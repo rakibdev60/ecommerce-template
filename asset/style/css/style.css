@@ -40,6 +40,9 @@ body::-webkit-scrollbar {
                 fill: rgba(0, 0, 0, 0.829);
             }
         }
+        a:hover{
+            background-color: orange;
+        }
             p{
                 position: absolute;
                 background-color: orange;
@@ -55,6 +58,8 @@ body::-webkit-scrollbar {
             }
     }
 }
+
+/************* start slider ************/
 .slider-main {
     width: 100vw;
     height: calc(100vh - 100px);
@@ -62,23 +67,19 @@ body::-webkit-scrollbar {
     overflow: hidden;
     border-radius: 13px;
 }
-
 .slids {
     width: 100%;
-    height: 100%; /* পুরো উচ্চতা দিচ্ছি যাতে সঠিকভাবে পজিশন হয় */
+    height: 100%;
     position: absolute;
     transition: transform 1s ease;
-    display: flex; /* Flexbox ব্যবহার করছি */
-    justify-content: center; /* Centering horizontally */
-    align-items: center; /* Centering vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .slids img {
     width: 100%;
     height: auto;
-    /* max-height: 100%; */
 }
-
 .slider-btn{
     width: 99%;
     padding: 0 20px;
@@ -99,8 +100,6 @@ body::-webkit-scrollbar {
         fill: white;
     }
 }
-
-
 .dot-container {
     text-align: center;
     margin-top: -25px;
@@ -116,13 +115,9 @@ body::-webkit-scrollbar {
     display: inline-block;
     cursor: pointer;
 }
-
 .dot-active {
     background-color: orange;
 }
-
-
-
 .slider-btn{
     width: 99%;
     padding: 0 20px;
@@ -143,8 +138,9 @@ body::-webkit-scrollbar {
         fill: white;
     }
 }
+/************* end slider ************/
 
-
+/************* start categories ************/
 .categories{
     width: 100%;
     height: 200px;
@@ -189,6 +185,7 @@ body::-webkit-scrollbar {
             max-width: 200px;
             height: max-content;
             background-color: orange;
+            color: white;
             display: flex;
             flex-direction: column;
             border-radius: 13px;
@@ -223,11 +220,9 @@ body::-webkit-scrollbar {
 .ctgy-slid::-webkit-scrollbar {
 display: none;
 }
+/************* end categories ************/
 
-
-
-
-/* start ftrs products */
+/************** start ftrs products ******************/
 .featurs-product{
     padding: 25px 5px;
     margin: 0 20px;
@@ -320,9 +315,10 @@ display: none;
     opacity: 1;
     margin-bottom: 0%;
 }
-/* end ftrs products */
+/************** end ftrs products ****************/
 
-/* start banner */
+/************** start banner ****************/
+
 .banner{
     width: 100%;
     height: 275px;
@@ -339,4 +335,4 @@ display: none;
         height: auto;
     }
 }
-/* end banner */
+/************** start banner ****************/
