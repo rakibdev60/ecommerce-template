@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     overflow-x: hidden;
@@ -149,7 +152,7 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 200px;
     overflow: hiddden;
-    padding: 20px 50px;
+    padding: 20px 100px;
     h1{
         font-size: 25px;
         font-weight: 700;
@@ -160,12 +163,12 @@ body::-webkit-scrollbar {
         justify-content: center;
     }
     .sliderr-btn{
-        width: 98%;
+        width: 92%;
         display: flex;
         justify-content: space-between;
         position: absolute;
         margin-left: -40px;
-        margin-top: 90px;
+        margin-top: 85px;
         z-index: 999;
         button{
             background-color: orange;
@@ -313,7 +316,6 @@ display: none;
                 display: flex;
                 justify-content: center;
                 gap: 10px;
-                opacity: 0;
                 margin-bottom: -25%;
                 transition: 1s;
                 button {
@@ -322,8 +324,9 @@ display: none;
                     border-radius: 10px;
                     display: flex;
                     gap: 10px;
-                    transition: 1s ease;
+                    transition: 1.5s ease;
                     overflow: hidden;
+                    opacity: 0;
                     h6 {
                         width: 0; 
                         visibility: hidden;
@@ -366,6 +369,9 @@ display: none;
     opacity: 1;
     margin-bottom: 0%;
 }
+.products:hover .down button{
+    opacity: 1;
+}
 #favorited{
         i{
             color: orange;
@@ -375,16 +381,18 @@ display: none;
 
 /************** start banner ****************/
 
-.banner{
+.bannerr{
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; /* Ensures the image covers the entire div */
-    background-position: center; /* Centers the image */
-    height: 400px; /* Set a height for the banner */
-    color: white; /* Text color for better visibility */
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+    border-radius: 13px;
+    cursor: pointer;
 }
 /************** start banner ****************/
