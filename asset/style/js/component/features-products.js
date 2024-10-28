@@ -2,6 +2,7 @@
 
 function createFerfeaturedProduct() {
     return `
+            <h1 class="text-center text-2xl font-bold p-[30px_0px]">Featured Product</h1>
             <div class="featurs-product">
                 <div class="products" style="background-image: url('https://img.freepik.com/free-photo/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background_23-2151382816.jpg');">
                     <div class="top">
