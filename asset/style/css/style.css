@@ -251,6 +251,30 @@ display: none;
         box-shadow: 0px 0.650px 3px hsla(0, 0%, 0%, 0.178)!important;
         cursor: pointer;
     }
+    .top{
+        text-align: -webkit-right;
+        width: 100%;
+        padding: 10px;
+        button{
+            padding: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.171);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 19px;
+            }
+        }
+        button:hover{
+            background-color: orange;
+        }
+        button:hover i{
+            color: white !important;
+        }
+    }
     .down{
         width: 100%;
         backdrop-filter: blur(17px);
@@ -288,23 +312,46 @@ display: none;
                 opacity: 0;
                 margin-bottom: -25%;
                 transition: 1s;
-            button{
-                padding: 10px;
-                background-color: #fff;
-                border-radius: 10px;
-                display: flex;
-                gap: 10px;
-                svg{
-                    height: 20px;
-                    fill: orange;
+                button {
+                    padding: 10px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    display: flex;
+                    gap: 10px;
+                    transition: 1s ease;
+                    overflow: hidden;
+                    h6 {
+                        width: 0; 
+                        visibility: hidden;
+                        position: absolute;
+                        white-space: nowrap;
+                        transition: 0.5s ease;
+                        color: transparent;
+                        transform: scale(0);
+                        overflow: hidden;
+                    }
+                    i {
+                        font-size: 23px;
+                        color: orange;
+                    }
                 }
-            }
-            button:hover{
-                background-color: orange;
-            }
-            button:hover svg{
-                fill: white;
-            }
+                
+                button:hover {
+                    background-color: orange;
+                }
+                
+                button:hover h6 {
+                    width: auto; /* You might want to set it to auto or a specific width */
+                    visibility: visible;
+                    position: relative;
+                    color: white;
+                    transform: scale(1);
+                }
+                
+                button:hover i {
+                    color: white;
+                }
+                
         }
     }
 }
@@ -314,6 +361,11 @@ display: none;
 .products:hover .down section{
     opacity: 1;
     margin-bottom: 0%;
+}
+#favorited{
+        i{
+            color: orange;
+        }
 }
 /************** end ftrs products ****************/
 
