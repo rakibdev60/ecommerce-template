@@ -11,7 +11,11 @@ body::-webkit-scrollbar {
     margin: 0;
     padding: 0;
 }
- 
+#main-body::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    background-color: green;
+    }
 .menus{
   /*    display: flex;
     justify-content:space-between;
