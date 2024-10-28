@@ -83,3 +83,18 @@ function moveLeft() {
 }
 
 /************************ end categories slider ************************/
+
+/************************ start product favorited ************************/
+        const icons = document.querySelectorAll('.top button');
+
+        icons.forEach(icon => {
+            icon.addEventListener('click', function() {
+                
+                if (this.id !== 'favorited') {
+                    this.id = 'favorited';
+                } else {
+                    this.id = '';
+                }
+            });
+        });
+/************************ end product favorited ************************/
