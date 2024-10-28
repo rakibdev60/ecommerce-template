@@ -115,9 +115,9 @@ function createFerfeaturedProduct() {
                         </section>
                     </div>
                 </div>
-                <div class="" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                <div class="products" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
                     <div class="top">
-                    <button id="favorited"><i class="material-icons">favorite</i></button>
+                    <button id=""><i class="material-icons">favorite</i></button>
                     </div>
                     <div class="down">
                         <h1>This is safely usedfdddull product</h1>
