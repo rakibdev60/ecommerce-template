@@ -289,13 +289,13 @@ display: none;
         width: 100%;
         padding: 10px;
         button{
-            padding: 10px;
+            padding: 5px 10px;
             border-radius: 10px;
             overflow: hidden;
             background-color: rgba(255, 255, 255, 0.171);
             backdrop-filter: blur(10px);
             display: flex;
-            align-items: center;
+            align-items: center !important;
             justify-content: center;
             i{
                 font-size: 19px;
@@ -345,10 +345,11 @@ display: none;
                 margin-bottom: -25%;
                 transition: 1s;
                 button {
-                    padding: 10px;
+                    padding: 6px 10px;
                     background-color: #fff;
                     border-radius: 10px;
                     display: flex;
+                    align-items: center;
                     gap: 10px;
                     transition: 1.5s ease;
                     overflow: hidden;
@@ -421,4 +422,63 @@ display: none;
     border-radius: 13px;
     /* cursor: pointer; */
 }
-/************** start banner ****************/
+/************** end banner ****************/
+/************** start footer ****************/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #042825;
+    padding: 50px 30px;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        li{
+            a{
+                font-size: 14px;
+                font-weight: 400;
+                font-family: poppins, sans-serif;
+                color: rgba(245, 245, 245, 0.397);
+                h2{
+                    color: whitesmoke;
+                    font-size: 20px;
+                    font-weight: 500;
+                    padding-bottom: 15px !important;
+
+                }
+            }
+            a:hover{
+                color: rgba(245, 245, 245, 0.699);
+            }
+        }
+    }
+    ul:last-child{
+        li{
+            a{
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              i{
+                padding: 0 10px;
+                font-size: 25px;
+                color: orange;
+              }
+              h2{
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                padding: 0 10px;
+                line-height: 23px;
+                border-left: 1px dotted rgba(192, 192, 192, 0.26);
+                span{
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: rgba(245, 245, 245, 0.397);
+                }
+              }
+            }
+
+        }
+    }
+/************** end footer ****************/
