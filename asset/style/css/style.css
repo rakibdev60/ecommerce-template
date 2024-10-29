@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 #cursor{
     width: 10px;
     height: 10px;
-    background-color: orange;
+    background-color: #FF6F61;
     position: fixed;
     border-radius: 50%;
     z-index: 99;
@@ -68,15 +68,15 @@ body::-webkit-scrollbar {
             }
         }
         li:hover{
-            background-color: orange;
-            border-color: orange;
+            background-color: #FF6F61;
+            border-color: #FF6F61;
         }
         li:hover a svg{
             fill: white;
         }
             p{
                 position: absolute;
-                background-color: orange;
+                background-color: #FF6F61;
                 color: white;
                 margin-top: -50px;
                 margin-left: 30px;
@@ -149,7 +149,7 @@ body::-webkit-scrollbar {
     /* cursor: pointer; */
 }
 .dot-active {
-    background-color: orange;
+    background-color: #FF6F61;
 }
 .slider-btn{
     width: 99%;
@@ -197,7 +197,7 @@ body::-webkit-scrollbar {
         margin-top: 85px;
         z-index: 999;
         button{
-            background-color: orange;
+            background-color: #FF6F61;
             padding: 15px;
             border-radius: 15px;
             backdrop-filter: blur(10px);
@@ -217,7 +217,7 @@ body::-webkit-scrollbar {
             min-width: 200px;
             max-width: 200px;
             height: max-content;
-            background-color: orange;
+            background-color: #FF6F61;
             color: white;
             display: flex;
             flex-direction: column;
@@ -302,7 +302,7 @@ display: none;
             }
         }
         button:hover{
-            background-color: orange;
+            background-color: #FF6F61;
         }
         button:hover i{
             color: white !important;
@@ -366,12 +366,12 @@ display: none;
                     }
                     i {
                         font-size: 23px;
-                        color: orange;
+                        color: #FF6F61;
                     }
                 }
                 
                 button:hover {
-                    background-color: orange;
+                    background-color: #FF6F61;
                 }
                 
                 button:hover h6 {
@@ -401,7 +401,7 @@ display: none;
 }
 #favorited{
         i{
-            color: orange;
+            color: #FF6F61;
         }
 }
 /************** end ftrs products ****************/
@@ -462,7 +462,7 @@ footer{
               i{
                 padding: 0 10px;
                 font-size: 25px;
-                color: orange;
+                color: #FF6F61;
               }
               h2{
                 display: flex;
