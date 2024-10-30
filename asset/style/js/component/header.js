@@ -6,12 +6,12 @@ function createHeader() {
                     <img class="w-[150px] crsr-hover" src="https://sajerbela.com/storage/app/public/company/2023-03-31-6426dc9918aaa.png" alt="">
                 </div>
                 <section class="flex p-[15px] gap-2">
-                    <svg class="h-[50px] border rounded p-[8px_8px]" fill="orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M16 64C16 28.7 44.7 0 80 0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64L80 64l0 320 224 0 0-320z"/></svg>
+                    <svg class="h-[50px] border rounded p-[8px_8px]" style="fill: #FF6F61;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M16 64C16 28.7 44.7 0 80 0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64L80 64l0 320 224 0 0-320z"/></svg>
                     <span>Call Us <br> 01000000000</span>
                 </section>
                 <div class=" md:h-[55px] w-1/3 flex bg-white border rounded-md overflow-hidden md:items-center">
                     <input class="md:w-[90%] md:h-[100%] md:items-center bg-transparent md:pl-2 md:text-md focus:outline-none" type="text" placeholder="search here.." />
-                    <div class="flex md:w-[10%] md:h-full md:items-center md:p-2 bg-[orange]">
+                    <div class="flex md:w-[10%] md:h-full md:items-center md:p-2 bg-[#FF6F61]">
                         <svg class="fill-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
                         </svg>

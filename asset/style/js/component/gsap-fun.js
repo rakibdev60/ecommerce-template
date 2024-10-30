@@ -41,3 +41,41 @@ crsrHover.forEach(crsrHover => {
     });
 });
 /**** cursor ****/
+/****** liner ******/
+var anmtdDiv = document.querySelector('.animated');
+var anmtdsvg = document.querySelector('#animate-line');
+var finalPath = 'M 10 80 Q 95 100 180 80';
+
+anmtdDiv.addEventListener("mousemove", (e) => {
+    var { left, top } = anmtdDiv.getBoundingClientRect();
+    var x = e.clientX - left;
+    var y = Math.max(0, Math.min(100, e.clientY - top));
+    
+    gsap.to(anmtdsvg, { attr: { d: `M 10 80 Q ${x} ${y} 180 80` } });
+});
+
+anmtdDiv.addEventListener("mouseleave", () => {
+    gsap.to(anmtdsvg, { 
+        attr: { 
+            d: finalPath 
+        },
+        duration:0.8,
+        ease:"elastic.out(1.0.2)"
+    });
+});
+
+
+// anmtdDiv.forEach(anmtdDiv => {
+//     anmtdDiv.addEventListener('mousemove', function (dets) {
+
+//         var svgAnmtdPath   = `M 10 100 Q 500 ${dets.y} 900 100`
+        
+//         gsap.to(anmtdsvg, {
+//             Attr:{
+//                 d:svgAnmtdPath
+//             }
+//         })
+//     })
+// })
+
+/****** liner ******/
