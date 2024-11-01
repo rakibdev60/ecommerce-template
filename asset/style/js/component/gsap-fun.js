@@ -51,7 +51,8 @@ anmtdDiv.addEventListener("mousemove", (e) => {
     var x = e.clientX - left;
     var y = Math.max(0, Math.min(100, e.clientY - top));
     
-    gsap.to(anmtdsvg, { attr: { d: `M 10 80 Q ${x} ${y} 180 80` } });
+    gsap.to(anmtdsvg, { attr: { d: `M 10 80 Q 95 ${y} 180 80` } });
+    // gsap.to(anmtdsvg, { attr: { d: `M 10 80 Q ${x} ${y} 180 80` } });
 });
 
 anmtdDiv.addEventListener("mouseleave", () => {

@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 #cursor{
     width: 10px;
     height: 10px;
-    background-color: #FF6F61;
+    background-color: orange;
     position: fixed;
     border-radius: 50%;
     z-index: 99;
@@ -68,15 +68,15 @@ body::-webkit-scrollbar {
             }
         }
         li:hover{
-            background-color: #FF6F61;
-            border-color: #FF6F61;
+            background-color: orange;
+            border-color: orange;
         }
         li:hover a svg{
             fill: white;
         }
             p{
                 position: absolute;
-                background-color: #FF6F61;
+                background-color: orange;
                 color: white;
                 margin-top: -50px;
                 margin-left: 30px;
@@ -149,7 +149,7 @@ body::-webkit-scrollbar {
     /* cursor: pointer; */
 }
 .dot-active {
-    background-color: #FF6F61;
+    background-color: orange;
 }
 .slider-btn{
     width: 99%;
@@ -197,7 +197,7 @@ body::-webkit-scrollbar {
         margin-top: 85px;
         z-index: 999;
         button{
-            background-color: #FF6F61;
+            background-color: rgb(255, 166, 0);
             padding: 15px;
             border-radius: 15px;
             backdrop-filter: blur(10px);
@@ -217,7 +217,7 @@ body::-webkit-scrollbar {
             min-width: 200px;
             max-width: 200px;
             height: max-content;
-            background-color: #FF6F61;
+            background-color: rgba(255, 166, 0, 0.589);
             color: white;
             display: flex;
             flex-direction: column;
@@ -257,12 +257,12 @@ display: none;
 
 /************** start ftrs products ******************/
 .featurs-product{
-    padding: 25px 5px;
+    padding: 25px 40px;
     margin: 0 20px;
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
     box-shadow: 0px 0.650px 3px hsla(0, 0%, 0%, 0.178)!important;
     border-radius: 13px;
     gap: 20px;
@@ -302,7 +302,7 @@ display: none;
             }
         }
         button:hover{
-            background-color: #FF6F61;
+            background-color: orange;
         }
         button:hover i{
             color: white !important;
@@ -332,8 +332,7 @@ display: none;
         }
         h2{
             font-size: 20px;
-            color: #D32F2F;
-            font-weight: 800;
+            color: orangered;
             text-align: center;
             margin-top: -15px;
         }
@@ -366,12 +365,12 @@ display: none;
                     }
                     i {
                         font-size: 23px;
-                        color: #FF6F61;
+                        color: orange;
                     }
                 }
                 
                 button:hover {
-                    background-color: #FF6F61;
+                    background-color: orange;
                 }
                 
                 button:hover h6 {
@@ -401,7 +400,7 @@ display: none;
 }
 #favorited{
         i{
-            color: #FF6F61;
+            color: orangered;
         }
 }
 /************** end ftrs products ****************/
@@ -424,7 +423,7 @@ display: none;
 }
 /************** end banner ****************/
 /************** start footer ****************/
-footer{
+/* footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -481,5 +480,8 @@ footer{
 
         }
     }
-}
+} */
 /************** end footer ****************/
+
+
+/*** header 2.0 ***/

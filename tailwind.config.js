@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [".//**/*.{html,js}"],
+  content: ["./**/*.{html,js,php}"], // Include HTML, JS, and PHP files in all subdirectories
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
+ 

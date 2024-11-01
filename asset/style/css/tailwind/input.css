@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
+@layer components {
+    /******* start footer *******/
+    .ftr{
+        @apply flex justify-around items-center flex-wrap bg-[#042825] p-[50px_30px]  gap-[10px];
+    }
+    .ftrUl{
+        @apply flex flex-col gap-[14px] list-none;
+    }
+    .ftrUlA{
+        @apply text-[rgba(245,245,245,0.397)] font-poppins text-[14px] font-normal hover:text-[rgba(245,245,245,0.699)];
+    }
+    .ftrUlAH2{
+        @apply text-[whitesmoke] text-[20px] font-medium pb-[15px];
+    }
+    .ftrLastUlA{
+        @apply flex items-center justify-start text-[rgba(245,245,245,0.67)] font-poppins text-[14px] font-normal hover:text-[rgba(245,245,245,0.699)];
+    }
+    .ftrLastUlAI{
+        @apply text-[#FF6F61] text-[25px] px-[10px];
+    }
+    .ftrLastUlAIH2{
+        @apply flex flex-col border-l border-dotted border-[rgba(192,192,192,0.26)] pl-[10px];
+    }
+    .ftrLastUlAIH2Span{
+        @apply text-[14px] font-normal text-[rgba(245,245,245,0.397)];
+    }
+    /******* end footer *******/
+    /******* start responsive *******/
+    @media (max-width: 528px) {
+        .ftr {
+          @apply flex-col;
+        }
+      }
+    /******* end responsive *******/
+
+}
 @tailwind utilities;

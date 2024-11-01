@@ -6,7 +6,7 @@ function loadScript(url) {
 }
 
 
-
+loadScript('asset/style/js/component/cursor.js');
 loadScript('asset/style/js/component/header.js');
 loadScript('asset/style/js/component/slider.js');
 loadScript('asset/style/js/component/catagories.js');
