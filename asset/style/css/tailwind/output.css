@@ -634,7 +634,7 @@ video {
   font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: rgba(245,245,245,0.397);
+  color: rgba(245,245,245,0.67);
 }
 
 .ftrLastUlA:hover {
@@ -2734,3 +2734,5 @@ video {
     }
   }
 }
+
+

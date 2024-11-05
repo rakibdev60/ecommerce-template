@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
     background-color: orange;
     position: fixed;
     border-radius: 50%;
-    z-index: 99;
+    z-index: 99999999;
     pointer-events: none;
 }
 #cursor2{
@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
     background-color: rgba(255, 166, 0, 0.13);
     position: fixed;
     border-radius: 50%;
-    z-index: 98;
+    z-index: 99999998;
     pointer-events: none;
 }
 #main-body::-webkit-scrollbar {
@@ -95,7 +95,7 @@ body::-webkit-scrollbar {
 /************* start slider ************/
 .slider-main {
     width: 100vw;
-    height: calc(100vh - 100px);
+    height: 500px;
     position: relative;
     overflow: hidden;
     border-radius: 13px;
@@ -485,3 +485,203 @@ display: none;
 
 
 /*** header 2.0 ***/
+
+.hdr{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 25px 70px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 165px;
+}
+.hdrD1{
+    display: flex;
+    justify-content: space-between;
+}
+.logoD{
+    height: 50px;
+    width: auto;
+}
+.logo{
+    height: 100%;
+}
+.srch{
+    background-color: whitesmodke;
+    border-radius: 10px;
+    width: 400px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    border: 1px solid rgba(192, 192, 192, 0.438);
+}
+.srchInpt{
+        background-color: transparent;
+        outline: none;
+        color: black;
+        width: 90%;
+        padding-left: 15px;
+}
+.srchA{
+    background-color: orange;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+.srchI{
+    font-size: 20px;
+    color: white;
+}
+.hdrD1btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.hdrD1btnsA{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 10px;
+    height: min-content;
+    border: 1px solid silver;
+    transition: 1s ease;
+}
+.hdrD1btnsA:hover{
+    background-color: orange;
+    border: 1px solid orange;
+}
+.hdrD1btnsAI{
+    font-size: 20px;
+    color: black;
+}
+.hdrD1btnsA:hover .hdrD1btnsAI{
+    color: white;
+}
+.hdrD2 {
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    font-family: poppins, sans-serif;
+}
+.ctgrys{
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 280px;
+    transition: 1s ease; 
+}
+.ctgry{
+    display: flex;
+    align-items: center !important;
+    height: 0px;
+    opacity: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s ease; 
+
+}
+.ctgrys:hover {
+    position: relative;
+    z-index: 9999;
+}
+.ctgrys:hover .ctgry{
+    height: 60px !important;
+    opacity: 1;
+}
+.ctgry:hover{
+    background-color: #fff;
+}
+.ctgry-active{
+    height: 60px;
+    opacity: 1;
+    background-color: white;
+}
+.ctgryD{
+    padding: 1px 10px;
+    background-color: orange;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ctgryDI{
+    font-size: 25px;
+    color: white;
+}
+.ctgryImgs{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 10px;
+}
+.ctgryImg{
+
+}
+.ctgrySpn{
+    font-size: 15px;
+    font-family: poppins, sans-serif;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: blac;
+}
+
+.menus {
+    display: flex;
+    gap: 20px;
+    font-weight:  400;
+    font-size: 15px;
+    flex-grow: 1;
+    justify-content: start;
+    margin-left: 50px;
+    margin-top: 4px;
+}
+.menusA{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 50px;
+}
+.menusASpn{
+    height: 100%;
+}
+.submenu{
+    background-color: white;
+    display: flex;
+    position: absolute;
+    margin-top: 48px;
+    gap: 80px;
+    padding: 15px 30px;
+    height: 0;
+    opacity: 0;
+    transition: 1s ease;
+}
+.submenuD{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.submenuStrng{
+    margin-bottom: 10px;
+}
+.menusA:hover .submenu{
+    height: min-content;
+    opacity: 1;
+    z-index: 999;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.menusA:hover .menusASpnI{
+    rotate: 90deg;
+}

@@ -1,4 +1,4 @@
-/******* start slider ********/
+/******* start slider 
 
 function adjustSliderHeight() {
     const header = document.querySelector('header');
@@ -13,6 +13,7 @@ function adjustSliderHeight() {
   
 window.addEventListener('load', adjustSliderHeight);
 window.addEventListener('resize', adjustSliderHeight);
+********/
 const slides = document.querySelectorAll(".slids");
 const dots = document.querySelectorAll(".dot"); 
 let counter = 0;
