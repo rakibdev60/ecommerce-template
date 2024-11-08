@@ -99,3 +99,17 @@ function moveLeft() {
             });
         });
 /************************ end product favorited ************************/
+/************************ start qty  + - product page ************************/
+
+function increaseQuantity() {
+    const quantityInput = document.getElementById('quantity');
+    quantityInput.value = parseInt(quantityInput.value) + 1;
+}
+
+function decreaseQuantity() {
+    const quantityInput = document.getElementById('quantity');
+    if (quantityInput.value > 1) {
+        quantityInput.value = parseInt(quantityInput.value) - 1;
+    }
+}
+/************************ end qty  + - product page ************************/

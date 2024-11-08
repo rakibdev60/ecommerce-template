@@ -1,6 +1,75 @@
 @tailwind base;
 @tailwind components;
 @layer components {
+
+    .hdr{
+        @apply flex flex-col gap-[20px] bg-[white] p-[25px_70px] pb-[0px] mb-[10px] rounded h-[165px];
+    }
+    .hdrD1{
+        @apply flex justify-between;
+    }
+    .logoD{
+        @apply h-[50px] w-[auto];
+    }
+    .logo{
+        @apply h-[100%];
+    }
+    .srch{
+        @apply bg-[whitesmoke] rounded-lg w-[400px] h-[45px] flex justify-between items-center overflow-auto border ;
+    }
+    .srchInpt{
+        @apply bg-[transparent] outline-none text-[black] w-[90%] pl-[15px];
+    }
+    .srchA{
+        @apply bg-[orange] h-[100%] flex items-center justify-center w-[10%];
+    }
+    .srchI{
+        @apply text-[20px] text-white;
+    }
+    .hdrD1btns{
+        @apply flex items-center justify-end gap-[15px];
+    }
+    .hdrD1btnsA{
+        @apply bg-white flex items-center p-[4px_8px] rounded-[10px] h-min border border-[silver]  transition ease-in-out duration-[1000ms] hover:bg-[orange] hover:border hover:border-[orange];
+    }
+    .hdrD1btnsAI{
+        @apply text-[20px] text-black;
+    }
+    .hdrD1btnsA:hover .hdrD1btnsAI{
+       @apply text-white;
+    }
+    .hdrD2{
+        @apply flex justify-between items-baseline font-poppins;
+    }
+    .ctgrys{
+        @apply p-[10px] rounded-lg flex flex-col gap-[5px] min-w-[280px] transition ease-in-out duration-[1000ms] hover:relative hover:bg-[whitesmoke] hover:z-[9999];
+    }
+    .ctgry{
+        @apply flex items-center h-[0px] opacity-0 rounded-lg overflow-hidden transition ease-in-out duration-[1000ms];
+    }
+    .ctgrys:hover .ctgry {
+        @apply h-[60px] opacity-100;
+    }
+    .ctgry:hover{
+        @apply bg-white;
+    }
+    .ctgry-active{
+        @apply h-[60px] opacity-100 bg-white border border-[#8080802c];
+    }
+    .ctgryD{
+        @apply p-[1px_10px] bg-[orange] h-[100%] flex justify-center items-center;
+    }
+    .ctgryDI{
+        @apply text-[25px] text-white;
+    }
+    .ctgryImgs{
+        @apply w-[40px] h-[40px] overflow-hidden rounded-full m-[10px];
+    }
+    .ctgrySpn{
+        @apply text-[15px] font-poppins pl-[10px] pr-[20px] text-black;
+    }
+
+    
     /******* start footer *******/
     .ftr{
         @apply flex justify-around items-center flex-wrap bg-[#042825] p-[50px_30px]  gap-[10px];

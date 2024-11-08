@@ -9,6 +9,8 @@
      <link rel="stylesheet" href="asset/style/css/style.css">
      <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <!-- remix icnos -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- gsap cdn -->
@@ -18,11 +20,14 @@
 </head>
 <body>
 
-    <custom-cursor></custom-cursor>
+    <div id="cursor"></div>
+    <div id="cursor2""></div>
 
     <div id="main-body">
-        <!-- <custom-header></custom-header> -->
-         <header class="hdr">
+        <!--=====================
+                header start
+        ======================-->
+        <header class="hdr">
             <div class="hdrD1">
                 <div class="logoD">
                     <a href=""><img class="logo" src="https://sajerbela.com/storage/app/public/company/2023-03-31-6426dc9918aaa.png" alt=""></a>
@@ -174,47 +179,575 @@
                     <i class="ri-price-tag-3-fill"></i>
                     <a href="">
                         <span>Today's Deals</span>
+                        
                     </a>
                 </div>
             </div>
          </header>
-         
-        <custom-slider></custom-slider>
-        <custom-categories-slider></custom-categories-slider>
+         <!--=====================
+                 header end
+         ======================--> 
+         <!--=====================
+                 slider start
+         ======================--> 
+         <div class="slider-main">
+            <div class="slider-btn">
+                <button class="crsr-hover" onclick="prev()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                </button>
+                <button class="crsr-hover"
+                 onclick="next()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </button>
+            </div>
+            <div class="slids">
+                <img src="https://images.remotehub.com/d42c62669a7711eb91397e038280fee0/1200x6000/ec1eb042.jpg?version=1618112516" alt="">
+            </div>
+            <div class="slids">
+                <img src="https://images.remotehub.com/ace0aaa09a7711eb8e999a0aaf11a20e/1200x6000/ce972803.jpg?version=1618112444" alt="">
+            </div>
+            <div class="slids">
+                <img src="https://images.remotehub.com/512bf05e9a7a11ebac3a9a0aaf11a20e/1200x6000/0a026a71.jpg?version=1618113595" alt="">
+            </div>
+            <div class="slids">
+                <img src="https://graphicsfamily.com/wp-content/uploads/edd/2023/06/E-commerce-Website-Product-Banner-Design-1180x664.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+            <span class="dot" onclick="goToSlide(4)"></span>
+        </div> 
+        <!--=====================
+                slider start
+        ======================--> 
+         <!--=====================
+          categories slider start
+         ======================--> 
+         <div class="categories">
+            <h1>Ceategories Gallery</h1>
+            <div class="sliderr-btn">
+                <button class="crsr-hover" onclick="moveLeft()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                </button>
+                <button class="crsr-hover" onclick="moveRight()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </button>
+            </div>
+            <div class="ctgy-slid">
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="ctgy-top">
+                    <img src="https://contents.mediadecathlon.com/p2393865/59e9499e49d170903fb3c71ddaf67c3a/p2393865.jpg?format=auto&quality=70&f=2520x0" alt="">
+                </div>
+                <div class="ctgy-down">
+                    <span>Shoes for winter</span>
+                </div>
+                </a>
+            </div>
+        </div>
+         <!--=====================
+          categories slider end
+         ======================--> 
 
         <div class="space p-[100px]"></div>
 
-        <custom-featured-product></custom-featured-product>
+         <!--=====================
+          featured product start
+         ======================--> 
+         <h1 class="text-center text-2xl font-bold p-[30px_0px]">Featured Product</h1>
+            <div class="featurs-product">
+                <a href="/product.html" class="top-a">
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/free-photo/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background_23-2151382816.jpg');">
+                        <div class="top" onclick="event.stopPropagation();">
+                            <button id="favorited"><i class="ri-heart-fill"></i></button>
+                        </div>
+                        <div class="down">
+                            <h1>This is safely usedfdddull product</h1>
+                            <h2>$750.00</h2>
+                            <section>
+                                <button onclick="location.href='http://www.example.com'" ><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                                <button onclick="location.href='http://www.example.com'" ><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                                <button onclick="location.href='/product.html'" ><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                            </section>
+                        </div>
+                </div>
+                </a>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/free-photo/bottle-juice-with-fruit-it_1340-34396.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://cdn.pixabay.com/photo/2020/03/06/16/16/cornflakes-4907490_1280.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://b2861582.smushcdn.com/2861582/wp-content/uploads/2023/02/splash-01-605-v1.png');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+         <!--=====================
+          featured product end
+         ======================--> 
 
         <br>
 
-        <custom-banner></custom-banner>
+         <!--=====================
+                 banner start
+         ======================--> 
+         <div class="bannerr crsr-hover" style="background-image: url('https://images.remotehub.com/d42c62669a7711eb91397e038280fee0/1200x6000/ec1eb042.jpg');">
+         </div>
+         <!--=====================
+                 banner start
+         ======================--> 
     
         <div class="space p-[50px]"></div>
     
-        <custom-shoes-product></custom-shoes-product>
-    <!--
-        <div class="p">
-        <div class="animated space p-[10px] bg-[green]">
-            <svg id="mySvg" width="500px" height="100%">
-                <path id="animate-line" d="M 10 80 Q 95 100 180 80" stroke="black" fill="transparent"/>
-            </svg>
-        </div>
-    </div>
+        
+         <!--=====================
+            product Shoes start
+         ======================-->
+         <h1 class="text-center text-2xl font-bold p-[30px_0px]">Shoes Product</h1>
+            <div class="featurs-product">
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/free-photo/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background_23-2151382816.jpg');">
+                    <div class="top">
+                    <button id="favorited"><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/free-photo/bottle-juice-with-fruit-it_1340-34396.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://cdn.pixabay.com/photo/2020/03/06/16/16/cornflakes-4907490_1280.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://b2861582.smushcdn.com/2861582/wp-content/uploads/2023/02/splash-01-605-v1.png');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+                <div class="products crsr-hover" style="background-image: url('https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg');">
+                    <div class="top">
+                    <button id=""><i class="ri-heart-fill"></i></button>
+                    </div>
+                    <div class="down">
+                        <h1>This is safely usedfdddull product</h1>
+                        <h2>$750.00</h2>
+                        <section>
+                            <button><i class="ri-shopping-bag-4-fill"></i><h6>Buy Now</h6></button>
+                            <button><i class="ri-shopping-cart-fill"></i><h6>Add to Cart</h6></button>
+                            <button><i class="ri-error-warning-fill"></i><h6>See Details</h6></button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+         <!--=====================
+            product Shoes end
+         ======================--> 
 
-      <div class="animated space p-[50px]">
-            <svg width="450" height="100">
-                <path id="animate-line" d="M 10 100 Q 500 100 900 100" stroke="black" fill="transparent"/>
-            </svg>
-        </div>
-    -->
         <div class="space p-[50px]"></div>
 
+         <!--=====================
+                Footer start
+         ======================--> 
         <footer class="ftr">
             <ul class="ftrUl">
                 <li><a href="" class="ftrUlA"><img class="w-[150px] crsr-hover" src="https://sajerbela.com/storage/app/public/company/2023-03-31-6426dc9918aaa.png" alt=""></a></li>
             </ul>
-            <ul class="ftrUl"
+            <ul class="ftrUl">
                 <li><a href="" class="ftrUlA"><h2 class="ftrUlAH2">Quick Links</h2></a></li>
                 <li class="crsr-hover"><a href="" class="ftrUlA">Home</a></li>
                 <li class="crsr-hover"><a href="" class="ftrUlA">Discount</a></li>
@@ -244,16 +777,21 @@
             </ul>
             <ul class="ftrUl">
                 <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-map-pin-2-line ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Adress <span class="ftrLastUlAIH2Span">124/ 1 Dhaka Bangladesh</span></h2></a></li>
-                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA""><i class="ri-mail-unread-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2></a></li>
-                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA""><i class="ri-phone-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-mail-unread-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-phone-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2></a></li>
             </ul>
         </footer>
+         <!--=====================
+                Footer end
+         ======================--> 
         
     </div>
 
  
 
 
-    <script src="asset/style/js/script.js" async></script>
+    <script src="asset/style/js/script.js"></script>
+    <script src="asset/style/js/component/function.js"></script>
+    <script src="asset/style/js/gsap-fun.js"></script>
 </body>
 </html>

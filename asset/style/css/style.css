@@ -1,3 +1,9 @@
+:root{
+    --p-featurs-product: 25 40px;
+    --g-featurs-product: 10px;
+    --w-products: 280px;
+    --h-products: 400px;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -257,7 +263,7 @@ display: none;
 
 /************** start ftrs products ******************/
 .featurs-product{
-    padding: 25px 40px;
+    padding: var(--p-featurs-product);
     margin: 0 20px;
     margin-bottom: 100px;
     display: flex;
@@ -265,7 +271,7 @@ display: none;
     justify-content: space-evenly; 
     box-shadow: 0px 0.650px 3px hsla(0, 0%, 0%, 0.178)!important;
     border-radius: 13px;
-    gap: 20px;
+    gap: var(--g-featurs-product);
     .products{
         width: 280px;
         height: 400px;
@@ -283,6 +289,11 @@ display: none;
         justify-content: space-between;
         box-shadow: 0px 0.650px 3px hsla(0, 0%, 0%, 0.178)!important;
         /* cursor: pointer; */
+        margin-top: 10px;
+    }
+    .top-a{
+        width: 100%;
+        height: 100%;
     }
     .top{
         text-align: -webkit-right;
@@ -313,7 +324,7 @@ display: none;
         backdrop-filter: blur(17px);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        background-color: rgba(255, 255, 255, 0.329);
+        background-color: rgba(255, 255, 255, 0.644);
         overflow: hidden;
         padding: 10px;
         color: black;
@@ -325,13 +336,17 @@ display: none;
 
         h1{
             width: 100%;
-            font-size: 20px;
+            font-size: 17px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 5  00;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
         }
         h2{
             font-size: 20px;
+            font-weight: 600;
+            font-family: "Montserrat", sans-serif;
             color: orangered;
             text-align: center;
             margin-top: -15px;
@@ -484,10 +499,10 @@ display: none;
 /************** end footer ****************/
 
 
-/*** header 2.0 ***/
+/* ** header 2.0 ** */
 
 .hdr{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: white;
@@ -495,21 +510,21 @@ display: none;
     padding-bottom: 0px;
     margin-bottom: 10px;
     border-radius: 10px;
-    height: 165px;
+    height: 165px; */
 }
 .hdrD1{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 .logoD{
-    height: 50px;
-    width: auto;
+    /* height: 50px;
+    width: auto; */
 }
 .logo{
-    height: 100%;
+    /* height: 100%; */
 }
 .srch{
-    background-color: whitesmodke;
+    /* background-color: whitesmodke;
     border-radius: 10px;
     width: 400px;
     height: 45px;
@@ -517,124 +532,125 @@ display: none;
     justify-content: space-between;
     align-items: center;
     overflow: auto;
-    border: 1px solid rgba(192, 192, 192, 0.438);
+    border: 1px solid rgba(192, 192, 192, 0.438); */
 }
 .srchInpt{
-        background-color: transparent;
+        /* background-color: transparent;
         outline: none;
         color: black;
         width: 90%;
-        padding-left: 15px;
+        padding-left: 15px; */
 }
 .srchA{
-    background-color: orange;
+    /* background-color: orange;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10%;
+    width: 10%; */
 }
 .srchI{
-    font-size: 20px;
-    color: white;
+    /* font-size: 20px;
+    color: white; */
 }
 .hdrD1btns{
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 15px; */
 }
 .hdrD1btnsA{
-    background-color: #fff;
+    /* background-color: #fff;
     display: flex;
     align-items: center;
     padding: 4px 8px;
     border-radius: 10px;
     height: min-content;
     border: 1px solid silver;
-    transition: 1s ease;
+    transition: 1s ease; */
 }
 .hdrD1btnsA:hover{
-    background-color: orange;
-    border: 1px solid orange;
+    /* background-color: orange;
+    border: 1px solid orange; */
 }
 .hdrD1btnsAI{
-    font-size: 20px;
-    color: black;
+    /* font-size: 20px;
+    color: black; */
 }
 .hdrD1btnsA:hover .hdrD1btnsAI{
-    color: white;
+    /* color: white; */
 }
 .hdrD2 {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items:baseline;
-    font-family: poppins, sans-serif;
+    font-family: poppins, sans-serif; */
 }
 .ctgrys{
-    background: whitesmoke;
-    padding: 10px;
+    /* padding: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     min-width: 280px;
-    transition: 1s ease; 
+    transition: 1s ease;  */
 }
 .ctgry{
-    display: flex;
+    /* display: flex;
     align-items: center !important;
     height: 0px;
     opacity: 0;
     border-radius: 10px;
     overflow: hidden;
-    transition: 1s ease; 
+    transition: 1s ease;  */
 
 }
 .ctgrys:hover {
-    position: relative;
-    z-index: 9999;
+    /* position: relative;
+    background: whitesmoke;
+    z-index: 9999; */
 }
 .ctgrys:hover .ctgry{
-    height: 60px !important;
-    opacity: 1;
+    /* height: 60px !important;
+    opacity: 1; */
 }
 .ctgry:hover{
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .ctgry-active{
-    height: 60px;
+    /* height: 60px;
     opacity: 1;
     background-color: white;
+    border: 1px solid #8080802c; */
 }
 .ctgryD{
-    padding: 1px 10px;
+    /* padding: 1px 10px;
     background-color: orange;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .ctgryDI{
-    font-size: 25px;
-    color: white;
+    /* font-size: 25px;
+    color: white; */
 }
 .ctgryImgs{
-    width: 40px;
+    /* width: 40px;
     height: 40px;
     overflow: hidden;
     border-radius: 50%;
-    margin: 10px;
+    margin: 10px; */
 }
 .ctgryImg{
 
 }
 .ctgrySpn{
-    font-size: 15px;
+    /* font-size: 15px;
     font-family: poppins, sans-serif;
     padding-left: 10px;
     padding-right: 20px;
-    color: blac;
+    color: blac; */
 }
 
 .menus {
@@ -682,6 +698,263 @@ display: none;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.menusA:hover .menusASpnI{
-    rotate: 90deg;
+/*===========================================
+                product page start
+============================================*/
+.product-view-dev{
+    width: 100%;
+    height: 520px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    overflow: hidden !important;
+    gap: 20px;
+    padding: 10px 150px;
+    position: relative;
+    z-index: 1;
+}
+.product-view-images{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    padding: 0 50px;
+    gap: 10px;
+    overflow: hidden !important;
+}
+.products-images{
+    width: 80px;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    img{
+        height: 70px;
+        width: auto;
+    }
+    img:first-child{
+        border-top-left-radius: 10px;
+    }
+    img:last-child{
+        border-bottom-left-radius: 10px;
+    }
+}
+.product-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    img{
+        width: auto !important;
+        height: 100%;
+        object-fit: cover;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: 1hs ease;
+        cursor: zoom-in;
+    }
+    
+}
+/* Zoomed image container styling */
+.zoom-container {
+    position: absolute;
+    top: 0;
+    left: 20px; 
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    display: none;
+    z-index: 99;
+}
+
+.zoomed-image {
+    position: absolute;
+    width: 600px; /* Zoom level */
+    height: 600px; /* Zoom level */
+    object-fit: cover;
+}
+.product-view-details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+    .ttls{
+        overflow: hidden; 
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        .title{
+            font-size: 21px;
+            font-weight: 500;
+        }
+    }
+    .prcs{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        line-height: 30px;
+        .discount{
+            font-size: 19px;
+            font-weight: 600;
+            color: orangered;
+        }
+        .price{
+            font-size: 25px;
+            font-weight: 600;
+            color: orange;
+        }
+    }
+    .prdct-dscrpt{
+        overflow: hidden; 
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        span{
+            font-size: 17px;
+            color: grey;
+        }
+        span:hover{
+            color: black;
+        }
+    }
+    .stock{
+        font-size: 20px;
+        font-weight: 600;
+        color: grey;
+        strong{
+            font-weight: 500;
+            color: black;
+        }
+    }
+    .size{
+        font-size: 18px;
+        font-weight: 500;
+        color: gray;
+    }
+    .size-dev{
+        display: flex;
+        gap: 15px;
+    }
+    .size-option {
+        display: none;
+    }
+    .size-label {
+        padding: 5px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 15px;
+        text-align: center;
+        border: 1px solid rgba(128, 128, 128, 0.418);
+        transition: 1s ease;
+    }
+    .size-option:checked + .size-label{
+        background-color: orange; 
+        color: #fff;
+        border-color: orange;
+    }
+    .size-option:hover + .size-label{
+        background-color: orange; 
+        color: #fff;
+        border-color: orange;
+    }
+    .qty{
+        display: flex;
+        gap: 3px;
+        .qty-input{
+            font-size: 17px;
+            width: 100px;
+            height: 65px;
+            text-align: center;
+            padding: 5px 10px;
+            border: 1px solid rgba(128, 128, 128, 0.418);
+            border-radius: 5px;
+        }
+        .qty-btn{
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            button{
+                font-size: 20px;
+                width: 50px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 5px;
+                border: 1px solid rgba(128, 128, 128, 0.418);
+                border-radius: 5px;
+                transition: 1s ease;
+            }
+            button:hover{
+                background-color: orange;
+                color: white;
+                border-color: orange;
+            }
+        }
+    }
+    .main-btn{
+        display: flex;
+        gap: 20px;
+        transition: 1s ease-in;
+        a{
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            gap: 5px;
+            color: white;
+            background-color: orange;
+            padding: 12px 30px;
+            border-radius: 8px;
+            transition: 1s ease-in;
+        }
+        a:hover{
+            border-radius: 50pc;
+        }
+    }
+}
+/* start product description and review */
+.description-review-dev{
+    padding: 10px 150px;
+    .dscrp-rvew-h1{
+        display: flex;
+        gap: 10px;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.418);
+        h1{
+            font-size: 22px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.507);
+            padding: 10px 10px;
+            border-bottom: 5px solid transparent;
+            margin: 0 10px;
+        }
+        h1:hover{
+            color: orange;
+            border-bottom: 4px solid orange;
+        }
+    }
+
+}
+/* end product description and review */
+/*===========================================
+                product page end
+============================================*/
+/************ responsive **************/
+@media screen and (max-width: 1200px) {
+    :root {
+        --p-featurs-product: 15px 10px;
+        --g-featurs-product: 5px;
+        --w-products: 250px;
+        --h-products: 380px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    :root {
+        /* --p-featurs-product: 15px 10px; */
+    }
 }
