@@ -86,7 +86,7 @@ function moveLeft() {
 /************************ end categories slider ************************/
 
 /************************ start product favorited ************************/
-        const icons = document.querySelectorAll('.top button');
+        const icons = document.querySelectorAll('.products button');
 
         icons.forEach(icon => {
             icon.addEventListener('click', function() {
@@ -99,10 +99,6 @@ function moveLeft() {
             });
         });
 /************************ end product favorited ************************/
-
-/*========================================================================
-                        product page start
-========================================================================*/
 /************************ start qty  + - product page ************************/
 
 function increaseQuantity() {
@@ -117,53 +113,6 @@ function decreaseQuantity() {
     }
 }
 /************************ end qty  + - product page ************************/
-/************************ end qty  + - product page ************************/
+/************************ start description review section product page ************************/
 
-// Get elements
-    const zoomContainer = document.querySelector('.zoom-container');
-    const zoomedImage = document.getElementById('zoomed-image');
-
-    const thumbnailImages = document.querySelectorAll('.products-images img');
-    const sImage = document.querySelector('.product-image');
-    const mainImage = document.querySelector('.product-image img');
-
-    // Update zoomed image on thumbnail click
-    thumbnailImages.forEach(image => {
-        image.addEventListener('click', () => {
-            mainImage.src = image.src;
-            zoomedImage.src = image.src;
-        });
-    });
-
-// Show zoomed image on hover
-sImage.addEventListener('mouseenter', () => {
-    zoomContainer.style.display = 'block';
-});
-
-// Hide zoomed image when not hovering
-sImage.addEventListener('mouseleave', () => {
-    zoomContainer.style.display = 'none';
-});
-
-// Move zoomed image based on mouse position
-sImage.addEventListener('mousemove', (e) => {
-    const rect = sImage.getBoundingClientRect();
-    const x = e.clientX - rect.left; // Mouse X within main image
-    const y = e.clientY - rect.top;  // Mouse Y within main image
-
-    const zoomLevel = 3; // Zoom factor
-
-    // Calculate percentage position within the image
-    const moveX = (x / rect.width) * 100;
-    const moveY = (y / rect.height) * 100 - 5; // Adjust Y position slightly to center vertically
-
-    // Adjust the zoomed image's position based on mouse position
-    zoomedImage.style.transformOrigin = `${moveX}% ${moveY}%`;
-    zoomedImage.style.transform = `scale(${zoomLevel})`;
-});
-
-
-
-/*========================================================================
-                        product page end
-========================================================================*/
+/************************ end description review section product page ************************/

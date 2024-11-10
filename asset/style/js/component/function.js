@@ -86,7 +86,7 @@ function moveLeft() {
 /************************ end categories slider ************************/
 
 /************************ start product favorited ************************/
-        const icons = document.querySelectorAll('.top button');
+        const icons = document.querySelectorAll('.products button');
 
         icons.forEach(icon => {
             icon.addEventListener('click', function() {
