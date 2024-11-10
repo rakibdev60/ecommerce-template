@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind -->
+     <link rel="stylesheet" href="asset/style/css/tailwind/output.css">
+     <!-- style -->
+     <link rel="stylesheet" href="asset/style/css/style.css">
+     <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- remix icnos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- gsap cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <title>Ecommerce</title>
+</head>
+<body>
+
+    <div id="cursor"></div>
+    <div id="cursor2"></div>
+
+    <div id="main-body">
+        <!--=====================
+                header start
+        ======================-->
+        <header class="hdr">
+            <div class="hdrD1">
+                <div class="logoD">
+                    <a href="index.html"><img class="logo" src="https://sajerbela.com/storage/app/public/company/2023-03-31-6426dc9918aaa.png" alt=""></a>
+                </div>
+                <div class="srch">
+                    <input class="srchInpt" type="text" placeholder="Search here...">
+                    <input class="hidden" id="srchBtn" type="submit" value="">
+                    <a href="" class="srchA">
+                        <i class="ri-search-line srchI"></i>
+                    </a>
+                </div>
+                <div class="hdrD1btns">
+                    <a href="" class="hdrD1btnsA">
+                        <i class="ri-user-fill hdrD1btnsAI"></i>
+                    </a>
+                    <a href="" class="hdrD1btnsA">
+                        <i class="ri-heart-2-fill hdrD1btnsAI"></i>
+                    </a>
+                    <a href="cart.html" class="hdrD1btnsA">
+                        <i class="ri-shopping-bag-2-fill hdrD1btnsAI"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hdrD2">
+                <div class="ctgrys">
+                    <a href="" class="ctgry ctgry-active">
+                        <div class="ctgryD">
+                            <i class="ri-gallery-view-2 ctgryDI"></i>
+                        </div>
+                        <span class="ctgrySpn">All Categories</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                </div>
+                <div class="menus">
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Home</span>
+                    </a>
+                    <div class="menusA  crsr-hover">
+                        <span class="menusASpn">Featurs <i class="ri-arrow-down-s-line menusASpnI"></i></span>
+                        <div class="submenu">
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="submenuA"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="submenuA"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="submenuA"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="submenuA"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Men's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Women's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Men's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Women's</span>
+                    </a>
+                </div>
+                <div class="todaydeals">
+                    <i class="ri-price-tag-3-fill"></i>
+                    <a href="">
+                        <span>Today's Deals</span>
+                        
+                    </a>
+                </div>
+            </div>
+         </header>
+         <!--=====================
+                 header end
+         ======================-->
+         <!--=====================
+                 cart start
+         ======================-->
+         <div class="card-main-dev">
+            <div class="card-main">
+
+            </div>
+            <div class="cart-checkout">
+                <ul>
+                    <li>
+                        <section>
+                            <input type="checkbox">
+                            <span>SELECT ALL (10 ITEMS)</span>
+                        </section>
+                        <span><i class="ri-delete-bin-5-fill"></i> DELETE</span>
+                    </li>
+                    <li>
+                        <section class="cart-first">
+                            <input type="checkbox" name="" id="">
+                        </section>
+                        <section class="cart-middle">
+                            <div class="cart-img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="cart-details">
+                                <span></span>
+                                <p></p>
+                            </div>
+                        </section>
+                        <section class="cart-last">
+                            
+                        </section>
+                    </li>
+                </ul>
+            </div>
+         </div>
+         <!--=====================
+                 cart end
+         ======================-->
+         <!--=====================
+                Footer start
+         ======================--> 
+        <footer class="ftr">
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA"><img class="w-[150px] crsr-hover" src="https://sajerbela.com/storage/app/public/company/2023-03-31-6426dc9918aaa.png" alt=""></a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA"><h2 class="ftrUlAH2">Quick Links</h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Home</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Discount</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Tearm- condition</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Faq</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">About us</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Privacy- Policy</a></li>
+            </ul>
+            
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA"><h2 class="ftrUlAH2">Top Categories</h2></a></li>
+                <li class="crsr-hover" class="ftrUlA"><a href="" class="ftrUlA">SHAREE COLLECTIONS</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">INdian Clothing</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Dresses</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">WOMEN"S FASION</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">BEAUTI PRODUCTS</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">MEN'S Products</a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA" ><h2 class="ftrUlAH2">BRAND</h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Ariz's Territory</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Sajer bela</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Zyan and Myza</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Simple</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Himalaya</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Palmolive</a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-map-pin-2-line ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Adress <span class="ftrLastUlAIH2Span">124/ 1 Dhaka Bangladesh</span></h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA""><i class="ri-mail-unread-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA""><i class="ri-phone-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2></a></li>
+            </ul>
+        </footer>
+         <!--=====================
+                Footer end
+         ======================--> 
+    </div>
+    <script src="asset/style/js/script.js" ></script>
+    <script src="asset/style/js/function.js"></script>
+    <script src="asset/style/js/gsap-fun.js" ></script>
+    <script>
+        /************* review icon function **************/
+            // Function to create stars dynamically based on rating from ID
+            function createRatingStars() {
+                const ratingContainers = document.querySelectorAll('.review-icons');
+                
+                ratingContainers.forEach(ratingContainer => {
+                    const rating = parseInt(ratingContainer.id);
+
+                    ratingContainer.innerHTML = '';
+
+                    for (let i = 1; i <= 5; i++) {
+                        const star = document.createElement('span');
+                        star.classList.add('star');
+                        star.innerHTML = '★';
+
+                        if (i <= rating) {
+                            star.classList.add('filled');
+                        }
+
+                        ratingContainer.appendChild(star);
+                    }
+                });
+            }
+
+            createRatingStars();
+
+        /************* review icon function **************/
+
+
+        /************************ start description review section product page ************************/
+            document.addEventListener('DOMContentLoaded', function() {
+                const descriptionBtn = document.querySelector('.descriptionBtn');
+                const reviewsBtn = document.querySelector('.reviewsBtn');
+                const descriptionBody = document.querySelector('.description');
+                const reviewBody = document.querySelector('.review');
+
+                // Initialize the page with description visible and review hidden
+                descriptionBody.style.display = 'flex';
+                descriptionBtn.classList.add('active-review-h1');
+                reviewBody.style.display = 'none';
+                reviewsBtn.classList.remove('active-review-h1');
+
+                // Switch to reviews when reviewsBtn is clicked
+                reviewsBtn.addEventListener('click', function() {
+                    reviewBody.style.display = 'flex';
+                    reviewsBtn.classList.add('active-review-h1');
+                    descriptionBody.style.display = 'none';
+                    descriptionBtn.classList.remove('active-review-h1');
+                });
+
+                // Switch to description when descriptionBtn is clicked
+                descriptionBtn.addEventListener('click', function() {
+                    descriptionBody.style.display = 'flex';
+                    descriptionBtn.classList.add('active-review-h1');
+                    reviewBody.style.display = 'none';
+                    reviewsBtn.classList.remove('active-review-h1');
+                });
+            });
+        /************************ end description review section product page ************************/
+
+    </script>
+</body>
+</html>

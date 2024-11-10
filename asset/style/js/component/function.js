@@ -113,3 +113,6 @@ function decreaseQuantity() {
     }
 }
 /************************ end qty  + - product page ************************/
+/************************ start description review section product page ************************/
+
+/************************ end description review section product page ************************/
