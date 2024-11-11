@@ -193,16 +193,16 @@
          <div class="card-main-dev">
             <div class="card-main">
                 <ul>
-                    <!-- <li>
+                    <li>
                         <section>
-                            <input type="checkbox">
+                            <input type="checkbox" id="mainCheckbox">
                             <span>SELECT ALL (10 ITEMS)</span>
                         </section>
                         <span><i class="ri-delete-bin-5-fill"></i> DELETE</span>
-                    </li> -->
+                    </li>
                     <li>
                         <section class="cart-first">
-                            <input type="checkbox" name="" id="">
+                            <input class="cart-checkbox" type="checkbox" name="" id="">
                         </section>
                         <section class="cart-middle">
                             <div class="cart-img">
@@ -228,7 +228,7 @@
                     
                     <li>
                         <section class="cart-first">
-                            <input type="checkbox" name="" id="">
+                            <input class="cart-checkbox" type="checkbox" name="" id="">
                         </section>
                         <section class="cart-middle">
                             <div class="cart-img">
@@ -254,7 +254,7 @@
                     
                     <li>
                         <section class="cart-first">
-                            <input type="checkbox" name="" id="">
+                            <input class="cart-checkbox" type="checkbox" name="" id="">
                         </section>
                         <section class="cart-middle">
                             <div class="cart-img">
@@ -335,66 +335,34 @@
     <script src="asset/style/js/function.js"></script>
     <script src="asset/style/js/gsap-fun.js" ></script>
     <script>
-        /************* review icon function **************/
-            // Function to create stars dynamically based on rating from ID
-            function createRatingStars() {
-                const ratingContainers = document.querySelectorAll('.review-icons');
-                
-                ratingContainers.forEach(ratingContainer => {
-                    const rating = parseInt(ratingContainer.id);
-
-                    ratingContainer.innerHTML = '';
-
-                    for (let i = 1; i <= 5; i++) {
-                        const star = document.createElement('span');
-                        star.classList.add('star');
-                        star.innerHTML = '★';
-
-                        if (i <= rating) {
-                            star.classList.add('filled');
-                        }
-
-                        ratingContainer.appendChild(star);
-                    }
-                });
-            }
-
-            createRatingStars();
-
-        /************* review icon function **************/
-
-
-        /************************ start description review section product page ************************/
-            document.addEventListener('DOMContentLoaded', function() {
-                const descriptionBtn = document.querySelector('.descriptionBtn');
-                const reviewsBtn = document.querySelector('.reviewsBtn');
-                const descriptionBody = document.querySelector('.description');
-                const reviewBody = document.querySelector('.review');
-
-                // Initialize the page with description visible and review hidden
-                descriptionBody.style.display = 'flex';
-                descriptionBtn.classList.add('active-review-h1');
-                reviewBody.style.display = 'none';
-                reviewsBtn.classList.remove('active-review-h1');
-
-                // Switch to reviews when reviewsBtn is clicked
-                reviewsBtn.addEventListener('click', function() {
-                    reviewBody.style.display = 'flex';
-                    reviewsBtn.classList.add('active-review-h1');
-                    descriptionBody.style.display = 'none';
-                    descriptionBtn.classList.remove('active-review-h1');
-                });
-
-                // Switch to description when descriptionBtn is clicked
-                descriptionBtn.addEventListener('click', function() {
-                    descriptionBody.style.display = 'flex';
-                    descriptionBtn.classList.add('active-review-h1');
-                    reviewBody.style.display = 'none';
-                    reviewsBtn.classList.remove('active-review-h1');
+        /************************ start  input select cart ************************/
+        document.addEventListener('DOMContentLoaded', function() {
+            // Select the main checkbox
+            const mainCheckbox = document.getElementById('mainCheckbox');
+            
+            // Select all the checkboxes within the cart items
+            const cartCheckboxes = document.querySelectorAll('.cart-checkbox');
+        
+            // Add event listener to the main "Select All" checkbox
+            mainCheckbox.addEventListener('change', function() {
+                cartCheckboxes.forEach(function(checkbox) {
+                    checkbox.checked = mainCheckbox.checked; // Set the state of each checkbox to match the "Select All"
                 });
             });
-        /************************ end description review section product page ************************/
-
+        
+            // If any individual checkbox changes, check if all checkboxes are selected
+            cartCheckboxes.forEach(function(checkbox) {
+                checkbox.addEventListener('change', function() {
+                    // Check if all cart checkboxes are selected
+                    const allChecked = Array.from(cartCheckboxes).every(function(checkbox) {
+                        return checkbox.checked;
+                    });
+                    mainCheckbox.checked = allChecked; // Update the "Select All" checkbox
+                });
+            });
+        });
+        
+        /************************ end input select cart ************************/
     </script>
 </body>
 </html>

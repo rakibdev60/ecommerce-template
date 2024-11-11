@@ -1,19 +1,4 @@
-/******* start slider 
 
-function adjustSliderHeight() {
-    const header = document.querySelector('header');
-    const slider = document.querySelector('.slider-main');
-  
-    const headerHeight = header.offsetHeight;
-  
-    slider.style.height = `calc(100vh - ${headerHeight}px)`;
-  
-  }
-  
-  
-window.addEventListener('load', adjustSliderHeight);
-window.addEventListener('resize', adjustSliderHeight);
-********/
 const slides = document.querySelectorAll(".slids");
 const dots = document.querySelectorAll(".dot"); 
 let counter = 0;
@@ -99,21 +84,6 @@ function moveLeft() {
             });
         });
 /************************ end product favorited ************************/
-/************************ start qty  + - product page ************************/
-
-function increaseQuantity(button) {
-    const input = button.closest('li').querySelector('.qty-input');
-    input.value = parseInt(input.value) + 1;
-}
-
-function decreaseQuantity(button) {
-    const input = button.closest('li').querySelector('.qty-input');
-    if (input.value > 1) {
-        input.value = parseInt(input.value) - 1;
-    }
-}
-
-/************************ end qty  + - product page ************************/
 /************************ end qty  + - product page ************************/
 // Get elements
     const zoomContainer = document.querySelector('.zoom-container');
@@ -150,3 +120,18 @@ sImage.addEventListener('mousemove', (e) => {
     zoomedImage.style.transform = `scale(${zoomLevel})`;
 });
 /************************ start description review section product page ************************/
+/************************ start qty  + - cart page ************************/
+
+function increaseQuantity(button) {
+    const input = button.closest('li').querySelector('.qty-input');
+    input.value = parseInt(input.value) + 1;
+}
+
+function decreaseQuantity(button) {
+    const input = button.closest('li').querySelector('.qty-input');
+    if (input.value > 1) {
+        input.value = parseInt(input.value) - 1;
+    }
+}
+
+/************************ end qty  + - cart page ************************/
