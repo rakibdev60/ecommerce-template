@@ -101,17 +101,18 @@ function moveLeft() {
 /************************ end product favorited ************************/
 /************************ start qty  + - product page ************************/
 
-function increaseQuantity() {
-    const quantityInput = document.getElementById('quantity');
-    quantityInput.value = parseInt(quantityInput.value) + 1;
+function increaseQuantity(button) {
+    const input = button.closest('li').querySelector('.qty-input');
+    input.value = parseInt(input.value) + 1;
 }
 
-function decreaseQuantity() {
-    const quantityInput = document.getElementById('quantity');
-    if (quantityInput.value > 1) {
-        quantityInput.value = parseInt(quantityInput.value) - 1;
+function decreaseQuantity(button) {
+    const input = button.closest('li').querySelector('.qty-input');
+    if (input.value > 1) {
+        input.value = parseInt(input.value) - 1;
     }
 }
+
 /************************ end qty  + - product page ************************/
 /************************ end qty  + - product page ************************/
 // Get elements
