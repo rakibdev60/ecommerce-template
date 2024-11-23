@@ -1,0 +1,38 @@
+:root{
+
+    
+    --p-featurs-product: 25 40px;
+    --g-featurs-product: 10px;
+    --w-products: 280px;
+    --h-products: 400px;
+
+    --w-products: 280px;
+    --h-products: 380px;
+
+    --ai-imgss: center;
+    --w-imgss: 100%;
+    --h-imgss-a: 100%;
+
+    --p-btnSections: absolute;
+    --fs-btnSections-h1: 17px;
+    --fs-btnSections-h2: 20px;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    cursor: none;
+
+}
+body::-webkit-scrollbar {
+    display: none;
+    }
+*{
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,217 @@
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 25px 0px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 136px;
+    .hdrD1{
+        display: flex;
+        padding: 0px 70px;
+        justify-content: space-between;
+        .logoD{
+            height: 50px;
+            width: auto;
+            .logo{
+                height: 100%;
+            }
+        }
+        .srch{
+            border-radius: 8px;
+            width: 400px;
+            height: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: auto;
+            .srchInpt{
+                background-color: transparent;
+                outline: none;
+                color: black;
+                width: 90%;
+                height: 100%;
+                padding-left: 15px;
+                border: 1px solid rgba(192, 192, 192, 0.438);
+                border-radius: 8px 0 0 8px;
+            }
+            .srchA{
+                background-color: orange;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 10%;
+                border: 1px solid orange;
+            }
+        }
+        .hdrD1btns{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 15px;
+            a{
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                padding: 4px 8px;
+                border-radius: 10px;
+                height: min-content;
+                border: 1px solid silver;
+                transition: 1s ease;
+                i{
+                    font-size: 20px;
+                    color: black;
+                }
+                &:hover{
+                    background-color: orange;
+                    border: 1px solid orange;
+                }
+                &:hover i{
+                    color: white;
+                }
+            }
+        }
+    }
+    .hdrD2{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items:baseline;
+        font-family: poppins, sans-serif;
+        padding: 0px 70px;
+        background-color: #ffa600d5;
+        .ctgrys{
+            display: flex;
+            flex-direction: column;
+            min-width: 280px;
+            transition: 1s ease;
+            .ctgry{
+                display: flex;
+                align-items: center !important;
+                height: 0px;
+                opacity: 0;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: 1s ease;
+                border-radius: 0;
+                border-bottom: 1px dotted rgba(128, 128, 128, 0.295);
+                .ctgryImgs{
+                    width: 30px;
+                    height: 30px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    margin: 10px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                span{
+                    font-size: 15px;
+                    font-family: poppins, sans-serif;
+                    font-weight: 300;
+                    padding-left: 10px;
+                    padding-right: 20px;
+                    color: black;
+                }
+                &:hover{
+                    background-color: orange;
+                }
+                &:hover span{
+                    color: white;
+                }
+            }
+            .ctgry-active{
+                height: 50px;
+                opacity: 1;
+                background-color: orange;
+                border-radius: 0;
+                border-bottom: none;
+                position: relative;
+                div{
+                    padding: 1px 10px;
+                    background-color: orange;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        font-size: 25px;
+                        font-weight: 300;
+                        color: white;
+                        position: relative;
+                        right: 0;
+                    }
+                }
+                span{
+                    color: white !important;
+                }
+                i{
+                    position: absolute;
+                    right: 10px;
+                    color: white;
+                }
+                &:hover{
+                    background-color: orange;
+                }
+            }
+            &:hover {
+                position: relative;
+                background: whitesmoke;
+                z-index: 9999;
+            }
+            &:hover .ctgry{
+                height: 50px !important;
+                opacity: 1;
+            }
+        }
+        .menus{
+            display: flex;
+            gap: 20px;
+            font-weight:  400;
+            font-size: 15px;
+            flex-grow: 1;
+            justify-content: start;
+            margin-left: 50px;
+            margin-top: 4px;
+            .menusA{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                height: 50px;
+                .menusASpn{
+                    height: 100%;
+
+                }
+                .submenu{
+                    background-color: white;
+                    display: flex;
+                    position: absolute;
+                    margin-top: 33px;
+                    gap: 80px;
+                    padding: 15px 30px;
+                    height: 0;
+                    opacity: 0;
+                    transition: 1s ease;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        strong{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                &:hover .submenu{
+                    height: min-content;
+                    opacity: 1;
+                    z-index: 999;
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+            }
+        }
+    }
+}

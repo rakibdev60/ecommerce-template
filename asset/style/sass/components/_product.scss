@@ -1,0 +1,164 @@
+.featurs-product{
+    padding: var(--p-featurs-product);
+    margin: 0 20px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    box-shadow: 0px 0.650px 3px hsla(0, 0%, 0%, 0.178)!important;
+    border-radius: 13px;
+    gap: var(--g-featurs-product);
+    .products{
+        display: flex;
+        flex-direction: column;
+        width: var(--w-products);
+        height: var(--h-products);
+        background-color: whitesmoke;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid rgba(192, 192, 192, 0.219);
+        button{
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 5px 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.171);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center !important;
+            justify-content: center;
+            margin-top: 10px;
+            margin-right: 15px;
+            color: white;
+        }
+        button:hover{
+            background-color: orange;
+        }
+        button:hover i{
+            color: white !important;
+        }
+        .imgss{
+            height: 100% !important;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: var(--ai-imgss);
+                a{
+                height: var(--h-imgss-a);
+                width: var(--w-imgss);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    img{
+                        height: 100% !important;
+                        width: auto;
+                        object-fit: cover;
+                    }
+                }
+        }
+    .btnSections{
+        width: 100%;
+        backdrop-filter: blur(17px);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.644);
+        overflow: hidden;
+        padding: 10px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: 1s;
+        behavior: smooth;
+        position: var(--p-btnSections);
+        bottom: 0;
+        h1{
+            width: 100%;
+            font-size: var(--fs-btnSections-h1);
+            color: black;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            padding: 10px 5px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        h2{
+            font-size: var(--fs-btnSections-h2);
+            font-weight: 600;
+            font-family: "Montserrat", sans-serif;
+            color: orangered;
+            text-align: center;
+            margin-top: -15px;
+        }
+        div{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: -25%;
+            transition: 1s;
+            a {
+                padding: 6px 10px;
+                background-color: #fff;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                transition: 1.5s ease;
+                overflow: hidden;
+                opacity: 0;
+                span{
+                    width: 0; 
+                    visibility: hidden;
+                    position: absolute;
+                    white-space: nowrap;
+                    transition: 0.5s ease;
+                    color: transparent;
+                    transform: scale(0);
+                    overflow: hidden;
+                }
+                i {
+                    font-size: 23px;
+                    color: orange;
+                }
+            }
+            a:hover {
+                background-color: orange;
+            }
+            a:hover span {
+                width: auto;
+                visibility: visible;
+                position: relative;
+                color: white;
+                transform: scale(1);
+            }
+            
+            a:hover i {
+                color: white;
+            }
+            
+            }
+        }
+    }
+    .products:hover .btnSections{
+        box-shadow: -2.5px -5.35px 21px hsla(0, 0%, 0%, 0.178) !important;
+    }
+    .products:hover .btnSections div{
+        opacity: 1;
+        margin-bottom: 0%;
+    }
+    .products:hover .btnSections a{
+        opacity: 1;
+    }
+}
+
+#favorited{
+    i{
+        color: orangered;
+    }
+}

@@ -7,9 +7,20 @@
     --g-featurs-product: 10px;
     --w-products: 280px;
     --h-products: 400px;
+
+    --w-products: 280px;
+    --h-products: 380px;
+
+    --ai-imgss: center;
+    --w-imgss: 100%;
+
+    --p-btnSections: absolute;
+    --fs-btnSections-h1: 17px;
+    --fs-btnSections-h2: 20px;
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
@@ -17,6 +28,7 @@ body{
     padding: 0;
     margin: 0;
     cursor: none;
+
 }
 body::-webkit-scrollbar {
     display: none;
@@ -279,8 +291,8 @@ display: none;
     .products{
         display: flex;
         flex-direction: column;
-        width: 280px;
-        height: 380px;
+        width: var(--w-products);
+        height: var(--h-products);
         background-color: whitesmoke;
         position: relative;
         border-radius: 10px;
@@ -314,9 +326,9 @@ display: none;
             width: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: var(--ai-imgss);
                 a{
-                height: 100% !important;
+                height: var(--h-imgss-a);
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -330,6 +342,7 @@ display: none;
         }
     .btnSections{
         width: 100%;
+        height: 50%;
         backdrop-filter: blur(17px);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -342,24 +355,26 @@ display: none;
         gap: 20px;
         transition: 1s;
         behavior: smooth;
-        position: absolute;
+        position: var(--p-btnSections);
         bottom: 0;
         h1{
             width: 100%;
-            font-size: 17px;
+            font-size: var(--fs-btnSections-h1);
+            color: black;
             font-family: "Montserrat", sans-serif;
-            font-weight: 5  00;
+            font-weight: 500;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
         }
         h2{
-            font-size: 20px;
+            font-size: var(--fs-btnSections-h2);
             font-weight: 600;
             font-family: "Montserrat", sans-serif;
             color: orangered;
             text-align: center;
             margin-top: -15px;
+            display: none;
         }
         div{
             width: 100%;
@@ -511,30 +526,31 @@ display: none;
 
 /* ** header 2.0 ** */
 
-.hdr{
-    /* display: flex;
+/* .hdr{
+    display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: white;
-    padding: 25px 70px;
+    padding: 25px 0px;
     padding-bottom: 0px;
     margin-bottom: 10px;
     border-radius: 10px;
-    height: 165px; */
+    height: 165px;
 }
 .hdrD1{
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    padding: 0px 70px;
+    justify-content: space-between;
 }
 .logoD{
-    /* height: 50px;
-    width: auto; */
+    height: 50px;
+    width: auto;
 }
 .logo{
-    /* height: 100%; */
+    height: 100%;
 }
 .srch{
-    /* background-color: whitesmodke;
+    background-color: whitesmodke;
     border-radius: 10px;
     width: 400px;
     height: 45px;
@@ -542,125 +558,128 @@ display: none;
     justify-content: space-between;
     align-items: center;
     overflow: auto;
-    border: 1px solid rgba(192, 192, 192, 0.438); */
+    border: 1px solid rgba(192, 192, 192, 0.438);
 }
 .srchInpt{
-        /* background-color: transparent;
+        background-color: transparent;
         outline: none;
         color: black;
         width: 90%;
-        padding-left: 15px; */
+        padding-left: 15px;
 }
 .srchA{
-    /* background-color: orange;
+    background-color: orange;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10%; */
+    width: 10%;
 }
 .srchI{
-    /* font-size: 20px;
-    color: white; */
+    font-size: 20px;
+    color: white;
 }
 .hdrD1btns{
-    /* display: flex;
+    display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 15px; */
+    gap: 15px;
 }
 .hdrD1btnsA{
-    /* background-color: #fff;
+    background-color: #fff;
     display: flex;
     align-items: center;
     padding: 4px 8px;
     border-radius: 10px;
     height: min-content;
     border: 1px solid silver;
-    transition: 1s ease; */
+    transition: 1s ease;
 }
 .hdrD1btnsA:hover{
-    /* background-color: orange;
-    border: 1px solid orange; */
+    background-color: orange;
+    border: 1px solid orange;
 }
 .hdrD1btnsAI{
-    /* font-size: 20px;
-    color: black; */
+    font-size: 20px;
+    color: black;
 }
 .hdrD1btnsA:hover .hdrD1btnsAI{
-    /* color: white; */
+    color: white;
 }
 .hdrD2 {
-    /* display: flex;
+    height: 80px;
+    display: flex;
     justify-content: space-between;
     align-items:baseline;
-    font-family: poppins, sans-serif; */
+    font-family: poppins, sans-serif;
+    padding: 0px 70px;
+    background-color: #ffa601ce;
 }
 .ctgrys{
-    /* padding: 10px;
+    padding: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     min-width: 280px;
-    transition: 1s ease;  */
+    transition: 1s ease; 
 }
 .ctgry{
-    /* display: flex;
+    display: flex;
     align-items: center !important;
     height: 0px;
     opacity: 0;
     border-radius: 10px;
     overflow: hidden;
-    transition: 1s ease;  */
+    transition: 1s ease; 
 
 }
 .ctgrys:hover {
-    /* position: relative;
+    position: relative;
     background: whitesmoke;
-    z-index: 9999; */
+    z-index: 9999;
 }
 .ctgrys:hover .ctgry{
-    /* height: 60px !important;
-    opacity: 1; */
+    height: 60px !important;
+    opacity: 1;
 }
 .ctgry:hover{
-    /* background-color: #fff; */
+    background-color: #fff;
 }
 .ctgry-active{
-    /* height: 60px;
+    height: 60px;
     opacity: 1;
     background-color: white;
-    border: 1px solid #8080802c; */
+    border: 1px solid #8080802c;
 }
 .ctgryD{
-    /* padding: 1px 10px;
+    padding: 1px 10px;
     background-color: orange;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 .ctgryDI{
-    /* font-size: 25px;
-    color: white; */
+    font-size: 25px;
+    color: white;
 }
 .ctgryImgs{
-    /* width: 40px;
+    width: 40px;
     height: 40px;
     overflow: hidden;
     border-radius: 50%;
-    margin: 10px; */
+    margin: 10px;
 }
 .ctgryImg{
 
 }
 .ctgrySpn{
-    /* font-size: 15px;
+    font-size: 15px;
     font-family: poppins, sans-serif;
     padding-left: 10px;
     padding-right: 20px;
-    color: blac; */
+    color: blac;
 }
 
 .menus {
@@ -707,7 +726,7 @@ display: none;
     z-index: 999;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-}
+} */
 /*===========================================
                 product page start
 ============================================*/
@@ -1338,8 +1357,32 @@ display: none;
         --h-products: 380px;
     }
 }
-@media screen and (max-width: 1200px) {
+/**   915px   **/
+@media screen and (max-width: 915px) {
     :root {
-        /* --p-featurs-product: 15px 10px; */
+        --w-products: 180px;
+        --h-products: 280px;
+    }
+}
+
+/**   615px   **/
+@media screen and (max-width: 615px) {
+    :root {
+        --w-products: 150px;
+        --h-products: 250px;
+    }
+}/**   550px   **/
+@media screen and (max-width: 550px) {
+    :root {
+        --w-products: 150px;
+        --h-products: 250px;
+
+        --ai-imgss: start;
+        --h-imgss-a: 80%;
+
+        --p-btnSections: relative;
+        --fs-btnSections-h1: 10px;
+        --fs-btnSections-h2: 15px;
+
     }
 }

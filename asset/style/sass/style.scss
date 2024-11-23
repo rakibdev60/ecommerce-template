@@ -1,0 +1,12 @@
+@forward './util/root';
+@forward './util/reset';
+@forward 'components/header';
+@forward 'components/cursor';
+@forward 'components/slider';
+@forward 'components/categories';
+@forward 'components/product';
+@forward 'components/footer';
+
+.space{
+    padding: 100px;
+}

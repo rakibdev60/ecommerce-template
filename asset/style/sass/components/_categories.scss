@@ -1,0 +1,79 @@
+.categories{
+    width: 100%;
+    height: 200px;
+    overflow: hiddden;
+    padding: 20px 100px;
+    h1{
+        font-size: 25px;
+        font-weight: 700;
+        font-family: poppins, sans-serif;
+        text-align: center;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .sliderr-btn{
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        margin-left: -40px;
+        margin-top: 85px;
+        z-index: 999;
+        button{
+            background-color: rgb(255, 166, 0);
+            padding: 15px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        svg{
+            width: 20px;
+            fill: white;
+        }
+    }
+    .ctgy-slid{
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        overflow-x: scroll;
+        border-radius: 13px;
+        a{
+            min-width: 200px;
+            max-width: 200px;
+            height: max-content;
+            background-color: rgba(255, 166, 0, 0.589);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 13px;
+            overflow: hidden;
+            .ctgy-top{
+                width: 100%;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: auto;
+                    min-height: 100%;
+                }
+            }
+            .ctgy-down{
+                font-size: 18px;
+                font-family: poppins, sans-serif;
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 5px;
+                height: auto;
+            }
+        }
+    }
+}
+.ctgy-slid::-webkit-scrollbar {
+display: none;
+}

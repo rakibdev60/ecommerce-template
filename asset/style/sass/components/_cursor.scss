@@ -1,0 +1,18 @@
+#cursor{
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 99999999;
+    pointer-events: none;
+}
+#cursor2{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 166, 0, 0.13);
+    position: fixed;
+    border-radius: 50%;
+    z-index: 99999998;
+    pointer-events: none;
+}
