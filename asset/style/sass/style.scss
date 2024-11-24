@@ -1,5 +1,4 @@
-@forward './util/root';
-@forward './util/reset';
+@forward './util/index';
 @forward 'components/header';
 @forward 'components/cursor';
 @forward 'components/slider';
@@ -8,5 +7,21 @@
 @forward 'components/footer';
 
 .space{
-    padding: 100px;
+    height: 50px;
+}
+.heading{
+    div{
+        width: min-content;
+        h1{
+            font-family: poppins, sans-serif;
+            color: #212529;
+        }
+        hr{
+            width: 80%;
+            border-width: 3px;
+            border-color: orange;
+            opacity: 1;
+            border-radius: 50px;
+        }
+    }
 }

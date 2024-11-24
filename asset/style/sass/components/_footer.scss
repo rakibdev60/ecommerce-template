@@ -1,13 +1,11 @@
 footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: #042825;
     padding: 50px 30px;
     ul{
         display: flex;
         flex-direction: column;
         gap: 14px;
+        margin: 20px 0;
         li{
             a{
                 font-size: 14px;
@@ -20,6 +18,9 @@ footer{
                     font-weight: 500;
                     padding-bottom: 15px !important;
 
+                }
+                img{
+                    width: 150px;
                 }
             }
             a:hover{
