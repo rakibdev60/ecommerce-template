@@ -51,6 +51,15 @@ const goToSlide = (index) => {
 };
 
 /******* end slider ********/
+/************************ start headder ************************/
+const MenuIcon = document.querySelector('.ri-menu-3-fill');
+const HdrMenu  = document.querySelector('.menus');
+
+MenuIcon.addEventListener('click', function () {
+   HdrMenu.classList.add('menus-responsive');
+});
+/************************ end headder ************************/
+
 /************************ start categories slider ************************/
 function moveRight() {
     const container = document.querySelector('.ctgy-slid'); 

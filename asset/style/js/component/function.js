@@ -1,19 +1,16 @@
-/******* start slider 
 
-function adjustSliderHeight() {
-    const header = document.querySelector('header');
-    const slider = document.querySelector('.slider-main');
-  
-    const headerHeight = header.offsetHeight;
-  
-    slider.style.height = `calc(100vh - ${headerHeight}px)`;
-  
-  }
-  
-  
-window.addEventListener('load', adjustSliderHeight);
-window.addEventListener('resize', adjustSliderHeight);
-********/
+/************************ start headder ************************/
+const MenuIcon = document.querySelector('.ri-menu-3-fill');
+const MenuIconCloss = document.querySelector('.ri-menu-2-line');
+const HdrMenu  = document.querySelector('.menus');
+
+MenuIcon.addEventListener('click', function () {
+   HdrMenu.classList.add('menus-responsive');
+});
+MenuIconCloss.addEventListener('click', function () {
+    HdrMenu.classList.remove('menus-responsive');
+ });
+/************************ end headder ************************/
 const slides = document.querySelectorAll(".slids");
 const dots = document.querySelectorAll(".dot"); 
 let counter = 0;

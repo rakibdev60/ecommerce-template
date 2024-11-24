@@ -10,10 +10,10 @@ header{
     height: 145px;
     .hdrD1{
         display: flex;
-        padding: 0px 70px;
+        padding: var(--p-header);
         justify-content: space-between;
         .logoD{
-            height: 50px;
+            height: var(--h-logoD);
             width: auto;
             .logo{
                 height: 100%;
@@ -88,10 +88,11 @@ header{
         height: 50px;
         // display: flex;
         font-family: poppins, sans-serif;
-        padding: 0px 70px;
+        padding: var(--p-header);
         background-color: #ffa600d5;
         .ctgrys{
-            min-width: 280px;
+            // min-width: 280px;
+            min-width: max-content;
             transition: 1s ease;
             .ctgry{
                 display: flex;
@@ -117,8 +118,8 @@ header{
                     font-size: 15px;
                     font-family: poppins, sans-serif;
                     font-weight: 300;
-                    padding-left: 10px;
-                    padding-right: 20px;
+                    padding-left: 2px;
+                    padding-right: 60px;
                     color: black;
                 }
                 &:hover{
@@ -136,14 +137,14 @@ header{
                 border-bottom: none;
                 position: relative;
                 div{
-                    padding: 1px 10px;
-                    background-color: orange;
                     height: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    padding: 1px 10px;
+                    background-color: orange;
                     i{
-                        font-size: 25px;
+                        font-size: 20px;
                         font-weight: 300;
                         color: white;
                         position: relative;
@@ -175,7 +176,6 @@ header{
         .menus{
             font-weight:  400;
             font-size: 15px;
-            // flex-grow: 1;
             justify-content: start;
             margin-left: 50px;
             margin-top: 4px;
@@ -224,13 +224,26 @@ header{
     width: 300px;
     height: 100vh;
     padding: 50px;
+    display: flex !important;
     flex-direction: column;
     background-color: whitesmoke;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 999;
+    .ri-menu-2-line{
+        position: absolute;
+        top: 2%;
+        left: 5%;
+    }
     .submenu{
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 550px) {
+    :root {
+        --p-header: 0px 20px;
+        --h-logoD: 35px;
     }
 }
