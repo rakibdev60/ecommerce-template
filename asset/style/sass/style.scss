@@ -1,7 +1,7 @@
 @forward './util/index';
 @forward 'components/header';
 @forward 'components/cursor';
-@forward 'components/slider';
+@forward 'components/carousel';
 @forward 'components/categories';
 @forward 'components/product';
 @forward 'components/footer';
@@ -13,15 +13,24 @@
     div{
         width: min-content;
         h1{
+            font-size: var(--fs-heading);
+            font-weight: 600;
             font-family: poppins, sans-serif;
             color: #212529;
         }
         hr{
-            width: 80%;
+            width: 0%;
             border-width: 3px;
             border-color: orange;
             opacity: 1;
             border-radius: 50px;
+            animation: borderIn 2.6s ease-out forwards;
         }
+    }
+}
+
+@media (min-width: 768px) {
+    :root{
+        --fs-heading: 20px;
     }
 }

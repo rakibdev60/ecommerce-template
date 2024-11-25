@@ -1,0 +1,40 @@
+.main-carousel{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    .carousel{
+        width: 100%;
+        // height: var(--h-carousel);
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        img{
+            height: auto;
+            max-height: 450px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+        }
+        .carousel-control-prev,
+        .carousel-control-next{
+            width: 80px;
+            i{
+                width: 45px;
+                height: 45px;
+                font-size: 30px;
+                background-color: #ffffff6b;
+                border-radius: 10px;
+                backdrop-filter: blur(12px);
+                border: 1px solid #8080803d;
+                
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    :root{
+        --h-carousel: 400px;
+    }
+}
