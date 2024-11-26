@@ -778,8 +778,8 @@
             </ul>
             <ul class="ftrUl">
                 <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-map-pin-2-line ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Adress <span class="ftrLastUlAIH2Span">124/ 1 Dhaka Bangladesh</span></h2></a></li>
-                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA""><i class="ri-mail-unread-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2></a></li>
-                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA""><i class="ri-phone-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-mail-unread-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-phone-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2></a></li>
             </ul>
         </footer>
          <!--=====================
@@ -816,10 +816,8 @@
 
             createRatingStars();
 
-        /************* review icon function **************/
-
-
-        /************************ start description review section product page ************************/
+        /************* review icon function *************/
+        /************* start description review section product page *****************/
             document.addEventListener('DOMContentLoaded', function() {
                 const descriptionBtn = document.querySelector('.descriptionBtn');
                 const reviewsBtn = document.querySelector('.reviewsBtn');
@@ -848,21 +846,21 @@
                     reviewsBtn.classList.remove('active-review-h1');
                 });
             });
-        /************************ end description review section product page ************************/
-/************************ start qty  + - product page ************************/
+        /************* end description review section product page **************/
+        /************* start qty  + - product page **************/
 
-function increaseQuantity() {
-    const quantityInput = document.getElementById('quantity');
-    quantityInput.value = parseInt(quantityInput.value) + 1;
-}
+        function increaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
 
-function decreaseQuantity() {
-    const quantityInput = document.getElementById('quantity');
-    if (quantityInput.value > 1) {
-        quantityInput.value = parseInt(quantityInput.value) - 1;
-    }
-}
-/************************ end qty  + - product page ************************/
+        function decreaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            if (quantityInput.value > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        }
+        /************** end qty  + - product page **************/
 
     </script>
 </body>

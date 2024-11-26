@@ -7,6 +7,7 @@
     --h-carousel: 400px;
 
     --h-ctgy: 200px;
+    --p-ctgy: 20px 80px;
     --w-ctgy-a: 180px;
     --fs-ctgy-down: 18px;
 
@@ -15,10 +16,15 @@
     --g-featurs-product: 10px;
     --w-products: 280px;
     --h-products: 380px;
+    --w-products-button: 40px;
+    --h-products-button: 40px;
+    --fs-products-button: 20px;
     --ai-imgss: center;
     --w-imgss: 100%;
     --h-imgss: 100%;
     --h-imgss-a: 100%;
+    --g-btnSections: 10px;
+    --pd-btnSections: 15px 10px;
     --p-btnSections: absolute;
     --h-btnSections:  min-content;
     --br-btnSections:  20px;
@@ -26,6 +32,7 @@
     --fs-btnSections-h2: 20px;
     --mb-btnSections-div: -25%;
     --o-btnSections-div-a: 0;
+    --fs-star: 20px;
 
 }
 html {

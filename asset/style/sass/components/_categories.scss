@@ -2,7 +2,7 @@
     width: 100%;
     height: var(--h-ctgy);
     overflow: hidden;
-    padding: 20px 80px;
+    padding: var(--p-ctgy);
     position: relative;
     .ctgy-main{
         height: 100%;
@@ -103,6 +103,7 @@ display: none;
     :root{
         --w-ctgy-a: 105px;
         --h-ctgy: 150px;
+        --p-ctgy: 15px 35px;
         --fs-ctgy-down: 10px;
     }
 }
