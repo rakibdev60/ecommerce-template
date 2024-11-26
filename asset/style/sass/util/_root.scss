@@ -10,21 +10,23 @@
     --w-ctgy-a: 180px;
     --fs-ctgy-down: 18px;
 
-    --p-featurs-product: 25 40px;
+    --p-featurs-product: 25px 40px;
+    --m-featurs-product: 0 20px;
     --g-featurs-product: 10px;
     --w-products: 280px;
-    --h-products: 400px;
-
-    --w-products: 280px;
     --h-products: 380px;
-
     --ai-imgss: center;
     --w-imgss: 100%;
-    --h-imgss-a: auto;
-
+    --h-imgss: 100%;
+    --h-imgss-a: 100%;
     --p-btnSections: absolute;
+    --h-btnSections:  min-content;
+    --br-btnSections:  20px;
     --fs-btnSections-h1: 17px;
     --fs-btnSections-h2: 20px;
+    --mb-btnSections-div: -25%;
+    --o-btnSections-div-a: 0;
+
 }
 html {
     scroll-behavior: smooth;

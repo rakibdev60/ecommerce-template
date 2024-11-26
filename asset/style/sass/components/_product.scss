@@ -1,6 +1,6 @@
 .featurs-product{
     padding: var(--p-featurs-product);
-    margin: 0 20px;
+    margin:  var(--m-featurs-product);
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -42,14 +42,14 @@
             color: white !important;
         }
         .imgss{
-            height: 100% !important;
-            width: 100%;
+            height: var(--h-imgss);
+            width: var(--w-imgss);
             display: flex;
             justify-content: center;
             align-items: var(--ai-imgss);
                 a{
                 height: var(--h-imgss-a);
-                width: var(--w-imgss);
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -60,90 +60,91 @@
                     }
                 }
         }
-    .btnSections{
-        width: 100%;
-        backdrop-filter: blur(17px);
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        background-color: rgba(255, 255, 255, 0.644);
-        overflow: hidden;
-        padding: 10px;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        transition: 1s;
-        behavior: smooth;
-        position: var(--p-btnSections);
-        bottom: 0;
-        h1{
-            width: 100%;
-            font-size: var(--fs-btnSections-h1);
-            color: black;
-            font-family: "Montserrat", sans-serif;
-            font-weight: 500;
-            padding: 10px 5px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
+        .btnSections{
+            width: 100% !important;
+            height: var(--h-btnSections);
+            backdrop-filter: blur(17px);
             overflow: hidden;
-        }
-        h2{
-            font-size: var(--fs-btnSections-h2);
-            font-weight: 600;
-            font-family: "Montserrat", sans-serif;
-            color: orangered;
-            text-align: center;
-            margin-top: -15px;
-        }
-        div{
-            width: 100%;
+            padding: 10px;
+            color: black;
             display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: -25%;
+            flex-direction: column;
+            gap: 20px;
             transition: 1s;
-            a {
-                padding: 6px 10px;
-                background-color: #fff;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                transition: 1.5s ease;
+            position: var(--p-btnSections);
+            bottom: 0;
+            z-index: 1;
+            border-top-left-radius: var(--br-btnSections);
+            border-top-right-radius: var(--br-btnSections);
+            background-color: #ffffffa4;
+            h1{
+                width: 100%;
+                font-size: var(--fs-btnSections-h1);
+                color: black;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+                padding: 10px 5px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
                 overflow: hidden;
-                opacity: 0;
-                span{
-                    width: 0; 
-                    visibility: hidden;
-                    position: absolute;
-                    white-space: nowrap;
-                    transition: 0.5s ease;
-                    color: transparent;
-                    transform: scale(0);
+            }
+            h2{
+                font-size: var(--fs-btnSections-h2);
+                font-weight: 600;
+                font-family: "Montserrat", sans-serif;
+                color: orangered;
+                text-align: center;
+                margin-top: -15px;
+            }
+            div{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-bottom: var(--mb-btnSections-div);
+                transition: 1s;
+                a {
+                    padding: 6px 10px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    transition: 1.5s ease;
                     overflow: hidden;
+                    opacity: var(--o-btnSections-div-a);
+                    span{
+                        width: 0; 
+                        visibility: hidden;
+                        position: absolute;
+                        white-space: nowrap;
+                        transition: 0.5s ease;
+                        color: transparent;
+                        transform: scale(0);
+                        overflow: hidden;
+                    }
+                    i {
+                        font-size: 23px;
+                        color: orange;
+                    }
                 }
-                i {
-                    font-size: 23px;
-                    color: orange;
+                a:hover {
+                    background-color: orange;
+                }
+                a:hover span {
+                    width: auto;
+                    visibility: visible;
+                    position: relative;
+                    color: white;
+                    transform: scale(1);
+                }
+                
+                a:hover i {
+                    color: white;
+                }
+                
                 }
             }
-            a:hover {
-                background-color: orange;
-            }
-            a:hover span {
-                width: auto;
-                visibility: visible;
-                position: relative;
-                color: white;
-                transform: scale(1);
-            }
-            
-            a:hover i {
-                color: white;
-            }
-            
-            }
-        }
     }
     .products:hover .btnSections{
         box-shadow: -2.5px -5.35px 21px hsla(0, 0%, 0%, 0.178) !important;
@@ -160,5 +161,29 @@
 #favorited{
     i{
         color: orangered;
+    }
+}
+
+@media (max-width:568px) {
+    :root{
+        --w-products: 150px;
+        --p-featurs-product: 10px 2px;
+        --m-featurs-product: 0 10px;
+        --h-products: 220px;
+        --p-btnSections: relative;
+        --h-imgss: 65%;
+        --h-btnSections: 35%;
+        --br-btnSections: 0;
+        --fs-btnSections-h1: 11px;
+        --fs-btnSections-h2: 12px;
+        --mb-btnSections-div: 0;
+        --o-btnSections-div-a: 1 !important;
+    }
+    .featurs-product{
+        .products{
+            .btnSections{
+                width: 100% !important;
+            }
+        }
     }
 }
