@@ -6,9 +6,7 @@
     <!-- tailwind -->
      <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
      <!-- style -->
-     <link rel="stylesheet" href="asset/style/css/style.css">
-     <!-- style -->
-     <link rel="stylesheet" href="asset/style/css/style.min.css">
+     <link rel="stylesheet" href="asset/style/css/pages/products.min.css">
      <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -25,41 +23,53 @@
     <div id="cursor"></div>
     <div id="cursor2"></div>
 
-    <div id="main-body">
+    <div id="main-body" class="position-relative z-1 m-0 p-0">
         <!--=====================
                 header start
         ======================-->
         <header class="hdr">
-            <div class="hdrD1">
-                <div class="logoD">
+            <div class="hdrD1 row g-1">
+                <div class="logoD col-1">
                     <a href="index.html"><img class="logo" src="https://sajerbela.com/storage/app/public/company/2023-03-31-6426dc9918aaa.png" alt=""></a>
                 </div>
-                <div class="srch">
-                    <input class="srchInpt" type="text" placeholder="Search here...">
-                    <input class="hidden" id="srchBtn" type="submit" value="">
-                    <a href="" class="srchA">
-                        <i class="ri-search-line srchI"></i>
-                    </a>
+                <div class="srch col-md-6 col-lg-7 h-100 d-none d-md-flex justify-content-center align-items-center">
+                    <div class="search-closs d-none">
+                        <span>
+                            <i class="ri-close-line"></i>
+                        </span>
+                    </div>
+                    <form class=" h-100 d-flex justify-content-between align-items-center">
+                        <input class="" type="text" placeholder="Search here...">
+                        <input class="d-none" id="srchBtn" type="submit" value="">
+                        <a class="d-flex justify-content-center align-items-center h-100" href="">
+                            <i class="ri-search-line"></i>
+                        </a>
+                    </form>
                 </div>
-                <div class="hdrD1btns">
-                    <a href="" class="hdrD1btnsA">
-                        <i class="ri-user-fill hdrD1btnsAI"></i>
+                <div class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
+                    <a href="javascript:void(0)" class="search-icon d-md-none">
+                        <i class="ri-search-line"></i>
                     </a>
-                    <a href="" class="hdrD1btnsA">
-                        <i class="ri-heart-2-fill hdrD1btnsAI"></i>
+                    <a href="" class="">
+                        <i class="ri-user-fill"></i>
                     </a>
-                    <a href="cart.html" class="hdrD1btnsA">
-                        <i class="ri-shopping-bag-2-fill hdrD1btnsAI"></i>
+                    <a href="" class="">
+                        <i class="ri-heart-2-fill"></i>
+                    </a>
+                    <a href="cart.html" class="">
+                        <span>10</span>
+                        <i class="ri-shopping-bag-2-fill"></i>
                     </a>
                 </div>
             </div>
-            <div class="hdrD2">
-                <div class="ctgrys">
-                    <a href="" class="ctgry ctgry-active">
+            <div class="hdrD2 row g-0 justify-content-between align-items-baseline">
+                <div class="ctgrys col-1 col-lg-2 d-flex flex-column">
+                    <a href="javascript:void(0)" class="ctgry ctgry-active">
                         <div class="ctgryD">
-                            <i class="ri-gallery-view-2 ctgryDI"></i>
+                            <i class="ri-gallery-view-2"></i>
                         </div>
                         <span class="ctgrySpn">All Categories</span>
+                        <i class="ri-arrow-down-s-line"></i>
                     </a>
                     <a href="" class="ctgry">
                         <div class="ctgryImgs">
@@ -110,7 +120,12 @@
                         <span>Hot Deals</span>
                     </a>
                 </div>
-                <div class="menus">
+                <div class=" col-2 d-flex d-lg-none justify-content-end align-items-center">
+                    <i class="ri-menu-3-fill"></i>
+                </div>
+                
+                <div class="menus col-lg-8 col-xl-6 d-none d-lg-flex justify-content-start gap-lg-3">
+                    <i class="ri-menu-2-line d-none"></i>
                     <a href="" class="menusA crsr-hover">
                         <span class="menusASpn">Home</span>
                     </a>
@@ -119,39 +134,39 @@
                         <div class="submenu">
                             <div class="submenuD">
                                 <strong class="submenuStrng">Men's</strong>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Blogs</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Menus</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
                             </div>
                             <div class="submenuD">
                                 <strong class="submenuStrng">Men's</strong>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Blogs</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Menus</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
                             </div>
                             <div class="submenuD">
                                 <strong class="submenuStrng">Men's</strong>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Blogs</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Menus</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
                             </div>
                             <div class="submenuD">
                                 <strong class="submenuStrng">Men's</strong>
-                                <a href="" class="submenuA"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA"><span class="submenuASpn">Blogs</span></a>
-                                <a href="" class="submenuA"><span class="submenuASpn">Menus</span></a>
-                                <a href="" class="submenuA"><span class="submenuASpn">Ceerier</span></a>
-                                <a href="" class="submenuA"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
                             </div>
                         </div>
                     </div>
@@ -177,11 +192,11 @@
                         <span class="menusASpn">Women's</span>
                     </a>
                 </div>
-                <div class="todaydeals">
+
+                <div class="todaydeals d-none d-md-none  d-xl-flex flex-nowrap col-lg-2">
                     <i class="ri-price-tag-3-fill"></i>
                     <a href="">
-                        <span>Today's Deals</span>
-                        
+                        <span>Today's Deals</span>                        
                     </a>
                 </div>
             </div>
@@ -192,9 +207,9 @@
          <!--=====================
             product View start
          ======================--> 
-        <div class="product-view-dev">
-            <div class="product-view-images">
-                <div class="products-images">
+        <div class="product-view-dev row flex-column flex-md-row justify-content-center justify-content-md-between gap-3 gap-md-0">
+            <div class="product-view-images col-12 col-md-6 px-0 px-md-4 d-flex flex-column-reverse flex-lg-row">
+                <div class="products-images d-flex align-items-center justify-content-between flex-row flex-lg-column">
                     <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-madebymath-90946.jpg&fm=jpg" alt="" srcset="">
                     <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="" srcset="">
                     <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="" srcset="">
@@ -202,11 +217,11 @@
                     <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="" srcset="">
                     <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="" srcset="">
                 </div>
-                <div class="product-image">
+                <div class="product-image d-flex align-content-center justify-content-center">
                     <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-madebymath-90946.jpg&fm=jpg" alt="" srcset="">
                 </div>
             </div>
-            <div class="product-view-details">
+            <div class="product-view-details col-12 col-md-6 px-2 px-md-4 d-flex flex-column justify-content-between align-items-start position-relative">
                 <div class="zoom-container">
                     <img id="zoomed-image" class="zoomed-image" src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-madebymath-90946.jpg&fm=jpg" alt="Zoomed Product Image">
                 </div>
@@ -214,8 +229,8 @@
                     <h1 class="title">এমব্রয়ডারি এমব্রয়ডারি ওয়ার্ক ওয়ার্ক কামিজ কুর্তি কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি</h1>
                 </section>
                 <section class="prcs">
-                    <h2 class="discount">Discount 0%</h2>
                     <h2 class="price">750.00$</h2>
+                    <h2 class="discount">Discount 0%</h2>
                 </section>
                 <a href="#description-review-dev" class="prdct-dscrpt"><span>এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি। কাপড়- আড়ং কটন, সাইজ- ৩৬,৩৮,৪০,৪২,৪৪,৪৬। লং- ৪২। এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি। কাপড়- আড়ং কটন, সাইজ- ৩৬,৩৮,৪০,৪২,৪৪,৪৬। লং- ৪২।এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি। কাপড়- আড়ং কটন, সাইজ- ৩৬,৩৮,৪০,৪২,৪৪,৪৬। লং- ৪২।</span></a>
                 <h3 class="stock"><strong>Avilibality:</strong> In stock (6)</h3>
@@ -265,13 +280,13 @@
             <div class="description" id="">
                 কাপড়- আড়ং কটন, সাইজ- ৩৬,৩৮,৪০,৪২,৪৪,৪৬। লং- ৪২। অর্ডার করার নিয়ম- ড্রেসের ছবি, ড্রেসের সাইজ, নাম, মোবাইল নাম্বার ও আপনার ঠিকানা দিন। ঢাকা- ফুল ক্যাশ অন ডেলিভারি ৮০ টাকা। ঢাকার বাহিরে ফুল ক্যাশ অন ডেলিভারি ১৫০ টাকা।
             </div>
-            <div class="review">
-                <div class="review-1st">
+            <div class="review row">
+                <div class="review-1st col-12 col-sm-3 col-md-4 col-lg-3">
                     <h1>4/5</h1>
                     <section class="review-icons" id="4"></section>
                 </div>
-                <div class="review-progress">
-                    <section>
+                <div class="review-progress col-12 col-sm-9 col-md-8 col-lg-5">
+                    <section class=" gap-2 gap-md-4">
                         <div>
                             <span class="star filled">★</span>
                             <span class="star filled">★</span>
@@ -284,7 +299,7 @@
                         </div>
                         <span>5</span>
                     </section>
-                    <section>
+                    <section class=" gap-2 gap-md-4">
                         <div>
                             <span class="star filled">★</span>
                             <span class="star filled">★</span>
@@ -297,7 +312,7 @@
                         </div>
                         <span>4</span>
                     </section>
-                    <section>
+                    <section class=" gap-2 gap-md-4">
                         <div>
                             <span class="star filled">★</span>
                             <span class="star filled">★</span>
@@ -310,7 +325,7 @@
                         </div>
                         <span>3</span>
                     </section>
-                    <section>
+                    <section class=" gap-2 gap-md-4">
                         <div>
                             <span class="star filled">★</span>
                             <span class="star filled">★</span>
@@ -323,7 +338,7 @@
                         </div>
                         <span>2</span>
                     </section>
-                    <section>
+                    <section class=" gap-2 gap-md-4">
                         <div>
                             <span class="star filled">★</span>
                             <span class="star filled">★</span>
@@ -337,7 +352,7 @@
                         <span>1</span>
                     </section>
                 </div>
-                <div class="reviews">
+                <div class="reviews col-12 col-md-12 col-lg-4">
                     <nav>
                         <ul>
                             <li>
@@ -426,10 +441,14 @@
          <!--=====================
             related product start
          ======================--> 
-         <h1 class="text-center text-2xl font-bold p-[30px_0px]">Related Product</h1>
-         <div class="featurs-product">
-
-                
+         <section class="heading my-3 my-md-5 d-flex justify-content-center">
+            <div class=" d-flex fw-bold fs-4 flex-column justify-content-center align-items-center gap-2 text-nowrap">
+                <h1>Related Product</h1>
+                <hr>
+            </div>
+        </section>
+        <div class="featurs-product">
+                            
             <div class="products crsr-hover">
                 <button id="favorited"><i class="ri-heart-fill"></i></button>
                 <div class="imgss">
@@ -438,12 +457,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This ix safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -455,12 +479,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="3"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -472,12 +501,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="2"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -489,8 +523,13 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="1"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
@@ -506,12 +545,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -523,12 +567,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -540,12 +589,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -557,12 +611,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -574,12 +633,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -591,12 +655,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -608,12 +677,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -625,12 +699,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -642,12 +721,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -659,12 +743,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -676,12 +765,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -693,12 +787,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -710,12 +809,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -727,12 +831,17 @@
                     </a>
                 </div>
                 <div class="btnSections">
-                    <h1>This is safely usedfdddull product</h1>
-                    <h2>$750.00</h2>
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
                     <div>
                         <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -744,9 +853,9 @@
          <!--=====================
                 Footer start
          ======================--> 
-        <footer class="ftr">
+         <footer class="ftr py-5 px-3 d-flex justify-content-around align-items-center flex-wrap flex-column flex-md-row">
             <ul class="ftrUl">
-                <li><a href="" class="ftrUlA"><img class="w-[150px] crsr-hover" src="https://sajerbela.com/storage/app/public/company/2023-03-31-6426dc9918aaa.png" alt=""></a></li>
+                <li><a href="" class="ftrUlA"><img class="crsr-hover" src="https://sajerbela.com/storage/app/public/company/2023-03-31-6426dc9918aaa.png" alt=""></a></li>
             </ul>
             <ul class="ftrUl">
                 <li><a href="" class="ftrUlA"><h2 class="ftrUlAH2">Quick Links</h2></a></li>

@@ -123,7 +123,7 @@ sImage.addEventListener('mousemove', (e) => {
     const zoomLevel = 3; // Zoom factor
     // Calculate percentage position within the image
     const moveX = (x / rect.width) * 100;
-    const moveY = (y / rect.height) * 100 - 5; // Adjust Y position slightly to center vertically
+    const moveY = (y / rect.height) * 100 + 5; // Adjust Y position slightly to center vertically
     // Adjust the zoomed image's position based on mouse position
     zoomedImage.style.transformOrigin = `${moveX}% ${moveY}%`;
     zoomedImage.style.transform = `scale(${zoomLevel})`;

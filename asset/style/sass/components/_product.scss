@@ -1,7 +1,7 @@
 .featurs-product{
     padding: var(--p-featurs-product);
     margin:  var(--m-featurs-product);
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; 
@@ -88,7 +88,7 @@
                 h1{
                     width: 100%;
                     font-size: var(--fs-btnSections-h1);
-                    color: black;
+                    color: #000000c5;
                     font-family: "Montserrat", sans-serif;
                     font-weight: 500;
                     line-height: 1.5;

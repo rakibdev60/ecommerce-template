@@ -746,9 +746,9 @@ display: none;
     z-index: 1;
 }
 .product-view-images{
-    display: flex;
     height: 100%;
     width: 50%;
+    display: flex;
     padding: 0 50px;
     gap: 10px;
     overflow: hidden !important;
@@ -761,10 +761,11 @@ display: none;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    overflow: hidden;
     img{
         height: 70px;
         width: auto;
-        object-fit: cover;
+        object-fit: fit;
     }
     img:first-child{
         border-top-left-radius: 10px;
