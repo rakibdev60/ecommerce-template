@@ -9,10 +9,11 @@
     border-radius: 13px;
     gap: var(--g-featurs-product);
     .products{
-        display: flex;
-        flex-direction: column;
         width: var(--w-products);
         height: var(--h-products);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
         background-color: whitesmoke;
         position: relative;
         border-radius: 10px;
