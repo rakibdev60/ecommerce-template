@@ -51,13 +51,29 @@ const goToSlide = (index) => {
 };
 
 /******* end slider ********/
-/************************ start headder ************************/
+/************ start headder ************/
 const MenuIcon = document.querySelector('.ri-menu-3-fill');
+const MenuIconCloss = document.querySelector('.ri-menu-2-line');
 const HdrMenu  = document.querySelector('.menus');
+
 
 MenuIcon.addEventListener('click', function () {
    HdrMenu.classList.add('menus-responsive');
 });
+MenuIconCloss.addEventListener('click', function () {
+    HdrMenu.classList.remove('menus-responsive');
+ });
+
+const SrchIcon = document.querySelector('.search-icon');
+const SrchIconCloss = document.querySelector('.search-closs');
+const SrchFild = document.querySelector('.srch');
+ 
+SrchIcon.addEventListener('click', function () {
+SrchFild.classList.add('srch-responsive');
+});
+SrchIconCloss.addEventListener('click', function () {
+    SrchFild.classList.remove('srch-responsive');
+ });
 /************************ end headder ************************/
 
 /************************ start categories slider ************************/
@@ -77,9 +93,9 @@ function moveLeft() {
     });
 }
 
-/************************ end categories slider ************************/
+/************ end categories slider ************/
 
-/************************ start product favorited ************************/
+/************* start product favorited ************/
         const icons = document.querySelectorAll('.products button');
 
         icons.forEach(icon => {
