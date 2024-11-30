@@ -150,13 +150,13 @@ sImage.addEventListener('mousemove', (e) => {
 function increaseQuantity(button) {
     const input = button.closest('li').querySelector('.qty-input');
     input.value = parseInt(input.value) + 1;
-}
+};
 
 function decreaseQuantity(button) {
     const input = button.closest('li').querySelector('.qty-input');
     if (input.value > 1) {
         input.value = parseInt(input.value) - 1;
     }
-}
+};
 
 /************************ end qty  + - cart page ************************/

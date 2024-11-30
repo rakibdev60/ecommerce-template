@@ -18,7 +18,10 @@
         position: relative;
         border-radius: 10px;
         overflow: hidden;
-        border: 1px solid rgba(192, 192, 192, 0.219);
+        border: 1px solid #c0c0c038;
+        // animation: scrollanimation 1.5s ease-out forwards;
+        // animation-timeline: view();
+        // animation-range: 0.40%;
         button{
             position: absolute;
             right: 0;

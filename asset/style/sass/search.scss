@@ -1,0 +1,179 @@
+@forward './util/index';
+@forward 'components/header';
+@forward 'components/cursor';
+@forward 'components/product';
+@forward 'components/footer';
+
+// :root{
+
+// }
+
+.content-body{
+    display: flex;
+    gap: 10px;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+.filter-icon{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #ffffff54;
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid #c0c0c073;
+    i{
+        font-size: 17px;
+        color: black;
+    }
+}
+aside{
+    nav{
+        height: 100%;
+        overflow-y: auto;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 50px 20px;
+            .form-group{
+                display: flex;
+                flex-direction: column;
+                label{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                span{
+                    font-size: 15px;
+                    font-weight: 400;
+                    input{
+                        margin: 0 10px; 
+                    }
+                }
+                input[type="range"] {
+                    /* removing default appearance */
+                    -webkit-appearance: none;
+                    appearance: none; 
+                    /* creating a custom design */
+                    width: 100%;
+                    cursor: pointer;
+                    outline: none;
+                    /*  slider progress trick  */
+                    overflow: hidden;
+                    border-radius: 16px;
+                }
+                  
+                  /* Track: webkit browsers */
+                input[type="range"]::-webkit-slider-runnable-track {
+                    height: 10px; 
+                    background: #ccc;
+                    border-radius: 16px;
+                }
+                  
+                  /* Track: Mozilla Firefox */
+                input[type="range"]::-moz-range-track {
+                    height: 10px;
+                    background: #ccc;
+                    border-radius: 16px;
+                }
+                  
+                  /* Thumb: webkit */
+                input[type="range"]::-webkit-slider-thumb {
+                    /* removing default appearance */
+                    -webkit-appearance: none;
+                    appearance: none; 
+                    /* creating a custom design */
+                    height: 10px;
+                    width: 10px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    border: 2px solid gold;
+                    /*  slider progress trick  */
+                    box-shadow: -407px 0 0 400px gold;
+                }
+                  
+                  
+                  /* Thumb: Firefox */
+                input[type="range"]::-moz-range-thumb {
+                    height:10px;
+                    width: 10px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    border: 1px solid gold;
+                    /*  slider progress trick  */
+                    box-shadow: -407px 0 0 400px gold;
+                }
+            }
+            .colors{
+              display: flex;
+              gap: 5px;
+              flex-wrap: wrap;
+              div{
+                height: 30px;
+                width: 30px;
+                border-radius: 50pc;
+                border: 1px solid silver;
+
+              }
+            }
+        }
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}
+section{
+    height: 100%;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+// @media (max-width:700px) {
+    @media (max-width:991px) {
+        :root{
+            --w-products: 150px !important;
+            --p-featurs-product: 10px 2px !important;
+            --m-featurs-product: 0 10px !important;
+            --h-products: 220px !important;
+            --w-products-button: 30px !important;
+            --h-products-button: 30px !important;
+            --fs-products-button: 15px !important;
+            --g-btnSections: 10px !important;
+            --pd-btnSections: 10px 5px !important;
+            --p-btnSections: relative !important;
+            --h-imgss: 65% !important;
+            --h-btnSections: 35% !important;
+            --br-btnSections: 0 !important;
+            --fs-btnSections-h1: 11px !important;
+            --fs-btnSections-h2: 12px !important;
+            --mb-btnSections-div: 0 !important;
+            --o-btnSections-div-a: 1 !important;
+            --fs-star: 10px !important;
+        }
+        .featurs-product{
+            .products{
+                .btnSections{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+/* Class to show the aside panel */
+aside.show {
+    display: block !important; /* Show on larger screens */
+}
+.show {
+    display: block !important; /* Show on larger screens */
+}
+/* Make sure the panel is always visible on larger screens */
+@media (min-width: 768px) {
+    // aside {
+    //     display: block !important;
+    // }
+}

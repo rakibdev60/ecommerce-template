@@ -4,33 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- tailwind -->
-    <!-- <link rel="stylesheet" href="asset/style/css/tailwind/output.css"> -->
-    <!-- style -->
-
+    <title>My E-Commerce Store - Best Products Online</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1591/1591111.png" type="image/png">
+    <meta name="description" content="Welcome to My E-Commerce Store. Shop a wide variety of products including electronics, fashion, and home goods at the best prices online.">
+    <meta name="keywords" content="ecommerce, online store, shopping, electronics, fashion, home goods">
     <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
 
-    <link rel="stylesheet" href="asset/style/css/pages/cart.min.css">
-
+    <link rel="stylesheet" href="asset/style/css/pages/search.min.css">
     <!-- fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- remix icnos -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- gsap cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-    <title>My E-Commerce Store - Best Products Online</title>
-    <!-- Favicon -->
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1591/1591111.png" type="image/png">
-    <!-- Meta description (appears in search engine results and helps with SEO) -->
-    <meta name="description" content="Welcome to My E-Commerce Store. Shop a wide variety of products including electronics, fashion, and home goods at the best prices online.">
-    <!-- Optional: Meta keywords (helps with search engine optimization but is less important today) -->
-    <meta name="keywords" content="ecommerce, online store, shopping, electronics, fashion, home goods">
 </head>
 
 <body>
@@ -55,7 +44,7 @@
                             <i class="ri-close-line"></i>
                         </span>
                     </div>
-                    <form class=" h-100 d-flex justify-content-between align-items-center">
+                    <form class=" h-100 d-flex justify-content-between align-items-center" action="search.html">
                         <input class="" type="text" placeholder="Search here...">
                         <input class="d-none" id="srchBtn" type="submit" value="">
                         <a class="d-flex justify-content-center align-items-center h-100" href="">
@@ -231,10 +220,42 @@
                  header end 
          ======================-->
         <div class="content-body">
-            <aside>
+            <a class="filter-icon d-flex justify-content-center align-items-center d-md-none" href="javascript:void(0);"><i class="ri-equalizer-fill"></i></a>
+            <aside class=" d-none d-md-block col-12 col-md-3 col-lg-2">
+                <nav>
+                    <form class="d-flex flex-column" action="#" method="POST">
+                
+                        <!-- Gender Selection (Radio Buttons) -->
+                        <div class="form-group">
+                            <label for="gender">Gender:</label>
+                            <span><input type="radio" name="gender" value="male"> Male</span>
+                            <span><input type="radio" name="gender" value="female"> Female</span>
+                            <span><input type="radio" name="gender" value="other"> Other</span>
+                        </div>
+                
+                        <!-- Sub-Selection (Multiple Checkbox Options) -->
+                        <div class="form-group">
+                            <label for="subCategory">Sub-category:</label>
+                            <span><input type="checkbox" name="subCategory" value="clothing"> Clothing</span>
+                            <span><input type="checkbox" name="subCategory" value="electronics"> Electronics</span>
+                            <span><input type="checkbox" name="subCategory" value="accessories"> Accessories</span>
+                        </div>
 
+                        <!-- Price Range Slider -->
+                        <div class="form-group">
+                            <label for="priceRange">Price Range:</label>
+                            <input type="range" id="priceRange" name="priceRange" min="0" max="200" step="10" value="100">
+                            <div class="range-value" id="rangeValue">$100</div>
+                        </div>
+                        <div class="colors">
+                            <div class="bg-white"></div>
+                            <div class="bg-success"></div>
+                            <div class="bg-black"></div>
+                        </div>
+                    </form>
+                </nav>
             </aside>
-            <div class="result-body">
+            <section class="result-body col-12 col-md-9 col-lg-10">
                 <div class="featurs-product">
 
                     <div class="products crsr-hover">
@@ -647,66 +668,77 @@
                     </div>
         
                 </div>
-            </div>
+            </section>
         </div>
         <!--=====================
                 Footer start
          ======================-->
-        <footer
-        class="ftr py-5 px-3 d-flex justify-content-around align-items-center flex-wrap flex-column flex-md-row">
-        <ul class="ftrUl">
-            <li><a href="" class="ftrUlA"><img class="crsr-hover"
-                        src="https://sajerbela.com/storage/app/public/company/2023-03-31-6426dc9918aaa.png"
-                        alt=""></a></li>
-        </ul>
-        <ul class="ftrUl">
-            <li><a href="" class="ftrUlA">
-                    <h2 class="ftrUlAH2">Quick Links</h2>
-                </a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Home</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Discount</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Tearm- condition</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Faq</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">About us</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Privacy- Policy</a></li>
-        </ul>
+        <footer class="ftr py-5 px-3 d-flex justify-content-around align-items-center flex-wrap flex-column flex-md-row">
+            <ul class="ftrUl">
+                <li>
+                    <a href="" class="ftrUlA">
+                        <img class="crsr-hover" src="https://sajerbela.com/storage/app/public/company/2023-03-31-6426dc9918aaa.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul class="ftrUl">
+                <li>
+                    <a href="" class="ftrUlA">
+                        <h2 class="ftrUlAH2">Quick Links</h2>
+                    </a>
+                </li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Home</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Discount</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Tearm- condition</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Faq</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">About us</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Privacy- Policy</a></li>
+            </ul>
 
-        <ul class="ftrUl">
-            <li><a href="" class="ftrUlA">
-                    <h2 class="ftrUlAH2">Top Categories</h2>
-                </a></li>
-            <li class="crsr-hover" class="ftrUlA"><a href="" class="ftrUlA">SHAREE COLLECTIONS</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">INdian Clothing</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Dresses</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">WOMEN"S FASION</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">BEAUTI PRODUCTS</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">MEN'S Products</a></li>
-        </ul>
-        <ul class="ftrUl">
-            <li><a href="" class="ftrUlA">
-                    <h2 class="ftrUlAH2">BRAND</h2>
-                </a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Ariz's Territory</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Sajer bela</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Zyan and Myza</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Simple</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Himalaya</a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA">Palmolive</a></li>
-        </ul>
-        <ul class="ftrUl">
-            <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i
-                        class="ri-map-pin-2-line ftrLastUlAI"></i>
-                    <h2 class="ftrUlAH2 ftrLastUlAIH2">Adress <span class="ftrLastUlAIH2Span">124/ 1 Dhaka
-                            Bangladesh</span></h2>
-                </a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i
-                        class="ri-mail-unread-fill ftrLastUlAI"></i>
-                    <h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span
-                            class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2>
-                </a></li>
-            <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-phone-fill ftrLastUlAI"></i>
+            <ul class="ftrUl">
+                <li>
+                    <a href="" class="ftrUlA">
+                        <h2 class="ftrUlAH2">Top Categories</h2>
+                    </a>
+                </li>
+                <li class="crsr-hover" class="ftrUlA"><a href="" class="ftrUlA">SHAREE COLLECTIONS</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">INdian Clothing</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Dresses</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">WOMEN"S FASION</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">BEAUTI PRODUCTS</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">MEN'S Products</a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li>
+                    <a href="" class="ftrUlA">
+                        <h2 class="ftrUlAH2">BRAND</h2>
+                    </a>
+                </li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Ariz's Territory</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Sajer bela</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Zyan and Myza</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Simple</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Himalaya</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Palmolive</a></li>
+            </ul>
+            <ul class="ftrUl">
+            <li class="crsr-hover">
+                <a href="" class="ftrUlA ftrLastUlA">
+                    <i class="ri-map-pin-2-line ftrLastUlAI"></i>
+                    <h2 class="ftrUlAH2 ftrLastUlAIH2">Adress <span class="ftrLastUlAIH2Span">124/ 1 Dhaka, Bangladesh</span></h2>
+                </a>
+            </li>
+            <li class="crsr-hover">
+                <a href="" class="ftrUlA ftrLastUlA">
+                    <i class="ri-mail-unread-fill ftrLastUlAI"></i>
+                    <h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2>
+                </a>
+            </li>
+            <li class="crsr-hover">
+                <a href="" class="ftrUlA ftrLastUlA"><i class="ri-phone-fill ftrLastUlAI"></i>
                     <h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2>
-                </a></li>
+                </a>
+            </li>
         </ul>
     </footer>
     <!--=====================
@@ -718,32 +750,52 @@
 <script src="asset/style/js/gsap-fun.js"></script>
 <script>
     /************* review icon function **************/
-    // Function to create stars dynamically based on rating from ID
-    function createRatingStars() {
-        const ratingContainers = document.querySelectorAll('.review-icons');
+        // Function to create stars dynamically based on rating from ID
+        function createRatingStars() {
+            const ratingContainers = document.querySelectorAll('.review-icons');
 
-        ratingContainers.forEach(ratingContainer => {
-            const rating = parseInt(ratingContainer.id);
+            ratingContainers.forEach(ratingContainer => {
+                const rating = parseInt(ratingContainer.id);
 
-            ratingContainer.innerHTML = '';
+                ratingContainer.innerHTML = '';
 
-            for (let i = 1; i <= 5; i++) {
-                const star = document.createElement('span');
-                star.classList.add('star');
-                star.innerHTML = '★';
+                for (let i = 1; i <= 5; i++) {
+                    const star = document.createElement('span');
+                    star.classList.add('star');
+                    star.innerHTML = '★';
 
-                if (i <= rating) {
-                    star.classList.add('filled');
+                    if (i <= rating) {
+                        star.classList.add('filled');
+                    }
+
+                    ratingContainer.appendChild(star);
                 }
+            });
+        }
 
-                ratingContainer.appendChild(star);
-            }
-        });
-    }
-
-    createRatingStars();
+        createRatingStars();
 
     /************* review icon function *************/
+
+    /************* input range function *************/
+        // Update range value display dynamically
+        const rangeInput = document.getElementById('priceRange');
+        const rangeValue = document.getElementById('rangeValue');
+        
+        rangeInput.addEventListener('input', function() {
+            rangeValue.textContent = '$' + rangeInput.value;
+        });
+    /************* input range function *************/
+
+    /************ start filter search page **************/
+        const filterICon = document.querySelector('.filter-icon');
+        const filterField = document.querySelector('aside');
+
+        filterICon.addEventListener('click', function () {
+            filterField.classList.toggle('show');
+        });
+    /************** end filter search page *************/
+
 </script>
 </body>
 

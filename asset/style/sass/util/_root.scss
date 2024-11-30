@@ -114,7 +114,7 @@ body::-webkit-scrollbar {
             border-color: orange;
             opacity: 1;
             border-radius: 50px;
-            animation: borderIn 2.6s ease-out forwards;
+            animation: borderIn 2.6s linear forwards;
         }
     }
 }
