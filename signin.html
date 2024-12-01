@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind -->
+     <!-- <link rel="stylesheet" href="asset/style/css/tailwind/output.css"> -->
+     <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
+     <!-- style -->
+
+     <link rel="stylesheet" href="asset/style/css/pages/home.min.css">
+     <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- remix icnos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <title>My E-Commerce Store - Best Products Online</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1591/1591111.png" type="image/png">
+    <!-- Meta description (appears in search engine results and helps with SEO) -->
+    <meta name="description" content="Welcome to My E-Commerce Store. Shop a wide variety of products including electronics, fashion, and home goods at the best prices online.">
+    <!-- Optional: Meta keywords (helps with search engine optimization but is less important today) -->
+    <meta name="keywords" content="ecommerce, online store, shopping, electronics, fashion, home goods">
+
+</head>
+<body>
+
+    <div id="cursor"></div>
+    <div id="cursor2"></div>
+
+    <div id="main-body">
+        <!--=====================
+                header start
+        ======================-->
+        <header class="hdr">
+            <div class="hdrD1 row g-1">
+                <div class="logoD col-1">
+                    <a href="index.html">
+                        <img class="logo" src="asset/style/img/logo.jpg" alt=""></a>
+                </div>
+                <div class="srch col-md-6 col-lg-7 h-100 d-none d-md-flex justify-content-center align-items-center">
+                    <div class="search-closs d-none">
+                        <span>
+                            <i class="ri-close-line"></i>
+                        </span>
+                    </div>
+                    <form class=" h-100 d-flex justify-content-between align-items-center" action="search.html">
+                        <input class="" type="text" placeholder="Search here...">
+                        <input class="d-none" id="srchBtn" type="submit" value="">
+                        <a class="d-flex justify-content-center align-items-center h-100" href="">
+                            <i class="ri-search-line"></i>
+                        </a>
+                    </form>
+                </div>
+                <div
+                    class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
+                    <a href="javascript:void(0)" class="search-icon d-md-none">
+                        <i class="ri-search-line"></i>
+                    </a>
+                    <a href="signin.html" class="">
+                        <i class="ri-user-fill"></i>
+                    </a>
+                    <a href="wishlist.html" class="">
+                        <i class="ri-heart-2-fill"></i>
+                    </a>
+                    <a href="cart.html" class="">
+                        <span>10</span>
+                        <i class="ri-shopping-bag-2-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hdrD2 row g-0 justify-content-between align-items-baseline">
+                <div class="ctgrys col-1 col-lg-2 d-flex flex-column">
+                    <a href="javascript:void(0)" class="ctgry ctgry-active">
+                        <div class="ctgryD">
+                            <i class="ri-gallery-view-2"></i>
+                        </div>
+                        <span class="ctgrySpn">All Categories</span>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                </div>
+                <div class=" col-2 d-flex d-lg-none justify-content-end align-items-center">
+                    <i class="ri-menu-3-fill"></i>
+                </div>
+
+                <div class="menus col-lg-8 col-xl-6 d-none d-lg-flex justify-content-start gap-lg-3">
+                    <i class="ri-menu-2-line d-none"></i>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Home</span>
+                    </a>
+                    <div class="menusA  crsr-hover">
+                        <span class="menusASpn">Featurs <i class="ri-arrow-down-s-line menusASpnI"></i></span>
+                        <div class="submenu">
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Men's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Women's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Men's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Women's</span>
+                    </a>
+                </div>
+
+                <div class="todaydeals d-none d-md-none  d-xl-flex align-items-center flex-nowrap col-lg-2">
+                    <i class="ri-price-tag-3-fill"></i>
+                    <a href="">
+                        <span>Today's Deals</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+         <!--=====================
+                 header end
+         ======================--> 
+         <!--=====================
+                 slider start
+         ======================--> 
+         <!--=====================
+            register form start
+         ======================-->
+         <div class="row justify-content-center w-100 p-2 px-md-5 my-5 position-relative z-1">
+            <form class="col-10 col-sm-6">
+                <!-- Email input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" id="form2Example1" class="form-control" />
+                    <label class="form-label" for="form2Example1">Email address</label>
+                </div>
+
+                <!-- Password input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="password" id="form2Example2" class="form-control" />
+                    <label class="form-label" for="form2Example2">Password</label>
+                </div>
+
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                    <div class="col d-flex justify-content-between">
+                    <!-- Checkbox -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
+                            <label class="form-check-label" for="form2Example34"> Remember me </label>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-end">
+                        <!-- Simple link -->
+                        <a href="#!">Forgot password?</a>
+                    </div>
+                </div>
+
+                <!-- Submit button -->
+                <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                    <a class="text-primary fw-bold" href="signup.html">Create a new account</a>
+                    <p class="mb-2">or sign up with:</p>
+                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                      <i class="ri-facebook-fill"></i>
+                    </button>
+                
+                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                      <i class="ri-google-fill"></i>
+                    </button>
+                
+                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                      <i class="ri-twitter-line"></i>
+                    </button>
+                
+                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                      <i class="ri-github-fill"></i>
+                    </button>
+                  </div>
+            </form>
+         </div>
+         <!--=====================
+            register form end
+         ======================--> 
+         <!--=====================
+                Footer start
+         ======================--> 
+        <footer class="ftr py-5 px-3 d-flex justify-content-around align-items-center flex-wrap flex-column flex-md-row">
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA"><img class="crsr-hover" src="https://sajerbela.com/storage/app/public/company/2023-03-31-6426dc9918aaa.png" alt=""></a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA"><h2 class="ftrUlAH2">Quick Links</h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Home</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Discount</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Tearm- condition</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Faq</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">About us</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Privacy- Policy</a></li>
+            </ul>
+            
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA"><h2 class="ftrUlAH2">Top Categories</h2></a></li>
+                <li class="crsr-hover" class="ftrUlA"><a href="" class="ftrUlA">SHAREE COLLECTIONS</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">INdian Clothing</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Dresses</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">WOMEN"S FASION</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">BEAUTI PRODUCTS</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">MEN'S Products</a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA" ><h2 class="ftrUlAH2">BRAND</h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Ariz's Territory</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Sajer bela</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Zyan and Myza</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Simple</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Himalaya</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Palmolive</a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-map-pin-2-line ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Adress <span class="ftrLastUlAIH2Span">124/ 1 Dhaka Bangladesh</span></h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-mail-unread-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-phone-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2></a></li>
+            </ul>
+        </footer>
+         <!--=====================
+                Footer end
+         ======================--> 
+        
+    </div>
+
+
+    <script src="asset/style/css/bootstrap/bootstrap.min.js"></script>
+    <script src="asset/style/js/script.js"></script>
+    <script src="asset/style/js/gsap-fun.js"></script>
+</body>
+</html>

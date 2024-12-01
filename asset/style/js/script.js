@@ -10,3 +10,6 @@ mainDev.addEventListener(mousemove,function(dets){
     })
 })
 /**** cursor ****/
+
+
+
