@@ -1,56 +1,4 @@
 
-const slides = document.querySelectorAll(".slids");
-const dots = document.querySelectorAll(".dot"); 
-let counter = 0;
-
-
-slides.forEach((slide, index) => {
-    slide.style.left = `${index * 100}%`;
-});
-
-
-setInterval(() => {
-    next();
-}, 4000); // 4000ms = 4 seconds
-
-const next = () => {
-    counter++;
-    if (counter >= slides.length) counter = 0;
-    slideImages();
-    updateDots();
-};
-
-const prev = () => {
-    counter--;
-    if (counter < 0) counter = slides.length - 1; 
-    slideImages();
-    updateDots();
-};
-
-const slideImages = () => {
-    slides.forEach((slide) => {
-        slide.style.transform = `translateX(-${counter * 100}%)`;
-    });
-};
-
-
-const updateDots = () => {
-    dots.forEach((dot, index) => {
-        dot.classList.remove('dot-active');
-        if (index === counter) {
-            dot.classList.add('dot-active');
-        }
-    });
-};
-
-
-const goToSlide = (index) => {
-    counter = index;
-    slideImages();
-    updateDots();
-};
-
-/******* end slider ********/
 /************ start headder ************/
 const MenuIcon = document.querySelector('.ri-menu-3-fill');
 const MenuIconCloss = document.querySelector('.ri-menu-2-line');
@@ -75,25 +23,6 @@ SrchIconCloss.addEventListener('click', function () {
     SrchFild.classList.remove('srch-responsive');
  });
 /************************ end headder ************************/
-
-/************************ start categories slider ************************/
-function moveRight() {
-    const container = document.querySelector('.ctgy-slid'); 
-    container.scrollBy({
-        left: 210, 
-        behavior: 'smooth'
-    });
-}
-
-function moveLeft() {
-    const container = document.querySelector('.ctgy-slid');
-    container.scrollBy({
-        left: -210,
-        behavior: 'smooth'
-    });
-}
-
-/************ end categories slider ************/
 
 /************* start product favorited ************/
         const icons = document.querySelectorAll('.products button');

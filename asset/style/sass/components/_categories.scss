@@ -41,6 +41,8 @@
             overflow-x: scroll;
             border-radius: 13px;
             position: relative;
+            transition: .7s ease;
+            scroll-behavior: smooth;
             a{
                 min-width: var(--w-ctgy-a);
                 max-width: var(--w-ctgy-a);

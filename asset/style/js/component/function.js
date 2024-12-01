@@ -23,59 +23,30 @@ SrchIconCloss.addEventListener('click', function () {
     SrchFild.classList.remove('srch-responsive');
  });
 /************************ end headder ************************/
-const slides = document.querySelectorAll(".slids");
-const dots = document.querySelectorAll(".dot"); 
-let counter = 0;
 
-
-slides.forEach((slide, index) => {
-    slide.style.left = `${index * 100}%`;
-});
-
-
-setInterval(() => {
-    next();
-}, 4000); // 4000ms = 4 seconds
-
-const next = () => {
-    counter++;
-    if (counter >= slides.length) counter = 0;
-    slideImages();
-    updateDots();
-};
-
-const prev = () => {
-    counter--;
-    if (counter < 0) counter = slides.length - 1; 
-    slideImages();
-    updateDots();
-};
-
-const slideImages = () => {
-    slides.forEach((slide) => {
-        slide.style.transform = `translateX(-${counter * 100}%)`;
-    });
-};
-
-
-const updateDots = () => {
-    dots.forEach((dot, index) => {
-        dot.classList.remove('dot-active');
-        if (index === counter) {
-            dot.classList.add('dot-active');
-        }
-    });
-};
-
-
-const goToSlide = (index) => {
-    counter = index;
-    slideImages();
-    updateDots();
-};
-
-/******* end slider ********/
 /************************ start categories slider ************************/
+
+
+
+
+const ctgySlid = document.querySelector('.ctgy-slid');
+
+function autoScroll() {
+    // Scroll by a fixed amount every time (210px)
+    ctgySlid.scrollLeft += 210;
+
+    // If the scroll reaches the end, reset to the start
+    if (ctgySlid.scrollLeft + ctgySlid.clientWidth >= ctgySlid.scrollWidth) {
+        ctgySlid.scrollLeft = 0; // Reset to start
+    }
+}
+
+// Start auto-scroll every 3 seconds
+setInterval(autoScroll, 3000); // Scroll every 3 seconds (3000ms)
+
+
+
+
 function moveRight() {
     const container = document.querySelector('.ctgy-slid'); 
     container.scrollBy({
@@ -92,7 +63,7 @@ function moveLeft() {
     });
 }
 
-/************************ end categories slider ************************/
+/************ end categories slider ************/
 
 /************************ start product favorited ************************/
         const icons = document.querySelectorAll('.products button');
