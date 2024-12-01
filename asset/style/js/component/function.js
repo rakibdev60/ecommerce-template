@@ -25,6 +25,23 @@ SrchIconCloss.addEventListener('click', function () {
 /************************ end headder ************************/
 
 /************************ start categories slider ************************/
+
+const ctgySlid = document.querySelector('.ctgy-slid');
+
+function autoScroll() {
+    // Scroll by a fixed amount every time (210px)
+    ctgySlid.scrollLeft += 210;
+
+    // If the scroll reaches the end, reset to the start
+    if (ctgySlid.scrollLeft + ctgySlid.clientWidth >= ctgySlid.scrollWidth) {
+        ctgySlid.scrollLeft = 0; // Reset to start
+    }
+}
+
+// Start auto-scroll every 3 seconds
+setInterval(autoScroll, 3000); // Scroll every 3 seconds (3000ms)
+
+
 function moveRight() {
     const container = document.querySelector('.ctgy-slid'); 
     container.scrollBy({
