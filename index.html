@@ -3,27 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- tailwind -->
-     <!-- <link rel="stylesheet" href="asset/style/css/tailwind/output.css"> -->
      <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
-     <!-- style -->
-
      <link rel="stylesheet" href="asset/style/css/pages/home.min.css">
      <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <!-- remix icnos -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- gsap cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
     <title>Trade Mision - Best Products Online</title>
-    <!-- Favicon -->
     <link rel="icon" href="asset/style/img/fav.jpg" type="image/png">
-    <!-- Meta description (appears in search engine results and helps with SEO) -->
     <meta name="description" content="Welcome to My E-Commerce Store. Shop a wide variety of products including electronics, fashion, and home goods at the best prices online.">
-    <!-- Optional: Meta keywords (helps with search engine optimization but is less important today) -->
     <meta name="keywords" content="ecommerce, online store, shopping, electronics, fashion, home goods">
 </head>
 <body>
@@ -36,18 +28,19 @@
                 header start
         ======================-->
         <header class="hdr">
-            <div class="hdrD1 row g-1">
-                <div class="logoD col-1">
+            <div class="hdrD1 row g-1 align-items-center">
+                <div class="logoD col-1 m-0">
                     <a href="index.html">
-                        <img class="logo" src="asset/style/img/logo.png" alt=""></a>
+                        <img class="logo m-0" src="asset/style/img/logo.png" alt="">
+                    </a>
                 </div>
-                <div class="srch col-md-6 col-lg-7 h-100 d-none d-md-flex justify-content-center align-items-center">
+                <div class="srch col-md-1 col-lg-5 col-xl-7 h-100 d-none d-md-none d-lg-flex justify-content-center align-items-center">
                     <div class="search-closs d-none">
                         <span>
                             <i class="ri-close-line"></i>
                         </span>
                     </div>
-                    <form class=" h-100 d-flex justify-content-between align-items-center" action="search.html">
+                    <form class="h-100 d-flex justify-content-between align-items-center" action="search.html">
                         <input class="" type="text" placeholder="Search here...">
                         <input class="d-none" id="srchBtn" type="submit" value="">
                         <a class="d-flex justify-content-center align-items-center h-100" href="">
@@ -55,12 +48,11 @@
                         </a>
                     </form>
                 </div>
-                <div
-                    class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
-                    <a href="javascript:void(0)" class="search-icon d-md-none">
+                <div class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
+                    <a href="javascript:void(0)" class="search-icon d-lg-none">
                         <i class="ri-search-line"></i>
                     </a>
-                    <a href="signin.html" class="">
+                    <a href="profile_Account.html" class="">
                         <i class="ri-user-fill"></i>
                     </a>
                     <a href="wishlist.html" class="">
@@ -259,20 +251,14 @@
          <!--=====================
           categories slider start
          ======================--> 
-            <section class="heading my-4 my-md-5 d-flex justify-content-center">
-                <div class=" d-flex flex-column justify-content-center align-items-center gap-2 text-nowrap">
-                    <h1>Ceategories Gallery</h1>
-                    <hr>
-                </div>
-            </section>
-         <div class="categories">
+         <section class="heading my-4 my-md-5 d-flex justify-content-center">
+            <div class=" d-flex flex-column justify-content-center align-items-center gap-2 text-nowrap">
+                <h1>Ceategories Gallery</h1>
+                <hr>
+            </div>
+         </section>
+        <div class="categories">
             <div class="ctgy-main">
-                <button class="ctgy-btn-left" onclick="moveLeft()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-                </button>
-                <button class="ctgy-btn-right crsr-hover" onclick="moveRight()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
-                </button>
                 <div class="ctgy-slid">
                     <a href="">
                         <div class="ctgy-top">
@@ -412,8 +398,7 @@
                     <hr>
                 </div>
             </section>
-            <div class="featurs-product">
-                                
+            <div class="featurs-product">                               
                 <div class="products crsr-hover">
                     <button id="favorited"><i class="ri-heart-fill"></i></button>
                     <div class="imgss">
@@ -830,423 +815,423 @@
                  banner start
          ======================--> 
     
-        <div class="space p-[50px]"></div>
+        <div class="space"></div>
     
         
          <!--=====================
             product Shoes start
          ======================-->
-            <section class="heading my-3 my-md-5 d-flex justify-content-center">
-                <div class=" d-flex fw-bold fs-4 flex-column justify-content-center align-items-center gap-2 text-nowrap">
-                    <h1>Featured Product</h1>
-                    <hr>
-                </div>
-            </section>
-            <div class="featurs-product">
-                                
-                <div class="products crsr-hover">
-                    <button id="favorited"><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://img.freepik.com/free-photo/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background_23-2151382816.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="3"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id="favorited"><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://img.freepik.com/free-photo/bottle-juice-with-fruit-it_1340-34396.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="2"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="	https://cdn.pixabay.com/photo/2020/03/06/16/16/cornflakes-4907490_1280.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="1"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://b2861582.smushcdn.com/2861582/wp-content/uploads/2023/02/splash-01-605-v1.png'" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id="favorited"><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://img.freepik.com/free-photo/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background_23-2151382816.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id="favorited"><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://img.freepik.com/free-photo/bottle-juice-with-fruit-it_1340-34396.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="	https://cdn.pixabay.com/photo/2020/03/06/16/16/cornflakes-4907490_1280.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://b2861582.smushcdn.com/2861582/wp-content/uploads/2023/02/splash-01-605-v1.png'" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id="favorited"><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://img.freepik.com/free-photo/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background_23-2151382816.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id="favorited"><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://img.freepik.com/free-photo/bottle-juice-with-fruit-it_1340-34396.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="	https://cdn.pixabay.com/photo/2020/03/06/16/16/cornflakes-4907490_1280.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products crsr-hover">
-                    <button id=""><i class="ri-heart-fill"></i></button>
-                    <div class="imgss">
-                        <a href="product.html">
-                            <img src="https://b2861582.smushcdn.com/2861582/wp-content/uploads/2023/02/splash-01-605-v1.png'" alt="">
-                        </a>
-                    </div>
-                    <div class="btnSections">
-                        <section class="titles-section">
-                            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
-                        </section>
-                        <section class="review-section">
-                            <h2>$750.00</h2>
-                            <span class="review-icons" id="4"></span>
-                        </section>
-                        <div>
-                            <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
-                            <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
-                            <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
-                        </div>
-                    </div>
-                </div>
-
+        <section class="heading my-3 my-md-5 d-flex justify-content-center">
+            <div class=" d-flex fw-bold fs-4 flex-column justify-content-center align-items-center gap-2 text-nowrap">
+                <h1>Featured Product</h1>
+                <hr>
             </div>
+        </section>
+        <div class="featurs-product">
+                            
+            <div class="products crsr-hover">
+                <button id="favorited"><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://img.freepik.com/free-photo/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background_23-2151382816.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="3"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id="favorited"><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://img.freepik.com/free-photo/bottle-juice-with-fruit-it_1340-34396.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="2"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="	https://cdn.pixabay.com/photo/2020/03/06/16/16/cornflakes-4907490_1280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="1"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://b2861582.smushcdn.com/2861582/wp-content/uploads/2023/02/splash-01-605-v1.png'" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id="favorited"><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://img.freepik.com/free-photo/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background_23-2151382816.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id="favorited"><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://img.freepik.com/free-photo/bottle-juice-with-fruit-it_1340-34396.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="	https://cdn.pixabay.com/photo/2020/03/06/16/16/cornflakes-4907490_1280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://b2861582.smushcdn.com/2861582/wp-content/uploads/2023/02/splash-01-605-v1.png'" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id="favorited"><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://img.freepik.com/free-photo/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background_23-2151382816.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id="favorited"><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://img.freepik.com/free-photo/bottle-juice-with-fruit-it_1340-34396.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="	https://cdn.pixabay.com/photo/2020/03/06/16/16/cornflakes-4907490_1280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products crsr-hover">
+                <button id=""><i class="ri-heart-fill"></i></button>
+                <div class="imgss">
+                    <a href="product.html">
+                        <img src="https://b2861582.smushcdn.com/2861582/wp-content/uploads/2023/02/splash-01-605-v1.png'" alt="">
+                    </a>
+                </div>
+                <div class="btnSections">
+                    <section class="titles-section">
+                        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, totam.</h1>
+                    </section>
+                    <section class="review-section">
+                        <h2>$750.00</h2>
+                        <span class="review-icons" id="4"></span>
+                    </section>
+                    <div>
+                        <a href=""><i class="ri-shopping-bag-4-fill"></i> <span>Buy Now</span></a>
+                        <a href=""><i class="ri-shopping-cart-fill"></i><span>Add to Cart</span></a>
+                        <a href="product.html"><span>See Details</span> <i class="ri-error-warning-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
          <!--=====================
             product Shoes end
          ======================-->
 
-        <div class="space p-[50px]"></div>
+        <div class="space"></div>
 
          <!--=====================
                 Footer start
@@ -1300,12 +1285,10 @@
 
     <script src="asset/style/css/bootstrap/bootstrap.min.js"></script>
     <script src="asset/style/js/script.js"></script>
-    <script src="asset/style/js/component/function.js"></script>
     <script src="asset/style/js/function.js"></script>
     <script src="asset/style/js/gsap-fun.js"></script>
     <script>
         /************* review icon function **************/
-            // Function to create stars dynamically based on rating from ID
             function createRatingStars() {
                 const ratingContainers = document.querySelectorAll('.review-icons');
                 

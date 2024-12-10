@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/style/css/pages/profile.min.css">
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- remix icnos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <title>Trade Mision - Best Products Online</title>
+    <link rel="icon" href="asset/style/img/fav.jpg" type="image/jpg">
+    <meta name="description"
+        content="Welcome to My E-Commerce Store. Shop a wide variety of products including electronics, fashion, and home goods at the best prices online.">
+    <meta name="keywords" content="ecommerce, online store, shopping, electronics, fashion, home goods">
+</head>
+
+<body>
+
+    <div id="cursor"></div>
+    <div id="cursor2"></div>
+
+    <div id="main-boddy">
+        <!--=====================
+                header start
+        ======================-->
+        <header class="hdr">
+            <div class="hdrD1 row g-1 align-items-center">
+                <div class="logoD col-1 m-0">
+                    <a href="index.html">
+                        <img class="logo m-0" src="asset/style/img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="srch col-md-1 col-lg-5 col-xl-7 h-100 d-none d-md-none d-lg-flex justify-content-center align-items-center">
+                    <div class="search-closs d-none">
+                        <span>
+                            <i class="ri-close-line"></i>
+                        </span>
+                    </div>
+                    <form class="h-100 d-flex justify-content-between align-items-center" action="search.html">
+                        <input class="" type="text" placeholder="Search here...">
+                        <input class="d-none" id="srchBtn" type="submit" value="">
+                        <a class="d-flex justify-content-center align-items-center h-100" href="">
+                            <i class="ri-search-line"></i>
+                        </a>
+                    </form>
+                </div>
+                <div class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
+                    <a href="javascript:void(0)" class="search-icon d-lg-none">
+                        <i class="ri-search-line"></i>
+                    </a>
+                    <a href="profile_Account.html" class="">
+                        <i class="ri-user-fill"></i>
+                    </a>
+                    <a href="wishlist.html" class="">
+                        <i class="ri-heart-2-fill"></i>
+                    </a>
+                    <a href="cart.html" class="">
+                        <span>10</span>
+                        <i class="ri-shopping-bag-2-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hdrD2 row g-0 justify-content-between align-items-baseline">
+                <div class="ctgrys col-1 col-lg-2 d-flex flex-column">
+                    <a href="javascript:void(0)" class="ctgry ctgry-active">
+                        <div class="ctgryD">
+                            <i class="ri-gallery-view-2"></i>
+                        </div>
+                        <span class="ctgrySpn">All Categories</span>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                </div>
+                <div class=" col-2 d-flex d-lg-none justify-content-end align-items-center">
+                    <i class="ri-menu-3-fill"></i>
+                </div>
+
+                <div class="menus col-lg-8 col-xl-6 d-none d-lg-flex justify-content-start gap-lg-3">
+                    <i class="ri-menu-2-line d-none"></i>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Home</span>
+                    </a>
+                    <div class="menusA  crsr-hover">
+                        <span class="menusASpn">Featurs <i class="ri-arrow-down-s-line menusASpnI"></i></span>
+                        <div class="submenu">
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Men's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Women's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Men's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Women's</span>
+                    </a>
+                </div>
+
+                <div class="todaydeals d-none d-md-none  d-xl-flex align-items-center flex-nowrap col-lg-2">
+                    <i class="ri-price-tag-3-fill"></i>
+                    <a href="">
+                        <span>Today's Deals</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--=====================
+                 header end 
+         ======================-->
+        <!--=====================
+                shipping start
+         ======================-->
+        <div class="profile-main-dev row flex-lg-row">
+            <a class="profile-menu-icon d-lg-none" href="javascript:void(0);"><i class="ri-apps-2-add-line"></i></a>
+            <div class="profile-menu d-none d-lg-block col-12 col-lg-2 h-100 overflow-y-auto">
+                <span class="fw-semibold">Account Manage</span>
+                <ul class="overflow-hidden mb-3 overflow-auto">
+                    <li><a href="profile_Account.html"><i class="ri-user-fill"></i> My Profile</a></li>
+                    <li><a href="profile_Address copy.html"><i class="ri-file-list-3-fill"></i> My Addresses</a></li>
+                </ul>
+                <span class="fw-semibold">Order Manage</span>
+                <ul class="overflow-hidden mb-3 overflow-auto">
+                    <li><a href="profile_Orders.html"><i class="ri-shopping-basket-fill"></i> My Orders</a></li>
+                    <li><a href=""><i class="ri-delete-bin-2-fill"></i> My Cenceletions</a></li>
+                </ul>
+                <a href="setting"><span class="fw-semibold"><i class="ri-settings-fill"></i> Setting</span></a>
+            </div>
+            <div class="orders-main col-12 col-lg-10">
+                <h1 class="fw-normal fs-4 mb-3">My Orders Manage</h1>
+                <ul>
+                    <li>
+                        <div class="orders-1st">
+                            <section class="orders-middle">
+                                <div class="orders-img">
+                                    <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="orders-2nd flex-column flex-lg-row">
+                            <div class="orders-details">
+                                <div>
+                                    <a href="product.html">
+                                        <span>এমব্রয়ডারি এমব্রয়ডারি ওয়ার্ক ওয়ার্ক কামিজ কুর্তি কামিজ কুর্তি
+                                            এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক</span>
+                                    </a>
+                                </div>
+                                <p>Brand: Sajerbela Color: White</p>
+                            </div>
+                            <section class="orders-last">
+                                <div class="status d-flex ">
+                                    <span class="bg-warning text-dark fw-medium">Pending</span>
+                                </div>
+                                <div class="prc">
+                                    <span>৳ 60</span>
+                                    <p>3 Pcs</p>
+                                </div>
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="orders-1st">
+                            <section class="orders-middle">
+                                <div class="orders-img">
+                                    <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="orders-2nd flex-column flex-lg-row">
+                            <div class="orders-details">
+                                <div>
+                                    <a href="product.html">
+                                        <span>এমব্রয়ডারি এমব্রয়ডারি ওয়ার্ক ওয়ার্ক কামিজ কুর্তি কামিজ কুর্তি
+                                            এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক</span>
+                                    </a>
+                                </div>
+                                <p>Brand: Sajerbela Color: WHite</p>
+                            </div>
+                            <section class="orders-last">
+                                <div class="status d-flex ">
+                                    <span class="bg-body-secondary text-dark fw-medium">Cencel</span>
+                                </div>
+                                <div class="prc">
+                                    <span>৳ 60</span>
+                                    <p>2 Pcs</p>
+                                </div>
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="orders-1st">
+                            <section class="orders-middle">
+                                <div class="orders-img">
+                                    <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="orders-2nd flex-column flex-lg-row">
+                            <div class="orders-details">
+                                <div>
+                                    <a href="product.html">
+                                        <span>এমব্রয়ডারি এমব্রয়ডারি ওয়ার্ক ওয়ার্ক কামিজ কুর্তি কামিজ কুর্তি
+                                            এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক</span>
+                                    </a>
+                                </div>
+                                <p>Brand: Sajerbela Color: WHite</p>
+                            </div>
+                            <section class="orders-last">
+                                <div class="status d-flex ">
+                                    <span class="bg-success text-white fw-medium">Sucsessfull</span>
+                                </div>
+                                <div class="prc">
+                                    <span>৳ 60</span>
+                                    <p>1 Pcs</p>
+                                </div>
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="orders-1st">
+                            <section class="orders-middle">
+                                <div class="orders-img">
+                                    <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="orders-2nd flex-column flex-lg-row">
+                            <div class="orders-details">
+                                <div>
+                                    <a href="product.html">
+                                        <span>এমব্রয়ডারি এমব্রয়ডারি ওয়ার্ক ওয়ার্ক কামিজ কুর্তি কামিজ কুর্তি
+                                            এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক</span>
+                                    </a>
+                                </div>
+                                <p>Brand: Sajerbela Color: WHite</p>
+                            </div>
+                            <section class="orders-last">
+                                <div class="status d-flex ">
+                                    <span class="bg-success text-white fw-medium">Sucsessfull</span>
+                                </div>
+                                <div class="prc">
+                                    <span>৳ 60</span>
+                                    <p>1 Pcs</p>
+                                </div>
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="orders-1st">
+                            <section class="orders-middle">
+                                <div class="orders-img">
+                                    <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="orders-2nd flex-column flex-lg-row">
+                            <div class="orders-details">
+                                <div>
+                                    <a href="product.html">
+                                        <span>এমব্রয়ডারি এমব্রয়ডারি ওয়ার্ক ওয়ার্ক কামিজ কুর্তি কামিজ কুর্তি
+                                            এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক</span>
+                                    </a>
+                                </div>
+                                <p>Brand: Sajerbela Color: WHite</p>
+                            </div>
+                            <section class="orders-last">
+                                <div class="status d-flex ">
+                                    <span class="bg-success text-white fw-medium">Sucsessfull</span>
+                                </div>
+                                <div class="prc">
+                                    <span>৳ 60</span>
+                                    <p>1 Pcs</p>
+                                </div>
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="orders-1st">
+                            <section class="orders-middle">
+                                <div class="orders-img">
+                                    <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="orders-2nd flex-column flex-lg-row">
+                            <div class="orders-details">
+                                <div>
+                                    <a href="product.html">
+                                        <span>এমব্রয়ডারি এমব্রয়ডারি ওয়ার্ক ওয়ার্ক কামিজ কুর্তি কামিজ কুর্তি
+                                            এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক</span>
+                                    </a>
+                                </div>
+                                <p>Brand: Sajerbela Color: WHite</p>
+                            </div>
+                            <section class="orders-last">
+                                <div class="status d-flex ">
+                                    <span class="bg-success text-white fw-medium">Sucsessfull</span>
+                                </div>
+                                <div class="prc">
+                                    <span>৳ 60</span>
+                                    <p>1 Pcs</p>
+                                </div>
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="orders-1st">
+                            <section class="orders-middle">
+                                <div class="orders-img">
+                                    <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="orders-2nd flex-column flex-lg-row">
+                            <div class="orders-details">
+                                <div>
+                                    <a href="product.html">
+                                        <span>এমব্রয়ডারি এমব্রয়ডারি ওয়ার্ক ওয়ার্ক কামিজ কুর্তি কামিজ কুর্তি
+                                            এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক</span>
+                                    </a>
+                                </div>
+                                <p>Brand: Sajerbela Color: WHite</p>
+                            </div>
+                            <section class="orders-last">
+                                <div class="status d-flex ">
+                                    <span class="bg-success text-white fw-medium">Sucsessfull</span>
+                                </div>
+                                <div class="prc">
+                                    <span>৳ 60</span>
+                                    <p>1 Pcs</p>
+                                </div>
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="orders-1st">
+                            <section class="orders-middle">
+                                <div class="orders-img">
+                                    <img src="https://img.freepik.com/premium-photo/cosmetic-products-presentation-mockup-showcase-ai-image_1209683-16885.jpg?semt=ais_hybrid" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="orders-2nd flex-column flex-lg-row">
+                            <div class="orders-details">
+                                <div>
+                                    <a href="product.html">
+                                        <span>এমব্রয়ডারি এমব্রয়ডারি ওয়ার্ক ওয়ার্ক কামিজ কুর্তি কামিজ কুর্তি
+                                            এমব্রয়ডারি ওয়ার্ক কামিজ কুর্তি এমব্রয়ডারি ওয়ার্ক</span>
+                                    </a>
+                                </div>
+                                <p>Brand: Sajerbela Color: WHite</p>
+                            </div>
+                            <section class="orders-last">
+                                <div class="status d-flex ">
+                                    <span class="bg-success text-white fw-medium">Sucsessfull</span>
+                                </div>
+                                <div class="prc">
+                                    <span>৳ 60</span>
+                                    <p>1 Pcs</p>
+                                </div>
+                            </section>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- All Modals -->
+        <div class="modal fade" id="updatetProfile1" tabindex="-1" aria-labelledby="UpdatetProfile1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-semibold fs-4" id="UpdatetProfile1">Edit Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-2">
+                        <form action="">
+                            <!-- Full Name -->
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="inputFullNameEdit">Full Name</label>
+                                <input type="text" class="form-control" id="inputFullNameEdit" value="Example Name"
+                                    placeholder="Enter Your Full Name">
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="inputEmailEdit">Email</label>
+                                <input type="email" class="form-control" id="inputEmailEdit" value="example@example.com"
+                                    placeholder="Enter Your Email">
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="inputNumberEdit">Password</label>
+                                <input type="number" class="form-control" id="inputNumberEdit"
+                                    placeholder="Enter Your Number">
+                            </div>
+
+                            <div class="form-group row">
+                                <!-- Birthday -->
+                                <div class="form-group mb-3 col-md-6">
+                                    <label class="mb-2" for="inputBirthdayEdit">Birthday</label>
+                                    <input type="date" class="form-control" id="inputBirthdayEdit">
+                                </div>
+
+                                <!-- Gender -->
+                                <div class="form-group mb-3  col-md-6">
+                                    <label class="mb-2" for="inputGenderEdit">Gender</label>
+                                    <select id="inputGenderEdit" class="form-control">
+                                        <option selected>Select Your Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer mt-3 border-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn">Update Changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="updatetPassword1" tabindex="-1" aria-labelledby="UpdatetPassword1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-semibold fs-4" id="UpdatetPassword1">Edit Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-2">
+                        <form action="">
+                            <div class="row mb-3">
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputCurrentPasswordEdit">Current Password</label>
+                                    <input type="password" class="form-control" id="inputCurrentPasswordEdit" placeholder="Enter Current Password">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputNewPasswordEdit">New Password</label>
+                                    <input type="password" class="form-control" id="inputNewPasswordEdit" placeholder="Enter New Password">
+                                </div>
+                            </div>
+
+                            <div class="modal-footer mt-3 border-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success">Update Changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Modals -->
+        <!--=====================
+                shipping end
+         ======================-->
+
+
+        <!--=====================
+                Footer start
+         ======================-->
+        <footer
+            class="ftr py-5 px-3 d-flex justify-content-around align-items-center flex-wrap flex-column flex-md-row">
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA"><img class="crsr-hover" src="asset/style/img/logo.png" alt=""></a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA">
+                        <h2 class="ftrUlAH2">Quick Links</h2>
+                    </a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Home</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Discount</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Tearm- condition</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Faq</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">About us</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Privacy- Policy</a></li>
+            </ul>
+
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA">
+                        <h2 class="ftrUlAH2">Top Categories</h2>
+                    </a></li>
+                <li class="crsr-hover" class="ftrUlA"><a href="" class="ftrUlA">SHAREE COLLECTIONS</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">INdian Clothing</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Dresses</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">WOMEN"S FASION</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">BEAUTI PRODUCTS</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">MEN'S Products</a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA">
+                        <h2 class="ftrUlAH2">BRAND</h2>
+                    </a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Ariz's Territory</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Sajer bela</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Zyan and Myza</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Simple</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Himalaya</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Palmolive</a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i
+                            class="ri-map-pin-2-line ftrLastUlAI"></i>
+                        <h2 class="ftrUlAH2 ftrLastUlAIH2">Adress <span class="ftrLastUlAIH2Span">124/ 1 Dhaka
+                                Bangladesh</span></h2>
+                    </a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i
+                            class="ri-mail-unread-fill ftrLastUlAI"></i>
+                        <h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span
+                                class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2>
+                    </a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-phone-fill ftrLastUlAI"></i>
+                        <h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2>
+                    </a></li>
+            </ul>
+        </footer>
+        <!--=====================
+                Footer end
+         ======================-->
+    </div>
+    <script src="asset/style/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="asset/style/js/script.js"></script>
+    <script src="asset/style/js/function.js"></script>
+    <script src="asset/style/js/gsap-fun.js"></script>
+</body>
+
+</html>

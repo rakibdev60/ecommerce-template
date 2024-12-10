@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- style -->
     <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="asset/style/css/pages/wishlist.min.css">
-    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <!-- remix icnos -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- gsap cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
     <title>Trade Mision - Best Products Online</title>
-    <!-- Favicon -->
     <link rel="icon" href="asset/style/img/fav.jpg" type="image/png">
-    <!-- Meta description (appears in search engine results and helps with SEO) -->
     <meta name="description" content="Welcome to My E-Commerce Store. Shop a wide variety of products including electronics, fashion, and home goods at the best prices online.">
-    <!-- Optional: Meta keywords (helps with search engine optimization but is less important today) -->
     <meta name="keywords" content="ecommerce, online store, shopping, electronics, fashion, home goods">
 </head>
 
@@ -35,18 +28,19 @@
                 header start
         ======================-->
         <header class="hdr">
-            <div class="hdrD1 row g-1">
-                <div class="logoD col-1">
+            <div class="hdrD1 row g-1 align-items-center">
+                <div class="logoD col-1 m-0">
                     <a href="index.html">
-                        <img class="logo" src="asset/style/img/logo.png" alt=""></a>
+                        <img class="logo m-0" src="asset/style/img/logo.png" alt="">
+                    </a>
                 </div>
-                <div class="srch col-md-6 col-lg-7 h-100 d-none d-md-flex justify-content-center align-items-center">
+                <div class="srch col-md-1 col-lg-5 col-xl-7 h-100 d-none d-md-none d-lg-flex justify-content-center align-items-center">
                     <div class="search-closs d-none">
                         <span>
                             <i class="ri-close-line"></i>
                         </span>
                     </div>
-                    <form class=" h-100 d-flex justify-content-between align-items-center" action="search.html">
+                    <form class="h-100 d-flex justify-content-between align-items-center" action="search.html">
                         <input class="" type="text" placeholder="Search here...">
                         <input class="d-none" id="srchBtn" type="submit" value="">
                         <a class="d-flex justify-content-center align-items-center h-100" href="">
@@ -54,12 +48,11 @@
                         </a>
                     </form>
                 </div>
-                <div
-                    class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
-                    <a href="javascript:void(0)" class="search-icon d-md-none">
+                <div class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
+                    <a href="javascript:void(0)" class="search-icon d-lg-none">
                         <i class="ri-search-line"></i>
                     </a>
-                    <a href="signin.html" class="">
+                    <a href="profile_Account.html" class="">
                         <i class="ri-user-fill"></i>
                     </a>
                     <a href="wishlist.html" class="">
@@ -419,8 +412,7 @@
                 <hr>
             </div>
         </section>
-        <div class="featurs-product">
-                                
+        <div class="featurs-product">                      
             <div class="products crsr-hover">
                 <button id="favorited"><i class="ri-heart-fill"></i></button>
                 <div class="imgss">
@@ -874,7 +866,6 @@
         /************************ start  input select wishlist ************************/
         document.addEventListener('DOMContentLoaded', function () {
 
-            // Select the main checkbox
             const mainCheckbox = document.getElementById('mainCheckbox');
 
             const wishlistCheckboxes = document.querySelectorAll('.wishlist-checkbox');
@@ -887,21 +878,18 @@
 
             wishlistCheckboxes.forEach(function (checkbox) {
                 checkbox.addEventListener('change', function () {
-                    // Check if all wishlist checkboxes are selected
                     const allChecked = Array.from(wishlistCheckboxes).every(function (checkbox) {
                         return checkbox.checked;
                     });
-                    mainCheckbox.checked = allChecked; // Update the "Select All" checkbox
+                    mainCheckbox.checked = allChecked;
                 });
             });
 
-
-            // process butn value chacnge check out
             function checkoutProcsText() {
                 if (window.innerWidth > 767) {
-                    checkoutProcs.value = "Proceed to Checkout"; // Set value for large screens
+                    checkoutProcs.value = "Proceed to Checkout";
                 } else {
-                    checkoutProcs.value = "Check Out"; // Set value for small screens
+                    checkoutProcs.value = "Check Out";
                 }
             }
 
@@ -918,22 +906,19 @@
 
             function checkoutProcsText() {
                 if (window.innerWidth > 767) {
-                    checkoutProcs.value = "Proceed to Checkout"; // Set value for large screens
+                    checkoutProcs.value = "Proceed to Checkout";
                 } else {
-                    checkoutProcs.value = "Check Out"; // Set value for small screens
+                    checkoutProcs.value = "Check Out";
                 }
             }
 
-            // Call the function once on page load
             checkoutProcsText();
 
-            // Update the value on window resize
             window.addEventListener("resize", checkoutProcsText);
         });
 
         /************* end ceckout button wishlist page ***********/
         /************* review icon function **************/
-        // Function to create stars dynamically based on rating from ID
         function createRatingStars() {
             const ratingContainers = document.querySelectorAll('.review-icons');
 
@@ -960,7 +945,6 @@
 
         /************* review icon function *************/
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 
 </body>
 

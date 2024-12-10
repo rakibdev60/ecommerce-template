@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
-     <link rel="stylesheet" href="asset/style/css/pages/home.min.css">
-     <!-- fonts -->
+    <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/style/css/pages/cart.min.css">
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- remix icnos -->
@@ -14,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
     <title>Trade Mision - Best Products Online</title>
-    <link rel="icon" href="asset/style/img/fav.jpg" type="image/png">
+    <link rel="icon" href="asset/style/img/fav.jpg" type="image/jpg">
     <meta name="description" content="Welcome to My E-Commerce Store. Shop a wide variety of products including electronics, fashion, and home goods at the best prices online.">
     <meta name="keywords" content="ecommerce, online store, shopping, electronics, fashion, home goods">
 </head>
@@ -28,18 +29,19 @@
                 header start
         ======================-->
         <header class="hdr">
-            <div class="hdrD1 row g-1">
-                <div class="logoD col-1">
+            <div class="hdrD1 row g-1 align-items-center">
+                <div class="logoD col-1 m-0">
                     <a href="index.html">
-                        <img class="logo" src="asset/style/img/logo.png" alt=""></a>
+                        <img class="logo m-0" src="asset/style/img/logo.png" alt="">
+                    </a>
                 </div>
-                <div class="srch col-md-6 col-lg-7 h-100 d-none d-md-flex justify-content-center align-items-center">
+                <div class="srch col-md-1 col-lg-5 col-xl-7 h-100 d-none d-md-none d-lg-flex justify-content-center align-items-center">
                     <div class="search-closs d-none">
                         <span>
                             <i class="ri-close-line"></i>
                         </span>
                     </div>
-                    <form class=" h-100 d-flex justify-content-between align-items-center" action="search.html">
+                    <form class="h-100 d-flex justify-content-between align-items-center" action="search.html">
                         <input class="" type="text" placeholder="Search here...">
                         <input class="d-none" id="srchBtn" type="submit" value="">
                         <a class="d-flex justify-content-center align-items-center h-100" href="">
@@ -47,12 +49,11 @@
                         </a>
                     </form>
                 </div>
-                <div
-                    class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
-                    <a href="javascript:void(0)" class="search-icon d-md-none">
+                <div class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
+                    <a href="javascript:void(0)" class="search-icon d-lg-none">
                         <i class="ri-search-line"></i>
                     </a>
-                    <a href="signin.html" class="">
+                    <a href="profile_Account.html" class="">
                         <i class="ri-user-fill"></i>
                     </a>
                     <a href="wishlist.html" class="">
@@ -211,89 +212,15 @@
                 </div>
             </div>
         </header>
-         <!--=====================
-                 header end
+        <!--=====================
+                 header end 
          ======================-->
-         <!--=====================
-            register form start
-         ======================-->
-         <div class="row justify-content-center w-100 p-2 px-md-5 my-5 position-relative z-1">
-            <form class="col-10 col-sm-6">
-                <div class="row mb-4">
-                  <div class="col">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example1" class="form-control" />
-                      <label class="form-label" for="form3Example1">First name</label>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example2" class="form-control" />
-                      <label class="form-label" for="form3Example2">Last name</label>
-                    </div>
-                  </div>
-                </div>
-              
-                <!-- Email input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" />
-                  <label class="form-label" for="form3Example3">Email address</label>
-                </div>
-              
-                <!-- Password input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" />
-                  <label class="form-label" for="form3Example4">Password</label>
-                </div>
-              
-                
-                <!-- 2 column grid layout for inline styling -->
-                <div class="row mb-4">
-                    <div class="col d-flex justify-content-between">
-                    <!-- Checkbox -->
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
-                            <label class="form-check-label" for="form2Example34"> I'm agree to all Terms </label>
-                        </div>
-                    </div>
+         
+        
 
-                    <div class="col d-flex justify-content-end">
-                        <!-- Simple link -->
-                        <a href="#!">Forgot password?</a>
-                    </div>
-                </div>
-              
-                <!-- Submit button -->
-                <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Sign up</button>
-              
-                <!-- Register buttons -->
-                <div class="text-center">
-                    <a class="text-primary fw-bold" href="signin.html">I have a account</a>
-                    <p class="mb-2">or sign up with:</p>
-                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
-                        <i class="ri-facebook-fill"></i>
-                    </button>
-                
-                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
-                        <i class="ri-google-fill"></i>
-                    </button>
-                
-                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
-                        <i class="ri-twitter-line"></i>
-                    </button>
-                
-                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
-                        <i class="ri-github-fill"></i>
-                    </button>
-                </div>
-              </form>
-         </div>
-         <!--=====================
-            register form end
-         ======================--> 
-         <!--=====================
+        <!--=====================
                 Footer start
-         ======================--> 
+         ======================-->
         <footer class="ftr py-5 px-3 d-flex justify-content-around align-items-center flex-wrap flex-column flex-md-row">
             <ul class="ftrUl">
                 <li><a href="" class="ftrUlA"><img class="crsr-hover" src="asset/style/img/logo.png" alt=""></a></li>
@@ -332,15 +259,13 @@
                 <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-phone-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2></a></li>
             </ul>
         </footer>
-         <!--=====================
+        <!--=====================
                 Footer end
-         ======================--> 
-        
+         ======================-->
     </div>
-
-
-    <script src="asset/style/css/bootstrap/bootstrap.min.js"></script>
+    <script src="asset/style/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="asset/style/js/script.js"></script>
+    <script src="asset/style/js/function.js"></script>
     <script src="asset/style/js/gsap-fun.js"></script>
 </body>
 </html>

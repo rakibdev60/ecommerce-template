@@ -1,0 +1,22 @@
+@forward './util/index';
+@forward 'components/header';
+@forward 'components/cursor';
+@forward 'components/footer';
+ 
+.order-result-main{
+  div{
+    h1{
+      color: var(--main-color);
+    }
+    p{
+      font-size: 14px;
+      color: grey;
+    }
+    span{
+      color: var(--main-color);
+    }
+    a{
+      background-color: orangered;
+    }
+  }
+}

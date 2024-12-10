@@ -4,7 +4,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-    background-color: white;
+    background-color: var(--second-bg);
     padding: 25px 0px;
     padding-bottom: 0px;
     border-radius: 10px;
@@ -40,7 +40,7 @@ header{
                     height: 100%;
                     color: white;
                     font-size: 20px;
-                    background-color: orange;
+                    background-color: var(--main-color);
                     border: 1px solid orange;
                     border-radius: 0 8px 8px 0;
                 }
@@ -224,10 +224,10 @@ header{
 
 
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     :root {
-        --p-header: 0px 20px;
-        --h-logoD: 35px;
+        --p-header: 0px 20px !important;
+        --h-logoD: 25px;
     }
 }
 
@@ -297,7 +297,7 @@ header{
             left: 5%;
         }
         .menusA{
-            background-color: rgba(192, 192, 192, 0.466);
+            background-color: #c0c0c077;
             padding-left: 10px;
             margin: 5px 0;
             border-radius: 7px;

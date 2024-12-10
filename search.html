@@ -4,25 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
-
     <link rel="stylesheet" href="asset/style/css/pages/search.min.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <!-- remix icnos -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- gsap cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
     <title>Trade Mision - Best Products Online</title>
-    <!-- Favicon -->
     <link rel="icon" href="asset/style/img/fav.jpg" type="image/png">
-    <!-- Meta description (appears in search engine results and helps with SEO) -->
     <meta name="description" content="Welcome to My E-Commerce Store. Shop a wide variety of products including electronics, fashion, and home goods at the best prices online.">
-    <!-- Optional: Meta keywords (helps with search engine optimization but is less important today) -->
     <meta name="keywords" content="ecommerce, online store, shopping, electronics, fashion, home goods">
 </head>
 </head>
@@ -37,18 +31,19 @@
                 header start
         ======================-->
         <header class="hdr">
-            <div class="hdrD1 row g-1">
-                <div class="logoD col-1">
+            <div class="hdrD1 row g-1 align-items-center">
+                <div class="logoD col-1 m-0">
                     <a href="index.html">
-                        <img class="logo" src="asset/style/img/logo.jpg" alt=""></a>
+                        <img class="logo m-0" src="asset/style/img/logo.png" alt="">
+                    </a>
                 </div>
-                <div class="srch col-md-6 col-lg-7 h-100 d-none d-md-flex justify-content-center align-items-center">
+                <div class="srch col-md-1 col-lg-5 col-xl-7 h-100 d-none d-md-none d-lg-flex justify-content-center align-items-center">
                     <div class="search-closs d-none">
                         <span>
                             <i class="ri-close-line"></i>
                         </span>
                     </div>
-                    <form class=" h-100 d-flex justify-content-between align-items-center" action="search.html">
+                    <form class="h-100 d-flex justify-content-between align-items-center" action="search.html">
                         <input class="" type="text" placeholder="Search here...">
                         <input class="d-none" id="srchBtn" type="submit" value="">
                         <a class="d-flex justify-content-center align-items-center h-100" href="">
@@ -56,12 +51,11 @@
                         </a>
                     </form>
                 </div>
-                <div
-                    class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
-                    <a href="javascript:void(0)" class="search-icon d-md-none">
+                <div class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
+                    <a href="javascript:void(0)" class="search-icon d-lg-none">
                         <i class="ri-search-line"></i>
                     </a>
-                    <a href="signin.html" class="">
+                    <a href="profile_Account.html" class="">
                         <i class="ri-user-fill"></i>
                     </a>
                     <a href="wishlist.html" class="">
@@ -715,16 +709,15 @@
                 <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-phone-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2></a></li>
             </ul>
         </footer>
-    <!--=====================
-            Footer end
-     ======================-->
-</div>
-<script src="asset/style/js/script.js"></script>
-<script src="asset/style/js/function.js"></script>
-<script src="asset/style/js/gsap-fun.js"></script>
-<script>
+        <!--=====================
+                Footer end
+        ======================-->
+    </div>
+    <script src="asset/style/js/script.js"></script>
+    <script src="asset/style/js/function.js"></script>
+    <script src="asset/style/js/gsap-fun.js"></script>
+    <script>
     /************* review icon function **************/
-        // Function to create stars dynamically based on rating from ID
         function createRatingStars() {
             const ratingContainers = document.querySelectorAll('.review-icons');
 
@@ -752,7 +745,6 @@
     /************* review icon function *************/
 
     /************* input range function *************/
-        // Update range value display dynamically
         const rangeInput = document.getElementById('priceRange');
         const rangeValue = document.getElementById('rangeValue');
         
@@ -772,5 +764,4 @@
 
 </script>
 </body>
-
 </html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/style/css/pages/shipping.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- remix icnos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <title>Trade Mision - Best Products Online</title>
+    <link rel="icon" href="asset/style/img/fav.jpg" type="image/jpg">
+    <meta name="description" content="Welcome to My E-Commerce Store. Shop a wide variety of products including electronics, fashion, and home goods at the best prices online.">
+    <meta name="keywords" content="ecommerce, online store, shopping, electronics, fashion, home goods">
+</head>
+<body>
+
+    <div id="cursor"></div>
+    <div id="cursor2"></div>
+
+    <div id="main-boddy">
+        <!--=====================
+                header start
+        ======================-->
+        <header class="hdr">
+            <div class="hdrD1 row g-1 align-items-center">
+                <div class="logoD col-1 m-0">
+                    <a href="index.html">
+                        <img class="logo m-0" src="asset/style/img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="srch col-md-1 col-lg-5 col-xl-7 h-100 d-none d-md-none d-lg-flex justify-content-center align-items-center">
+                    <div class="search-closs d-none">
+                        <span>
+                            <i class="ri-close-line"></i>
+                        </span>
+                    </div>
+                    <form class="h-100 d-flex justify-content-between align-items-center" action="search.html">
+                        <input class="" type="text" placeholder="Search here...">
+                        <input class="d-none" id="srchBtn" type="submit" value="">
+                        <a class="d-flex justify-content-center align-items-center h-100" href="">
+                            <i class="ri-search-line"></i>
+                        </a>
+                    </form>
+                </div>
+                <div class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
+                    <a href="javascript:void(0)" class="search-icon d-lg-none">
+                        <i class="ri-search-line"></i>
+                    </a>
+                    <a href="profile_Account.html" class="">
+                        <i class="ri-user-fill"></i>
+                    </a>
+                    <a href="wishlist.html" class="">
+                        <i class="ri-heart-2-fill"></i>
+                    </a>
+                    <a href="cart.html" class="">
+                        <span>10</span>
+                        <i class="ri-shopping-bag-2-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hdrD2 row g-0 justify-content-between align-items-baseline">
+                <div class="ctgrys col-1 col-lg-2 d-flex flex-column">
+                    <a href="javascript:void(0)" class="ctgry ctgry-active">
+                        <div class="ctgryD">
+                            <i class="ri-gallery-view-2"></i>
+                        </div>
+                        <span class="ctgrySpn">All Categories</span>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                    <a href="" class="ctgry crsr-hover">
+                        <div class="ctgryImgs">
+                            <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg"
+                                alt="" class="ctgryImg">
+                        </div>
+                        <span>Hot Deals</span>
+                    </a>
+                </div>
+                <div class=" col-2 d-flex d-lg-none justify-content-end align-items-center">
+                    <i class="ri-menu-3-fill"></i>
+                </div>
+
+                <div class="menus col-lg-8 col-xl-6 d-none d-lg-flex justify-content-start gap-lg-3">
+                    <i class="ri-menu-2-line d-none"></i>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Home</span>
+                    </a>
+                    <div class="menusA  crsr-hover">
+                        <span class="menusASpn">Featurs <i class="ri-arrow-down-s-line menusASpnI"></i></span>
+                        <div class="submenu">
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                            <div class="submenuD">
+                                <strong class="submenuStrng">Men's</strong>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Blogs</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Menus</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                                <a href="" class="crsr-hover"><span class="submenuASpn">Ceerier</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Shop</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Men's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Women's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Men's</span>
+                    </a>
+                    <a href="" class="menusA crsr-hover">
+                        <span class="menusASpn">Women's</span>
+                    </a>
+                </div>
+
+                <div class="todaydeals d-none d-md-none  d-xl-flex align-items-center flex-nowrap col-lg-2">
+                    <i class="ri-price-tag-3-fill"></i>
+                    <a href="">
+                        <span>Today's Deals</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--=====================
+                header end 
+         ======================-->
+        <!--=====================
+                shipping start
+         ======================-->
+        <div class="shipping-main-dev row flex-lg-row">
+            <div class="shipping-main col-12 col-lg-8 rounded">
+                <div class="py-3 border bg-body text-center">
+                    <span class="fw-semibold fs-5">Shipping & Billing Address</span>
+                </div>
+                <ul class="overflow-hidden overflow-y-auto">
+                    <li class="row py-3 gap-0 g-0 align-items-center border">
+                        <div class="col-5 col-sm-3 d-flex gap-3 justify-content-center">
+                            <input type="radio" name="ShippingAddress" id="HomeAddress">
+                            <h2>Address<br>(Home)</h2>
+                        </div>
+                        <div class="d-flex flex-column flex-wrap col-7 col-sm-5">
+                            <span>Name: Example Names</span>
+                            <span>Phone: +880111111111</span>
+                            <span>Payment: Bkash</span>
+                            <span>House: 10/40</span>
+                            <span>City: City, Division</span>
+                            <span>Additional: additional message</span>
+                        </div>
+                        <div class="d-flex justify-content-around justify-content-sm-center gap-3 col-12 col-sm-4">
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editAddress1"><i class="ri-pencil-line"></i> Edit</a>
+                            <a class="text-danger" href=""><i class="ri-delete-bin-6-line"></i> Delete</a>
+                        </div>
+                    </li>
+                    <li class="row py-3 gap-0 g-0 align-items-center border">
+                        <div class="col-5 col-sm-3 d-flex gap-3 justify-content-center">
+                            <input type="radio" name="ShippingAddress" id="HomeAddress">
+                            <h2>Address<br>(Home)</h2>
+                        </div>
+                        <div class="d-flex flex-column flex-wrap col-7 col-sm-5">
+                            <span>Name: Example Names</span>
+                            <span>Phone: +880111111112</span>
+                            <span>Payment: Cash On Delevery</span>
+                            <span>House: House number</span>
+                            <span>City: City, Division</span>
+                            <span>Additional: additional message</span>
+                        </div>
+                        <div class="d-flex justify-content-around justify-content-sm-center gap-3 col-12 col-sm-4">
+                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editAddress2"><i class="ri-pencil-line"></i> Edit</a>
+                            <a class="text-danger" href=""><i class="ri-delete-bin-6-line"></i> Delete</a>
+                        </div>
+                    </li>
+                </ul>                
+                <div class="py-3 fw-semibold border bg-body text-center">
+                    <a class="" href="" data-bs-toggle="modal" data-bs-target="#createAddress"><i class="ri-add-fill"></i> Add New Adress</a>                 
+                </div>
+            </div>
+            <div class="shipping-checkout col-12 col-lg-4">
+                <form action="payment.html">
+                    <ul>
+                        <li>
+                            <span>Location</span>
+                            <div class="location">
+                                <i class="ri-map-pin-user-line"></i>
+                                <p>Arab road, City, Countrie</p>
+                            </div>
+                        </li>
+                        <li class="bills-amount-li">
+                            <h2>Order Summary</h2>
+                            <div class="bills-amount">
+                                <span>Subtotal (0 Items)</span>
+                                <p>৳ 0</p>
+                            </div>
+                            <div class="bills-amount">
+                                <span>Shipping Fee</span>
+                                <p>৳ 0</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cuppon">
+                                <input type="text" name="cuppun" id="" placeholder="Cuppon here..">
+                                <button>APPLY</button>
+                            </div>
+                        </li>
+                        <li class="total-li">
+                            <div class="total">
+                                <span>Total</span>
+                                <p>৳ 0</p>
+                            </div>
+                            <input type="submit" value="proceed to checckout">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+        <!-- All Modals -->
+        <div class="modal fade" id="createAddress" tabindex="-1" aria-labelledby="CreateNewAddress1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-semibold fs-4" id="CreateNewAddress1">Create New Address</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-2">
+                        <form action="">
+                            <div class="row mb-2">
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputFullName">Full Name</label>
+                                    <input type="text" class="form-control mb-2" id="inputFullName" placeholder="Enter Your Full Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputPhone">Phone Number</label>
+                                    <input type="text" class="form-control mb-2" id="inputPhone" placeholder="Enter Your Phone Number">
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group col-md-6">
+                                    <label class=" mb-2" for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control mb-2" id="inputEmail4" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputState">Region</label>
+                                    <select id="inputState" class="form-control mb-2">
+                                        <option selected>Choose Your Region</option>
+                                        <option>Dhaka</option>
+                                        <option>Borishal</option>
+                                        <option>Dhaka</option>
+                                        <option>Borishal</option>
+                                        <option>Dhaka</option>
+                                        <option>Borishal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label class="mb-2" for="inputAddress">Address</label>
+                                <input type="text" class="form-control mb-2" id="inputAddress" placeholder="For Example: House# 123, Street# 123, ABC Road">
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputArea">Area</label>
+                                    <input type="text" class="form-control mb-2" id="inputArea" placeholder="Enter Your Area">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="mb-2" class="mb-2" for="inputCity">City</label>
+                                    <input type="text" class="form-control mb-2" id="inputCity" placeholder="Enter Your City">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label class="mb-2" for="inputZip">Zip</label>
+                                    <input type="number" class="form-control mb-2" id="inputZip" placeholder="Enter Zip">
+                                </div>
+                            </div>
+                            
+                            <div class="modal-footer mt-3 border-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="editAddress1" tabindex="-1" aria-labelledby="EditAddress1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-semibold fs-4" id="EditAddress1">Edit Address</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-2">
+                        <form action="">
+                            <div class="row mb-2">
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputFullNamEdit">Full Name</label>
+                                    <input type="text" class="form-control mb-2" id="inputFullNamEdit" value="Example Names" placeholder="Enter Your Full Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputPhoneEdit">Phone Number</label>
+                                    <input type="text" class="form-control mb-2" id="inputPhoneEdit" value="+880111111111" placeholder="Enter Your Phone Number">
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group col-md-6">
+                                    <label class=" mb-2" for="inputEmailEdit">Email</label>
+                                    <input type="email" class="form-control mb-2" id="inputEmailEdit" value="Example@Example.com" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputStateEdit">Region</label>
+                                    <select id="inputStateEdit" class="form-control mb-2">
+                                        <option selected>Choose Your Region</option>
+                                        <option>Dhaka</option>
+                                        <option>Borishal</option>
+                                        <option>Dhaka</option>
+                                        <option>Borishal</option>
+                                        <option>Dhaka</option>
+                                        <option>Borishal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label class="mb-2" for="inputAddressEdit">Address</label>
+                                <input type="text" class="form-control mb-2" id="inputAddressEdit" placeholder="For Example: House# 123, Street# 123, ABC Road">
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputAreaEdit">Area</label>
+                                    <input type="text" class="form-control mb-2" id="inputAreaEdit" placeholder="Enter Your Area">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="mb-2" class="mb-2" for="inputCityEdit">City</label>
+                                    <input type="text" class="form-control mb-2" id="inputCityEdit" placeholder="Enter Your City">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label class="mb-2" for="inputZipEdit">Zip</label>
+                                    <input type="number" class="form-control mb-2" id="inputZipEdit" placeholder="Enter Zip">
+                                </div>
+                            </div>
+                            
+                            <div class="modal-footer mt-3 border-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success">Update changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="editAddress2" tabindex="-1" aria-labelledby="EditAddress2" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-semibold fs-4" id="EditAddress2">Edit Address</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-2">
+                        <form action="">
+                            <div class="row mb-2">
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputFullNamEdit">Full Name</label>
+                                    <input type="text" class="form-control mb-2" id="inputFullNamEdit" value="Example Names2" placeholder="Enter Your Full Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputPhoneEdit">Phone Number</label>
+                                    <input type="text" class="form-control mb-2" id="inputPhoneEdit" value="+880111111112" placeholder="Enter Your Phone Number">
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group col-md-6">
+                                    <label class=" mb-2" for="inputEmailEdit">Email</label>
+                                    <input type="email" class="form-control mb-2" id="inputEmailEdit" value="Example@Example.com" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputStateEdit">Region</label>
+                                    <select id="inputStateEdit" class="form-control mb-2">
+                                        <option selected>Choose Your Region</option>
+                                        <option>Dhaka</option>
+                                        <option>Borishal</option>
+                                        <option>Dhaka</option>
+                                        <option>Borishal</option>
+                                        <option>Dhaka</option>
+                                        <option>Borishal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label class="mb-2" for="inputAddressEdit">Address</label>
+                                <input type="text" class="form-control mb-2" id="inputAddressEdit" placeholder="For Example: House# 123, Street# 123, ABC Road">
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputAreaEdit">Area</label>
+                                    <input type="text" class="form-control mb-2" id="inputAreaEdit" placeholder="Enter Your Area">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="mb-2" class="mb-2" for="inputCityEdit">City</label>
+                                    <input type="text" class="form-control mb-2" id="inputCityEdit" placeholder="Enter Your City">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label class="mb-2" for="inputZipEdit">Zip</label>
+                                    <input type="number" class="form-control mb-2" id="inputZipEdit" placeholder="Enter Zip">
+                                </div>
+                            </div>
+                            
+                            <div class="modal-footer mt-3 border-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success">Update changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- All Modals -->
+
+        <!--=====================
+                shipping end
+         ======================-->
+
+        
+        <!--=====================
+                Footer start
+         ======================-->
+        <footer class="ftr py-5 px-3 d-flex justify-content-around align-items-center flex-wrap flex-column flex-md-row">
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA"><img class="crsr-hover" src="asset/style/img/logo.png" alt=""></a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA"><h2 class="ftrUlAH2">Quick Links</h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Home</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Discount</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Tearm- condition</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Faq</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">About us</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Privacy- Policy</a></li>
+            </ul>
+            
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA"><h2 class="ftrUlAH2">Top Categories</h2></a></li>
+                <li class="crsr-hover" class="ftrUlA"><a href="" class="ftrUlA">SHAREE COLLECTIONS</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">INdian Clothing</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Dresses</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">WOMEN"S FASION</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">BEAUTI PRODUCTS</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">MEN'S Products</a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li><a href="" class="ftrUlA" ><h2 class="ftrUlAH2">BRAND</h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Ariz's Territory</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Sajer bela</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Zyan and Myza</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Simple</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Himalaya</a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA">Palmolive</a></li>
+            </ul>
+            <ul class="ftrUl">
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-map-pin-2-line ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Adress <span class="ftrLastUlAIH2Span">124/ 1 Dhaka Bangladesh</span></h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-mail-unread-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-phone-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2></a></li>
+            </ul>
+        </footer>
+        <!--=====================
+                Footer end
+         ======================-->
+    </div>
+    <script src="asset/style/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="asset/style/js/script.js"></script>
+    <script src="asset/style/js/function.js"></script>
+    <script src="asset/style/js/gsap-fun.js"></script>
+    
+    <script>
+        /************************ start ceckout button cart page ************************/
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const checkoutProcs = document.querySelector('.total-li input');
+
+            function checkoutProcsText() {
+                if (window.innerWidth > 767) {
+                    checkoutProcs.value = "Proceed to Checkout";
+                } else {
+                    checkoutProcs.value = "Check Out";
+                }
+            }
+
+            checkoutProcsText();
+            window.addEventListener("resize", checkoutProcsText);
+        });
+
+        /************* end ceckout button cart page ***********/
+    </script>
+</body>
+</html>

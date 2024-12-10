@@ -7,9 +7,9 @@
 
     --h-carousel: 400px;
 
-    --h-ctgy: 200px;
-    --p-ctgy: 20px 80px;
-    --w-ctgy-a: 180px;
+    --h-ctgy: 300px;
+    --p-ctgy: 25px 30px;
+    --w-ctgy-a: 250px;
     --fs-ctgy-down: 18px;
 
     --p-featurs-product: 25px 40px;
@@ -53,6 +53,7 @@
     --fs-sizes: 18px;
     --fs-size-label: 15px;
     --h-qty-input: 65px;
+    --w-qty-btn: 25px;
     --h-qty-btn: 30px;
     --fs-main-btn: 18px;
 
@@ -75,6 +76,12 @@
     --p-card-main-dev: 20px 70px;
     /*** end cart page ***/
 
+
+    // colors
+    // --main-bg:;
+    --second-bg: white;
+    // --main-text:;
+    --main-color:orange;
 }
 html {
     scroll-behavior: smooth;
@@ -119,6 +126,30 @@ body::-webkit-scrollbar {
     }
 }
 
+    /*----- start Modal -----*/
+    .modal{
+        label{
+            font-size: 14px;
+            margin-left: 2px;
+        }
+        input{
+            border-radius: 2px;
+            outline: var(--main-color);
+        }
+        button[type="submit"] {
+            font-weight: 500;
+            color: white; 
+            background-color: var(--main-color);
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+    /*----- end Modal -----*/
 @media (min-width: 768px) {
     :root{
         --fs-heading: 20px;

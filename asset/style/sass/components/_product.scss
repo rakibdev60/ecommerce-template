@@ -104,7 +104,6 @@
                 align-items: center;
                 justify-content: space-around;
                 margin: 0;
-                margin-bottom: 10px;
                 h2{
                     font-size: var(--fs-btnSections-h2);
                     font-weight: 600;
@@ -124,7 +123,7 @@
                 gap: 10px;
                 margin-bottom: var(--mb-btnSections-div);
                 transition: 1s;
-                a {
+                a{
                     padding: 6px 10px;
                     background-color: #fff;
                     border-radius: 10px;
@@ -144,8 +143,6 @@
                         transform: scale(0);
                         overflow: hidden;
                     }
-                    
-
                     i {
                         font-size: 23px;
                         color: orange;
@@ -207,7 +204,7 @@
         --h-products-button: 30px;
         --fs-products-button: 15px;
         --g-btnSections: 10px;
-        --pd-btnSections: 10px 5px;
+        --pd-btnSections: 5px 5px;
         --p-btnSections: relative;
         --h-imgss: 65%;
         --h-btnSections: 35%;
@@ -222,6 +219,42 @@
         .products{
             .btnSections{
                 width: 100% !important;
+                .review-section{
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    margin: 0;
+                    margin-bottom: 10px;
+                    margin-top: -5px;
+                }
+                div{
+                    a{
+                        font-size: 12px;
+                        position: absolute;
+                        bottom: 5px;
+                        right: 5px;
+                        padding: 3px 6px;
+                        gap: 5px;
+                        flex-direction: row-reverse;
+                        border-radius: 5px;
+                        i{
+                            font-size: 20px;
+                        }
+                        &:hover i{
+                            font-size: 15px;
+                        }
+                        span{
+                            width: min-content; 
+                            visibility: visible;
+                        }
+                        &:nth-child(2){
+                            display: none;
+                        }
+                        &:nth-child(3){
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }

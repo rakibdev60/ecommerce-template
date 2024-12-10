@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
-     <link rel="stylesheet" href="asset/style/css/pages/home.min.css">
-     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/style/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/style/css/pages/profile.min.css">
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- remix icnos -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- gsap cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
     <title>Trade Mision - Best Products Online</title>
-    <link rel="icon" href="asset/style/img/fav.jpg" type="image/png">
-    <meta name="description" content="Welcome to My E-Commerce Store. Shop a wide variety of products including electronics, fashion, and home goods at the best prices online.">
+    <link rel="icon" href="asset/style/img/fav.jpg" type="image/jpg">
+    <meta name="description"
+        content="Welcome to My E-Commerce Store. Shop a wide variety of products including electronics, fashion, and home goods at the best prices online.">
     <meta name="keywords" content="ecommerce, online store, shopping, electronics, fashion, home goods">
 </head>
+
 <body>
 
     <div id="cursor"></div>
     <div id="cursor2"></div>
 
-    <div id="main-body">
+    <div id="main-boddy">
         <!--=====================
                 header start
         ======================-->
         <header class="hdr">
-            <div class="hdrD1 row g-1">
-                <div class="logoD col-1">
+            <div class="hdrD1 row g-1 align-items-center">
+                <div class="logoD col-1 m-0">
                     <a href="index.html">
-                        <img class="logo" src="asset/style/img/logo.png" alt=""></a>
+                        <img class="logo m-0" src="asset/style/img/logo.png" alt="">
+                    </a>
                 </div>
-                <div class="srch col-md-6 col-lg-7 h-100 d-none d-md-flex justify-content-center align-items-center">
+                <div class="srch col-md-1 col-lg-5 col-xl-7 h-100 d-none d-md-none d-lg-flex justify-content-center align-items-center">
                     <div class="search-closs d-none">
                         <span>
                             <i class="ri-close-line"></i>
                         </span>
                     </div>
-                    <form class=" h-100 d-flex justify-content-between align-items-center" action="search.html">
+                    <form class="h-100 d-flex justify-content-between align-items-center" action="search.html">
                         <input class="" type="text" placeholder="Search here...">
                         <input class="d-none" id="srchBtn" type="submit" value="">
                         <a class="d-flex justify-content-center align-items-center h-100" href="">
@@ -47,12 +54,11 @@
                         </a>
                     </form>
                 </div>
-                <div
-                    class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
-                    <a href="javascript:void(0)" class="search-icon d-md-none">
+                <div class="hdrD1btns col-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end justify-content-lg-center gap-1 gap-lg-3">
+                    <a href="javascript:void(0)" class="search-icon d-lg-none">
                         <i class="ri-search-line"></i>
                     </a>
-                    <a href="signin.html" class="">
+                    <a href="profile_Account.html" class="">
                         <i class="ri-user-fill"></i>
                     </a>
                     <a href="wishlist.html" class="">
@@ -211,95 +217,169 @@
                 </div>
             </div>
         </header>
-         <!--=====================
-                 header end
+        <!--=====================
+                 header end 
          ======================-->
-         <!--=====================
-            register form start
+        <!--=====================
+                shipping start
          ======================-->
-         <div class="row justify-content-center w-100 p-2 px-md-5 my-5 position-relative z-1">
-            <form class="col-10 col-sm-6">
-                <div class="row mb-4">
-                  <div class="col">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example1" class="form-control" />
-                      <label class="form-label" for="form3Example1">First name</label>
+        <div class="profile-main-dev row flex-lg-row">
+            <a class="profile-menu-icon d-lg-none" href="javascript:void(0);"><i class="ri-apps-2-add-line"></i></a>
+            <div class="profile-menu d-none d-lg-block col-12 col-lg-2 h-100 overflow-y-auto">
+                <span class="fw-semibold">Account Manage</span>
+                <ul class="overflow-hidden mb-3 overflow-auto">
+                    <li><a href="profile_Account.html"><i class="ri-user-fill"></i> My Profile</a></li>
+                    <li><a href="profile_Address copy.html"><i class="ri-file-list-3-fill"></i> My Addresses</a></li>
+                </ul>
+                <span class="fw-semibold">Order Manage</span>
+                <ul class="overflow-hidden mb-3 overflow-auto">
+                    <li><a href="profile_Orders.html"><i class="ri-shopping-basket-fill"></i> My Orders</a></li>
+                    <li><a href=""><i class="ri-delete-bin-2-fill"></i> My Cenceletions</a></li>
+                </ul>
+                <a href="setting"><span class="fw-semibold"><i class="ri-settings-fill"></i> Setting</span></a>
+            </div>
+            <div class="shipping-main col-12 col-lg-10 rounded">
+                <h1 class="fw-normal fs-4 mb-3">My Profile Manage</h1>
+                <div class="profile-cntent bg-body p-3 p-lg-4 row flex-wrap">
+                    <section class="col-md-3 mb-4 mb-md-5">
+                        <span>Full Name</span>
+                        <p>Example Names</p>
+                    </section>
+                    <section class="col-md-3 mb-4 mb-md-5">
+                        <span>Email Address</span>
+                        <p>example@emxample.com</p>
+                    </section>
+                    <section class="col-md-3 mb-4 mb-md-5">
+                        <span>Number</span>
+                        <p>+8801234567890</p>
+                    </section>
+                    <section class="col-md-3 mb-4 mb-md-5">
+                        <span>Birthday</span>
+                        <p>Please add your birthday</p>
+                    </section>
+                    <section class="col-md-3 mb-4 mb-md-5">
+                        <span>Gender</span>
+                        <p>Please add your Gender</p>
+                    </section>
+                    <div class="row gap-3">
+                        <a class="col-12 col-md-3 py-2 fw-semibold d-flex justify-content-center align-items-center gap-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#updatetProfile1"><i class="ri-file-edit-line fw-normal fs-5"></i>Update Profile</a>
+                        <a class="col-12 col-md-3 py-2 fw-semibold d-flex justify-content-center align-items-center gap-2" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#updatetPassword1"><i class="ri-file-lock-line fw-normal fs-5"></i>Change Password</a>
+                        <a class="col-12 col-md-5 py-3 fw-semibold d-flex gap-2 justify-content-center justify-content-md-end bg-transparent text-danger" href="logout"><i class="ri-logout-circle-line"></i>logout</a>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example2" class="form-control" />
-                      <label class="form-label" for="form3Example2">Last name</label>
-                    </div>
-                  </div>
                 </div>
-              
-                <!-- Email input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" />
-                  <label class="form-label" for="form3Example3">Email address</label>
-                </div>
-              
-                <!-- Password input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" />
-                  <label class="form-label" for="form3Example4">Password</label>
-                </div>
-              
-                
-                <!-- 2 column grid layout for inline styling -->
-                <div class="row mb-4">
-                    <div class="col d-flex justify-content-between">
-                    <!-- Checkbox -->
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
-                            <label class="form-check-label" for="form2Example34"> I'm agree to all Terms </label>
-                        </div>
-                    </div>
+            </div>
+        </div>
 
-                    <div class="col d-flex justify-content-end">
-                        <!-- Simple link -->
-                        <a href="#!">Forgot password?</a>
+        <!-- All Modals -->
+        <div class="modal fade" id="updatetProfile1" tabindex="-1" aria-labelledby="UpdatetProfile1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-semibold fs-4" id="UpdatetProfile1">Edit Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-2">
+                        <form action="">
+                            <!-- Full Name -->
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="inputFullNameEdit">Full Name</label>
+                                <input type="text" class="form-control" id="inputFullNameEdit" value="Example Name"
+                                    placeholder="Enter Your Full Name">
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="inputEmailEdit">Email</label>
+                                <input type="email" class="form-control" id="inputEmailEdit" value="example@example.com"
+                                    placeholder="Enter Your Email">
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="inputNumberEdit">Password</label>
+                                <input type="number" class="form-control" id="inputNumberEdit"
+                                    placeholder="Enter Your Number">
+                            </div>
+
+                            <div class="form-group row">
+                                <!-- Birthday -->
+                                <div class="form-group mb-3 col-md-6">
+                                    <label class="mb-2" for="inputBirthdayEdit">Birthday</label>
+                                    <input type="date" class="form-control" id="inputBirthdayEdit">
+                                </div>
+
+                                <!-- Gender -->
+                                <div class="form-group mb-3  col-md-6">
+                                    <label class="mb-2" for="inputGenderEdit">Gender</label>
+                                    <select id="inputGenderEdit" class="form-control">
+                                        <option selected>Select Your Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer mt-3 border-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn">Update Changes</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-              
-                <!-- Submit button -->
-                <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Sign up</button>
-              
-                <!-- Register buttons -->
-                <div class="text-center">
-                    <a class="text-primary fw-bold" href="signin.html">I have a account</a>
-                    <p class="mb-2">or sign up with:</p>
-                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
-                        <i class="ri-facebook-fill"></i>
-                    </button>
-                
-                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
-                        <i class="ri-google-fill"></i>
-                    </button>
-                
-                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
-                        <i class="ri-twitter-line"></i>
-                    </button>
-                
-                    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
-                        <i class="ri-github-fill"></i>
-                    </button>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="updatetPassword1" tabindex="-1" aria-labelledby="UpdatetPassword1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-semibold fs-4" id="UpdatetPassword1">Edit Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body m-2">
+                        <form action=""> <!-- Password (Current and New in a Row) -->
+                            <div class="row mb-3">
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputCurrentPasswordEdit">Current Password</label>
+                                    <input type="password" class="form-control" id="inputCurrentPasswordEdit" placeholder="Enter Current Password">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="mb-2" for="inputNewPasswordEdit">New Password</label>
+                                    <input type="password" class="form-control" id="inputNewPasswordEdit" placeholder="Enter New Password">
+                                </div>
+                            </div>
+
+                            <div class="modal-footer mt-3 border-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success">Update Changes</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </form>
-         </div>
-         <!--=====================
-            register form end
-         ======================--> 
-         <!--=====================
+            </div>
+        </div>
+
+        <!-- All Modals -->
+        <!--=====================
+                shipping end
+         ======================-->
+
+
+        <!--=====================
                 Footer start
-         ======================--> 
-        <footer class="ftr py-5 px-3 d-flex justify-content-around align-items-center flex-wrap flex-column flex-md-row">
+         ======================-->
+        <footer
+            class="ftr py-5 px-3 d-flex justify-content-around align-items-center flex-wrap flex-column flex-md-row">
             <ul class="ftrUl">
                 <li><a href="" class="ftrUlA"><img class="crsr-hover" src="asset/style/img/logo.png" alt=""></a></li>
             </ul>
             <ul class="ftrUl">
-                <li><a href="" class="ftrUlA"><h2 class="ftrUlAH2">Quick Links</h2></a></li>
+                <li><a href="" class="ftrUlA">
+                        <h2 class="ftrUlAH2">Quick Links</h2>
+                    </a></li>
                 <li class="crsr-hover"><a href="" class="ftrUlA">Home</a></li>
                 <li class="crsr-hover"><a href="" class="ftrUlA">Discount</a></li>
                 <li class="crsr-hover"><a href="" class="ftrUlA">Tearm- condition</a></li>
@@ -307,9 +387,11 @@
                 <li class="crsr-hover"><a href="" class="ftrUlA">About us</a></li>
                 <li class="crsr-hover"><a href="" class="ftrUlA">Privacy- Policy</a></li>
             </ul>
-            
+
             <ul class="ftrUl">
-                <li><a href="" class="ftrUlA"><h2 class="ftrUlAH2">Top Categories</h2></a></li>
+                <li><a href="" class="ftrUlA">
+                        <h2 class="ftrUlAH2">Top Categories</h2>
+                    </a></li>
                 <li class="crsr-hover" class="ftrUlA"><a href="" class="ftrUlA">SHAREE COLLECTIONS</a></li>
                 <li class="crsr-hover"><a href="" class="ftrUlA">INdian Clothing</a></li>
                 <li class="crsr-hover"><a href="" class="ftrUlA">Dresses</a></li>
@@ -318,7 +400,9 @@
                 <li class="crsr-hover"><a href="" class="ftrUlA">MEN'S Products</a></li>
             </ul>
             <ul class="ftrUl">
-                <li><a href="" class="ftrUlA" ><h2 class="ftrUlAH2">BRAND</h2></a></li>
+                <li><a href="" class="ftrUlA">
+                        <h2 class="ftrUlAH2">BRAND</h2>
+                    </a></li>
                 <li class="crsr-hover"><a href="" class="ftrUlA">Ariz's Territory</a></li>
                 <li class="crsr-hover"><a href="" class="ftrUlA">Sajer bela</a></li>
                 <li class="crsr-hover"><a href="" class="ftrUlA">Zyan and Myza</a></li>
@@ -327,20 +411,29 @@
                 <li class="crsr-hover"><a href="" class="ftrUlA">Palmolive</a></li>
             </ul>
             <ul class="ftrUl">
-                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-map-pin-2-line ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Adress <span class="ftrLastUlAIH2Span">124/ 1 Dhaka Bangladesh</span></h2></a></li>
-                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-mail-unread-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2></a></li>
-                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-phone-fill ftrLastUlAI"></i><h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2></a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i
+                            class="ri-map-pin-2-line ftrLastUlAI"></i>
+                        <h2 class="ftrUlAH2 ftrLastUlAIH2">Adress <span class="ftrLastUlAIH2Span">124/ 1 Dhaka
+                                Bangladesh</span></h2>
+                    </a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i
+                            class="ri-mail-unread-fill ftrLastUlAI"></i>
+                        <h2 class="ftrUlAH2 ftrLastUlAIH2">Email <span
+                                class="ftrLastUlAIH2Span">Info@ecommerce.com</span></h2>
+                    </a></li>
+                <li class="crsr-hover"><a href="" class="ftrUlA ftrLastUlA"><i class="ri-phone-fill ftrLastUlAI"></i>
+                        <h2 class="ftrUlAH2 ftrLastUlAIH2">phone <span class="ftrLastUlAIH2Span">01222222222</span></h2>
+                    </a></li>
             </ul>
         </footer>
-         <!--=====================
+        <!--=====================
                 Footer end
-         ======================--> 
-        
+         ======================-->
     </div>
-
-
-    <script src="asset/style/css/bootstrap/bootstrap.min.js"></script>
+    <script src="asset/style/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="asset/style/js/script.js"></script>
+    <script src="asset/style/js/function.js"></script>
     <script src="asset/style/js/gsap-fun.js"></script>
 </body>
+
 </html>
