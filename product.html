@@ -276,10 +276,9 @@
                     </div>
                 </div>
                 <div class="qty">
-                    <button onclick="decreaseQuantity()">-</button>
+                    <button onclick="decreaseQnty()">-</button>
                     <input class="qty-input" id="quantity" type="number" value="1" min="1">
-                    <button onclick="increaseQuantity()">+</button>
-                    
+                    <button onclick="increaseQnty()">+</button>
                 </div>
                 <div class="main-btn">
                     <a href=""><i class="ri-shopping-cart-fill"></i>Add to Cart</a>
@@ -972,12 +971,12 @@
             });
         /************* end description review section **************/
         /************* start qty  + - product page **************/
-        function increaseQuantity() {
+        function increaseQnty() {
             const quantityInput = document.getElementById('quantity');
             quantityInput.value = parseInt(quantityInput.value) + 1;
         }
 
-        function decreaseQuantity() {
+        function decreaseQnty() {
             const quantityInput = document.getElementById('quantity');
             if (quantityInput.value > 1) {
                 quantityInput.value = parseInt(quantityInput.value) - 1;

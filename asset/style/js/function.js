@@ -22,48 +22,6 @@ SrchIconCloss.addEventListener('click', function () {
     SrchFild.classList.remove('srch-responsive');
 });
 /************ end headder ************/
-/************************ start categories slider ************************/
-
-// const ctgySlid = document.querySelector('.ctgy-slid');
-
-// function autoScroll() {
-//     // Scroll by a fixed amount every time (210px)
-//     ctgySlid.scrollLeft += 210;
-
-//     // If the scroll reaches the end, reset to the start
-//     if (ctgySlid.scrollLeft + ctgySlid.clientWidth >= ctgySlid.scrollWidth) {
-//         ctgySlid.scrollLeft = 0; // Reset to start
-//     }
-// }
-
-// // Start auto-scroll continuously
-// function continuousScroll() {
-//     autoScroll();
-//     requestAnimationFrame(continuousScroll); // Keep calling the function in an animation loop
-// }
-
-// continuousScroll(); // Start continuous scroll
-
-
-
-// function moveRight() {
-//     const container = document.querySelector('.ctgy-slid'); 
-//     container.scrollBy({
-//         left: 210, 
-//         behavior: 'smooth'
-//     });
-// }
-
-// function moveLeft() {
-//     const container = document.querySelector('.ctgy-slid');
-//     container.scrollBy({
-//         left: -210,
-//         behavior: 'smooth'
-//     });
-// }
-
-/************ end categories slider ************/
-
 /************* start product favorited ************/
     const icons = document.querySelectorAll('.products button');
 
@@ -90,7 +48,20 @@ SrchIconCloss.addEventListener('click', function () {
             input.value = parseInt(input.value) - 1;
         }
     };
-/********** end qty  + - cart page *********/
+    /********** end qty  + - cart page *********/
+    /********** start qty  + - cart offcanvas *********/
+    function increaseQnty() {
+        const quantityInput = document.getElementById('quantity');
+        quantityInput.value = parseInt(quantityInput.value) + 1;
+    }
+
+    function decreaseQnty() {
+        const quantityInput = document.getElementById('quantity');
+        if (quantityInput.value > 1) {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
+        }
+    }
+/********** end qty  + - cart offcanvas *********/
 /********** start proflle menu icon profile page *********/
 const profileMenuIcon = document.querySelector('.profile-menu-icon');
 const profileMenuField = document.querySelector('.profile-menu');

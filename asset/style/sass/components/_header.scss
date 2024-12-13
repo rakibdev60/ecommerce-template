@@ -8,7 +8,6 @@ header{
     padding: 25px 0px;
     padding-bottom: 0px;
     border-radius: 10px;
-    // margin-bottom: 5px;
     .hdrD1{
         display: flex;
         padding: var(--p-header);
@@ -41,7 +40,7 @@ header{
                     color: white;
                     font-size: 20px;
                     background-color: var(--main-color);
-                    border: 1px solid orange;
+                    border: 1px solid var(--main-color);
                     border-radius: 0 8px 8px 0;
                 }
             }
@@ -54,7 +53,6 @@ header{
                 padding: 4px 8px;
                 border-radius: 10px;
                 height: min-content;
-                // border: 1px solid silver;
                 transition: 1s ease;
                 position: relative;
                 span{
@@ -77,8 +75,7 @@ header{
                     color: black;
                 }
                 &:hover{
-                    background-color: orange;
-                    // border: 1px solid orange;
+                    background-color: var(--main-color);
                 }
                 &:hover i{
                     color: white;
@@ -88,7 +85,6 @@ header{
     }
     .hdrD2{
         height: 50px;
-        // display: flex;
         font-family: poppins, sans-serif;
         padding: var(--p-header);
         background-color: #ffa600d5;
@@ -125,7 +121,7 @@ header{
                     color: black;
                 }
                 &:hover{
-                    background-color: orange;
+                    background-color: var(--main-color);
                 }
                 &:hover span{
                     color: white;
@@ -134,7 +130,7 @@ header{
             .ctgry-active{
                 height: 50px;
                 opacity: 1;
-                background-color: orange;
+                background-color: var(--main-color);
                 border-radius: 0;
                 border-bottom: none;
                 position: relative;
@@ -144,7 +140,7 @@ header{
                     justify-content: center;
                     align-items: center;
                     padding: 1px 10px;
-                    background-color: orange;
+                    background-color: var(--main-color);
                     i{
                         font-size: 20px;
                         font-weight: 300;
@@ -162,7 +158,7 @@ header{
                     color: white;
                 }
                 &:hover{
-                    background-color: orange;
+                    background-color: var(--main-color);
                 }
             }
             &:hover {
@@ -179,8 +175,6 @@ header{
             font-weight:  400;
             font-size: 15px;
             justify-content: start;
-            // margin-left: 50px;
-            // margin-top: 4px;
             .menusA{
                 display: flex;
                 flex-direction: column;
@@ -188,7 +182,6 @@ header{
                 height: 50px;
                 white-space: nowrap;
                 .menusASpn{
-                    // height: 100%;
                     color: black;
                 }
                 .submenu{
@@ -301,7 +294,6 @@ header{
             padding-left: 10px;
             margin: 5px 0;
             border-radius: 7px;
-            // justify-content: center;
             .menusASpn{
                 height: 100%;
                 display: flex;

@@ -125,6 +125,9 @@ body::-webkit-scrollbar {
         }
     }
 }
+.offcanvas {
+    z-index: 1055;
+}
 
     /*----- start Modal -----*/
     .modal{
